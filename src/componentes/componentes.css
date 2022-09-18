@@ -1,0 +1,35 @@
+@import "../index.css";
+
+.busquedas {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+
+.botonBusquedas {
+    border: 1px solid var(--color_violeta);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(34, 34, 34);
+    height: 75%;
+    margin: 0 10px;
+}
+
+.campoBusquedas {
+    border-radius: 5px;
+    width: 300px;
+    border-style: none;
+    height: 75%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+}
+
+.navbar {
+    height: 60px;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
