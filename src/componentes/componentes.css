@@ -1,35 +1,132 @@
 @import "../index.css";
 
+
+
+
+
+/******************************* NavBar ****************************/
+
+
 .busquedas {
+    position: relative; 
     width: 100%;
     text-align: center;
-    height: 50px;
+    height: 75px;
+    background-color: rgb(30, 30, 30);
 }
 
 .botonBusquedas {
     border: 1px solid var(--color_violeta);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
     background-color: rgb(34, 34, 34);
-    height: 75%;
+    height: 40px;
     margin: 0 10px;
 }
 
 .campoBusquedas {
-    border-radius: 5px;
-    width: 300px;
+    border-radius: 10px;
+    width: 400px;
     border-style: none;
-    height: 75%;
+    height: 40px;
     background-color: white;
     padding: 5px;
     color: black;
 }
 
-.navbar {
-    height: 60px;
-    padding: 0;
-}
-
 .nav-item {
     margin: 0 10px;
+}   
+
+
+
+
+/************************** Icono Carrito *******************************/
+
+.iconoCarrito {
+    margin-left: 60px;
+    height: 60px;
+}
+
+
+
+
+/***************************** logo ***********************************/
+
+
+.logo {
+    z-index: 100;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    left: 25px;
+    top: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    
+.logo__e {
+    color: var(--color_naranja);
+    font-style: oblique;
+    line-height: 0;
+}
+
+.logo__hard {
+    color: var(--color_celeste);
+    line-height: 40px;
+}
+
+.logo__computacion {
+    color: var(--color_violeta);
+    filter: brightness(150%) grayscale(25%);
+    font-style: oblique;
+    line-height: 0;
+    position: absolute;
+    font-size: 20px;
+    left: 50px;
+}
+
+
+
+
+
+/*************************** Carousel ***********************************/
+
+.imgCarousel {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+
+
+
+
+/************************ cartProductos *********************************/
+
+.cartProducto {
+    width: 250px;
+    height: 400px;
+    border: 1px solid gray;
+    color: rgb(34, 34, 34);
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.imgProducto {
+    object-fit: contain;
+    height: 50%;
+}
+
+.botonProducto {
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--color_violeta);
+    padding: 7px;
+}
+
+.precioProducto {
+    font-size: 30px;
+    font-weight: bold;
 }
