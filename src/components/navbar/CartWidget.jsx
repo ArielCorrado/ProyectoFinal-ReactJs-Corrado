@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IconoCarrito = () => {
+const CartWidget = () => {
     return (
         <div>
             <img className="iconoCarrito" src="./images/icono_carrito.png" alt="" />
@@ -8,4 +8,4 @@ const IconoCarrito = () => {
     );
 }
 
-export default IconoCarrito;
+export default CartWidget;

@@ -1,0 +1,175 @@
+@import "./index.css";
+
+
+/****************************** Main *************************************************/
+
+.main__container {
+    flex-wrap: wrap;
+}
+
+
+/******************************* Contenedor de NavBar *******************************/
+
+.contNav {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    width: 100%;
+}
+
+
+/******************************* Busquedas ****************************/
+
+
+.busquedas {
+    position: relative; 
+    width: 100%;
+    text-align: center;
+    height: 75px;
+    background-color: rgb(30, 30, 30);
+}
+
+.botonBusquedas {
+    border: 1px solid var(--color_violeta);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(34, 34, 34);
+    height: 40px;
+    margin: 0 10px;
+}
+
+.campoBusquedas {
+    border-radius: 10px;
+    width: 400px;
+    border-style: none;
+    height: 40px;
+    background-color: white;
+    padding: 5px;
+    color: black;
+}
+
+
+/*************************** Categorias ***************************************/
+
+
+.nav-item {
+    margin: 0 10px;
+}   
+
+.nav-link {
+    font-size: 20px;
+    color: rgb(224, 224, 224)
+}
+
+
+
+
+/************************** CartWidget *******************************/
+
+.iconoCarrito {
+    margin-left: 60px;
+    height: 60px;
+}
+
+
+
+
+/***************************** logo ***********************************/
+
+
+.logo {
+    z-index: 100;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    left: 25px;
+    top: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    
+.logo__e {
+    color: var(--color_naranja);
+    font-style: oblique;
+    line-height: 0;
+}
+
+.logo__hard {
+    color: var(--color_celeste);
+    line-height: 40px;
+}
+
+.logo__computacion {
+    color: var(--color_violeta);
+    filter: brightness(150%) grayscale(25%);
+    font-style: oblique;
+    line-height: 0;
+    position: absolute;
+    font-size: 20px;
+    left: 50px;
+}
+
+
+
+
+
+/*************************** Carousel ***********************************/
+
+.imgCarousel {
+    max-width: 1920px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+
+
+/************************ Card *********************************/
+
+.cartProducto {
+    width: 250px;
+    height: 400px;
+    border: 1px solid gray;
+    color: rgb(34, 34, 34);
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    justify-content: flex-end !important;
+}
+
+.imgProducto {
+    object-fit: contain;
+    height: 50%;
+}
+
+.descProducto {
+    margin: 10px 0;
+}
+
+.botonProducto {
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--color_violeta);
+    padding: 7px;
+}
+
+.precioProducto {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+
+
+
+
+
+
+
+
+
+
+
