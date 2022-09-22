@@ -6,7 +6,7 @@ const CartProducto = (props) => {
             <img className="imgProducto" src={`./images/productos/${props.imgScr}`} alt="" />
             <div className='descProducto'>{props.descripcion}</div>
             <button className='botonProducto'>Agregar al Carrito</button>
-            <div className='precioProducto'>{props.precio}</div>
+            <div className='precioProducto'>${props.precio}</div>
         </div>
     );
 }
