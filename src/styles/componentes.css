@@ -112,11 +112,16 @@
     text-align: center;
     margin: 10px;
     border-radius: 5px;
+    padding: 15px;
 }
 
 .imgProducto {
     object-fit: contain;
     height: 50%;
+}
+
+.descProducto {
+    margin: 10px 0;
 }
 
 .botonProducto {
@@ -127,6 +132,9 @@
 }
 
 .precioProducto {
+    margin-top: 10px;
     font-size: 30px;
     font-weight: bold;
 }
+
+
