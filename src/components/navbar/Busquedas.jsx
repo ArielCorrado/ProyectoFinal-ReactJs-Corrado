@@ -1,5 +1,5 @@
 import React from 'react';
-import IconoCarrito from './IconoCarrito';
+import IconoCarrito from './CartWidget';
 
 const Busquedas = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CartProducto = (props) => {
+const Card = (props) => {
     return (
         <div className="cartProducto flex">
             <img className="imgProducto" src={`./images/productos/${props.imgScr}`} alt="" />
@@ -11,8 +11,4 @@ const CartProducto = (props) => {
     );
 }
 
-
-
-export default CartProducto;
-
-
+export default Card;

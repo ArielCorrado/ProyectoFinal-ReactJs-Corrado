@@ -1,7 +1,14 @@
 @import "../index.css";
 
 
-/****************** Contenedor de barra de busqueda y NavBar *********************/
+/****************************** Main *************************************************/
+
+.main__container {
+    flex-wrap: wrap;
+}
+
+
+/******************************* Contenedor de NavBar *******************************/
 
 .contNav {
     position: sticky;
@@ -130,6 +137,7 @@
     border-radius: 5px;
     padding: 15px;
     background-color: white;
+    justify-content: flex-end !important;
 }
 
 .imgProducto {
@@ -152,6 +160,7 @@
     margin-top: 10px;
     font-size: 30px;
     font-weight: bold;
+    color: rgb(51, 51, 51);
 }
 
 
