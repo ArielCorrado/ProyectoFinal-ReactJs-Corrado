@@ -25,5 +25,5 @@ yarn-error.log*
 
 # GoogleDrive 
 
-.tmp.drivedownload
-.tmp.driveupload
+/.tmp.driveupload
+/.tmp.drivedownload
