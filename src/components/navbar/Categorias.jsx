@@ -4,19 +4,19 @@ const Categorias = () => {
     return (
         <>
             <li className="nav-item">
-                <a className="nav-link" href="#">Microprocesadores</a>
+                <a className="nav-link" href="index.html">Microprocesadores</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Motherboards</a>
+                <a className="nav-link" href="index.html">Motherboards</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Memorias RAM</a>
+                <a className="nav-link" href="index.html">Memorias RAM</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Placas de video</a>
+                <a className="nav-link" href="index.html">Placas de video</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Fuentes</a>
+                <a className="nav-link" href="index.html">Fuentes</a>
             </li>
         </>                
     );

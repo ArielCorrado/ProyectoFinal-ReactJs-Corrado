@@ -7,7 +7,7 @@
     "socket": "AM4",
     "frecuencia": "4.0Ghz",
     "precio": 20900,
-    "imgScr": "./images/productos/amd0.jpeg",
+    "imgScr": "../images/productos/amd0.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Amd Ryzen 3 4100 AM4 4.0Ghz"
   },
@@ -19,7 +19,7 @@
     "socket": "AM4",
     "frecuencia": "4.0Ghz",
     "precio": 32900,
-    "imgScr": "./images/productos/amd1.jpeg",
+    "imgScr": "../images/productos/amd1.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Amd Ryzen 3 4350G AM4 4.0Ghz"
   },
@@ -31,7 +31,7 @@
     "socket": "AM4",
     "frecuencia": "4.2Ghz",
     "precio": 42400,
-    "imgScr": "./images/productos/amd2.jpeg",
+    "imgScr": "../images/productos/amd2.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Amd Ryzen 5 3600 AM4 4.2Ghz"
   },
@@ -43,7 +43,7 @@
     "socket": "AM4",
     "frecuencia": "4.2Ghz",
     "precio": 46800,
-    "imgScr": "./images/productos/amd3.jpeg",
+    "imgScr": "../images/productos/amd3.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Amd Ryzen 5 5500 AM4 4.2Ghz"
   },
@@ -55,7 +55,7 @@
     "socket": "AM4",
     "frecuencia": "4.6Ghz",
     "precio": 66000,
-    "imgScr": "./images/productos/amd4.jpeg",
+    "imgScr": "../images/productos/amd4.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Amd Ryzen 7 5700X AM4 4.6Ghz"
   },
@@ -67,7 +67,7 @@
     "socket": "AM4",
     "frecuencia": "4.8Ghz",
     "precio": 110000,
-    "imgScr": "./images/productos/amd5.jpeg",
+    "imgScr": "../images/productos/amd5.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Amd Ryzen 9 5900X AM4 4.8Ghz"
   },
@@ -79,7 +79,7 @@
     "socket": "LGA1700",
     "frecuencia": "3.8Ghz",
     "precio": 12000,
-    "imgScr": "./images/productos/intel0.jpeg",
+    "imgScr": "../images/productos/intel0.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Celeron G6900 LGA1700 3.8Ghz"
   },
@@ -91,7 +91,7 @@
     "socket": "LGA1700",
     "frecuencia": "3.8Ghz",
     "precio": 15600,
-    "imgScr": "./images/productos/intel1.jpeg",
+    "imgScr": "../images/productos/intel1.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Pentium G7400 LGA1700 3.8Ghz"
   },
@@ -103,7 +103,7 @@
     "socket": "LGA1700",
     "frecuencia": "4.3Ghz",
     "precio": 34500,
-    "imgScr": "./images/productos/intel2.jpeg",
+    "imgScr": "../images/productos/intel2.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i3 12100 LGA1700 4.3Ghz"
   },
@@ -115,7 +115,7 @@
     "socket": "LGA1700",
     "frecuencia": "4.4Ghz",
     "precio": 51000,
-    "imgScr": "./images/productos/intel3.jpeg",
+    "imgScr": "../images/productos/intel3.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i5 12400 LGA1700 4.4Ghz"
   },
@@ -127,7 +127,7 @@
     "socket": "LGA1700",
     "frecuencia": "5.0Ghz",
     "precio": 87900,
-    "imgScr": "./images/productos/intel4.jpg",
+    "imgScr": "../images/productos/intel4.jpg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i7 12700KF LGA1700 5.0Ghz"
   },
@@ -139,7 +139,7 @@
     "socket": "LGA1700",
     "frecuencia": "5.2Ghz",
     "precio": 147719,
-    "imgScr": "./images/productos/intel5.jpeg",
+    "imgScr": "../images/productos/intel5.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i9 12900KF LGA1700 5.2Ghz"
   },
@@ -151,7 +151,7 @@
     "socket": "LGA1700",
     "frecuencia": "5.2Ghz",
     "precio": 149900,
-    "imgScr": "./images/productos/intel5.jpeg",
+    "imgScr": "../images/productos/intel5.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i9 12900K LGA1700 5.2Ghz"
   },
@@ -163,7 +163,7 @@
     "socket": "LGA1700",
     "frecuencia": "5.0Ghz",
     "precio": 99500,
-    "imgScr": "./images/productos/intel6.jpeg",
+    "imgScr": "../images/productos/intel6.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i7 12700K LGA1700 5.0Ghz"
   },
@@ -175,7 +175,7 @@
     "socket": "LGA1200",
     "frecuencia": "4.9Ghz",
     "precio": 56300,
-    "imgScr": "./images/productos/intel7.jpeg",
+    "imgScr": "../images/productos/intel7.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i5 11600K Comet Lake LGA1200 4.9Ghz"
   },
@@ -187,7 +187,7 @@
     "socket": "LGA1200",
     "frecuencia": "5.0Ghz",
     "precio": 75200,
-    "imgScr": "./images/productos/intel8.jpeg",
+    "imgScr": "../images/productos/intel8.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i7 11700KF Rocket Lake LGA1200 5.0Ghz"
   },
@@ -199,7 +199,7 @@
     "socket": "LGA1200",
     "frecuencia": "3.5Ghz",
     "precio": 8700,
-    "imgScr": "./images/productos/intel9.jpeg",
+    "imgScr": "../images/productos/intel9.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Celeron G5905 LGA1200 3.5Ghz"
   },
@@ -211,7 +211,7 @@
     "socket": "LGA1200",
     "frecuencia": "4.1Ghz",
     "precio": 12400,
-    "imgScr": "./images/productos/intel10.jpeg",
+    "imgScr": "../images/productos/intel10.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Pentium Gold G6405 LGA1200 4.1Ghz"
   },
@@ -223,7 +223,7 @@
     "socket": "LGA1200",
     "frecuencia": "4.4Ghz",
     "precio": 26900,
-    "imgScr": "./images/productos/intel11.jpeg",
+    "imgScr": "../images/productos/intel11.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i3 10105 LGA1200 4.4Ghz"
   },
@@ -235,7 +235,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 18000,
-    "imgScr": "./images/productos/mb0.jpeg",
+    "imgScr": "../images/productos/mb0.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-B450M DS3H AM4 DDR4"
   },
@@ -247,7 +247,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 19900,
-    "imgScr": "./images/productos/mb1.jpeg",
+    "imgScr": "../images/productos/mb1.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-A520M S2H AM4 DDR4"
   },
@@ -259,7 +259,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 32000,
-    "imgScr": "./images/productos/mb2.jpeg",
+    "imgScr": "../images/productos/mb2.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-B550M DS3H AM4 DDR4"
   },
@@ -271,7 +271,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 64800,
-    "imgScr": "./images/productos/mb3.jpeg",
+    "imgScr": "../images/productos/mb3.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-X570S UD AM4 DDR4"
   },
@@ -283,7 +283,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 95000,
-    "imgScr": "./images/productos/mb4.jpeg",
+    "imgScr": "../images/productos/mb4.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-X570S AORUS ELITE AM4 DDR4"
   },
@@ -295,7 +295,7 @@
     "socket": "LGA1700",
     "memoria": "DDR4",
     "precio": 18200,
-    "imgScr": "./images/productos/mb5.jpg",
+    "imgScr": "../images/productos/mb5.jpg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi PRO H610M LGA1700 DDR4"
   },
@@ -307,7 +307,7 @@
     "socket": "LGA1700",
     "memoria": "DDR4",
     "precio": 20000,
-    "imgScr": "./images/productos/mb6.jpeg",
+    "imgScr": "../images/productos/mb6.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi PRO H610M-G LGA1700 DDR4"
   },
@@ -319,7 +319,7 @@
     "socket": "LGA1700",
     "memoria": "DDR4",
     "precio": 25800,
-    "imgScr": "./images/productos/mb7.jpg",
+    "imgScr": "../images/productos/mb7.jpg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi PRO B660M-G LGA1700 DDR4"
   },
@@ -331,7 +331,7 @@
     "socket": "LGA1700",
     "memoria": "DDR4",
     "precio": 47900,
-    "imgScr": "./images/productos/mb8.jpeg",
+    "imgScr": "../images/productos/mb8.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi PRO Z690-A LGA1700 DDR4"
   },
@@ -343,7 +343,7 @@
     "socket": "LGA1700",
     "memoria": "DDR4",
     "precio": 64900,
-    "imgScr": "./images/productos/mb9.jpeg",
+    "imgScr": "../images/productos/mb9.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi Z690 Tomahawk WiFi LGA1700 DDR4"
   },
@@ -355,7 +355,7 @@
     "socket": "LGA1700",
     "memoria": "DDR5",
     "precio": 103000,
-    "imgScr": "./images/productos/mb10.jpeg",
+    "imgScr": "../images/productos/mb10.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-Z690 AORUS ULTRA LGA1700 DDR5"
   },
@@ -367,7 +367,7 @@
     "socket": "LGA1700",
     "memoria": "DDR4",
     "precio": 63400,
-    "imgScr": "./images/productos/mb11.jpeg",
+    "imgScr": "../images/productos/mb11.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Prime Z690-P WIFI LGA1700 DDR4"
   },
@@ -379,7 +379,7 @@
     "socket": "LGA1700",
     "memoria": "DDR4",
     "precio": 85000,
-    "imgScr": "./images/productos/mb12.jpeg",
+    "imgScr": "../images/productos/mb12.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Tuf GAMING Z690-PLUS WIFI LGA1700 DDR4"
   },
@@ -391,7 +391,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 11900,
-    "imgScr": "./images/productos/mb13.jpeg",
+    "imgScr": "../images/productos/mb13.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Prime A320M-K AM4 DDR4"
   },
@@ -403,7 +403,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 18000,
-    "imgScr": "./images/productos/mb14.jpeg",
+    "imgScr": "../images/productos/mb14.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Prime A520M-K AM4 DDR4"
   },
@@ -415,7 +415,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 17600,
-    "imgScr": "./images/productos/mb15.jpeg",
+    "imgScr": "../images/productos/mb15.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Prime B450M-A II AM4 DDR4"
   },
@@ -427,7 +427,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 42800,
-    "imgScr": "./images/productos/mb16.jpeg",
+    "imgScr": "../images/productos/mb16.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Tuf B550M GAMING PLUS WIFI II AM4 DDR4"
   },
@@ -439,7 +439,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 61000,
-    "imgScr": "./images/productos/mb17.jpeg",
+    "imgScr": "../images/productos/mb17.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Rog B550-A GAMING AM4 DDR4"
   },
@@ -451,7 +451,7 @@
     "socket": "AM4",
     "memoria": "DDR4",
     "precio": 38000,
-    "imgScr": "./images/productos/mb18.jpeg",
+    "imgScr": "../images/productos/mb18.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Prime X570-P AM4 DDR4"
   },
@@ -463,7 +463,7 @@
     "socket": "LGA1200",
     "memoria": "DDR4",
     "precio": 24100,
-    "imgScr": "./images/productos/mb19.jpeg",
+    "imgScr": "../images/productos/mb19.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi B560M PRO VDH LGA1200 DDR4"
   },
@@ -475,7 +475,7 @@
     "socket": "LGA1200",
     "memoria": "DDR4",
     "precio": 29700,
-    "imgScr": "./images/productos/mb20.jpeg",
+    "imgScr": "../images/productos/mb20.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi B560M BAZOOKA LGA1200 DDR4"
   },
@@ -487,7 +487,7 @@
     "socket": "LGA1200",
     "memoria": "DDR4",
     "precio": 48030,
-    "imgScr": "./images/productos/mb21.jpeg",
+    "imgScr": "../images/productos/mb21.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi Z590 GAMING PLUS LGA1200 DDR4"
   },
@@ -499,7 +499,7 @@
     "socket": "LGA1200",
     "memoria": "DDR4",
     "precio": 66000,
-    "imgScr": "./images/productos/mb22.jpeg",
+    "imgScr": "../images/productos/mb22.jpeg",
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi Z590 GAMING CARBON WIFI LGA1200 DDR4"
   },
@@ -513,7 +513,7 @@
     "capacidad": "4gb",
     "frecuencia": "2666mhz",
     "precio": 4940,
-    "imgScr": "./images/productos/mr0.jpeg",
+    "imgScr": "../images/productos/mr0.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -534,7 +534,7 @@
     "capacidad": "4gb",
     "frecuencia": "3200mhz",
     "precio": 7900,
-    "imgScr": "./images/productos/mr0.jpeg",
+    "imgScr": "../images/productos/mr0.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -555,7 +555,7 @@
     "capacidad": "8gb",
     "frecuencia": "2666mhz",
     "precio": 7450,
-    "imgScr": "./images/productos/mr0.jpeg",
+    "imgScr": "../images/productos/mr0.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -576,7 +576,7 @@
     "capacidad": "8gb",
     "frecuencia": "2666mhz",
     "precio": 9999,
-    "imgScr": "./images/productos/mr1.jpeg",
+    "imgScr": "../images/productos/mr1.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -597,7 +597,7 @@
     "capacidad": "8gb",
     "frecuencia": "3200mhz",
     "precio": 9250,
-    "imgScr": "./images/productos/mr0.jpeg",
+    "imgScr": "../images/productos/mr0.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -618,7 +618,7 @@
     "capacidad": "16gb",
     "frecuencia": "2666mhz",
     "precio": 13600,
-    "imgScr": "./images/productos/mr0.jpeg",
+    "imgScr": "../images/productos/mr0.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -639,7 +639,7 @@
     "capacidad": "16gb",
     "frecuencia": "3200mhz",
     "precio": 16700,
-    "imgScr": "./images/productos/mr0.jpeg",
+    "imgScr": "../images/productos/mr0.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -660,7 +660,7 @@
     "capacidad": "16gb",
     "frecuencia": "3600mhz",
     "precio": 19000,
-    "imgScr": "./images/productos/mr0.jpeg",
+    "imgScr": "../images/productos/mr0.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -681,7 +681,7 @@
     "capacidad": "16gb (2x8Gb)",
     "frecuencia": "2666mhz",
     "precio": 20500,
-    "imgScr": "./images/productos/mr2.jpeg",
+    "imgScr": "../images/productos/mr2.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -702,7 +702,7 @@
     "capacidad": "16gb (2x8Gb)",
     "frecuencia": "3600mhz",
     "precio": 24000,
-    "imgScr": "./images/productos/mr3.jpeg",
+    "imgScr": "../images/productos/mr3.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -723,7 +723,7 @@
     "capacidad": "8gb",
     "frecuencia": "4800mhz",
     "precio": 15900,
-    "imgScr": "./images/productos/mr0.jpeg",
+    "imgScr": "../images/productos/mr0.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -744,7 +744,7 @@
     "capacidad": "16gb",
     "frecuencia": "5200mhz",
     "precio": 26000,
-    "imgScr": "./images/productos/mr0.jpeg",
+    "imgScr": "../images/productos/mr0.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -765,7 +765,7 @@
     "capacidad": "32gb (2x16Gb)",
     "frecuencia": "5200mhz",
     "precio": 76700,
-    "imgScr": "./images/productos/mr4.jpeg",
+    "imgScr": "../images/productos/mr4.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -786,7 +786,7 @@
     "capacidad": "8gb",
     "frecuencia": "5200mhz",
     "precio": 9900,
-    "imgScr": "./images/productos/mr5.jpeg",
+    "imgScr": "../images/productos/mr5.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -807,7 +807,7 @@
     "capacidad": "8gb",
     "frecuencia": "5600mhz",
     "precio": 16000,
-    "imgScr": "./images/productos/mr6.jpeg",
+    "imgScr": "../images/productos/mr6.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -828,7 +828,7 @@
     "capacidad": "8gb",
     "frecuencia": "3200mhz",
     "precio": 10500,
-    "imgScr": "./images/productos/mr7.jpeg",
+    "imgScr": "../images/productos/mr7.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -849,7 +849,7 @@
     "capacidad": "16gb (2x8Gb)",
     "frecuencia": "2666mhz",
     "precio": 19900,
-    "imgScr": "./images/productos/mr8.jpeg",
+    "imgScr": "../images/productos/mr8.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -870,7 +870,7 @@
     "capacidad": "16gb (2x8Gb)",
     "frecuencia": "3600mhz",
     "precio": 20900,
-    "imgScr": "./images/productos/mr9.jpeg",
+    "imgScr": "../images/productos/mr9.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -891,7 +891,7 @@
     "capacidad": "16gb (2x8Gb)",
     "frecuencia": "2666mhz",
     "precio": 19900,
-    "imgScr": "./images/productos/mr10.jpeg",
+    "imgScr": "../images/productos/mr10.jpeg",
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -911,7 +911,7 @@
     "memoria": "12gb",
     "ddr": "DDR6",
     "precio": 117400,
-    "imgScr": "./images/productos/pv1.jpeg",
+    "imgScr": "../images/productos/pv1.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte GeForce RTX 3060 Gaming Oc 12gb DDR6"
   },
@@ -924,7 +924,7 @@
     "memoria": "12gb",
     "ddr": "DDR6",
     "precio": 118700,
-    "imgScr": "./images/productos/pv2.jpeg",
+    "imgScr": "../images/productos/pv2.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte GeForce RTX 3060 Vision Oc 12gb DDR6"
   },
@@ -937,7 +937,7 @@
     "memoria": "8gb",
     "ddr": "DDR6",
     "precio": 134000,
-    "imgScr": "./images/productos/pv3.jpeg",
+    "imgScr": "../images/productos/pv3.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte GeForce RTX 3060 Gaming Oc 8gb DDR6"
   },
@@ -950,7 +950,7 @@
     "memoria": "8gb",
     "ddr": "DDR6",
     "precio": 165000,
-    "imgScr": "./images/productos/pv4.jpeg",
+    "imgScr": "../images/productos/pv4.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Msi GeForce RTX 3070 Ventus 3x Plus 8gb DDR6"
   },
@@ -963,7 +963,7 @@
     "memoria": "12gb",
     "ddr": "DDR6",
     "precio": 270000,
-    "imgScr": "./images/productos/pv5.jpeg",
+    "imgScr": "../images/productos/pv5.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Msi GeForce RTX 3080 Gaming Z Trio 12gb DDR6"
   },
@@ -976,7 +976,7 @@
     "memoria": "12gb",
     "ddr": "DDR6",
     "precio": 280000,
-    "imgScr": "./images/productos/pv6.jpeg",
+    "imgScr": "../images/productos/pv6.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Asus GeForce RTX 3080 Tuf Gaming 12gb DDR6"
   },
@@ -989,7 +989,7 @@
     "memoria": "24gb",
     "ddr": "DDR6",
     "precio": 330000,
-    "imgScr": "./images/productos/pv7.jpeg",
+    "imgScr": "../images/productos/pv7.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gainward GeForce RTX 3090 Phantom + 24gb DDR6"
   },
@@ -1002,7 +1002,7 @@
     "memoria": "24gb",
     "ddr": "DDR6",
     "precio": 370000,
-    "imgScr": "./images/productos/pv8.jpeg",
+    "imgScr": "../images/productos/pv8.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Evga GeForce RTX 3090 FTW3 Ultra 24gb DDR6"
   },
@@ -1015,7 +1015,7 @@
     "memoria": "24gb",
     "ddr": "DDR6",
     "precio": 499900,
-    "imgScr": "./images/productos/pv9.jpeg",
+    "imgScr": "../images/productos/pv9.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Asus GeForce RTX 3090 Rog Strix Gaming Oc Blanco 24gb DDR6"
   },
@@ -1028,7 +1028,7 @@
     "memoria": "12gb",
     "ddr": "DDR6",
     "precio": 148300,
-    "imgScr": "./images/productos/pv10.jpeg",
+    "imgScr": "../images/productos/pv10.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Msi Radeon RX 6750 XT Mech 2X Oc 12gb DDR6"
   },
@@ -1041,7 +1041,7 @@
     "memoria": "12gb",
     "ddr": "DDR6",
     "precio": 160000,
-    "imgScr": "./images/productos/pv11.jpeg",
+    "imgScr": "../images/productos/pv11.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Asus Radeon RX 6700 XT Dual Oc 12gb DDR6"
   },
@@ -1054,7 +1054,7 @@
     "memoria": "16gb",
     "ddr": "DDR6",
     "precio": 260000,
-    "imgScr": "./images/productos/pv12.jpeg",
+    "imgScr": "../images/productos/pv12.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Asus Radeon RX 6800 XT Rog Strix Gaming Oc 16gb DDR6"
   },
@@ -1067,7 +1067,7 @@
     "memoria": "16gb",
     "ddr": "DDR6",
     "precio": 250700,
-    "imgScr": "./images/productos/pv13.jpeg",
+    "imgScr": "../images/productos/pv13.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte Radeon RX 6900 XT Gaming Oc 16gb DDR6"
   },
@@ -1080,7 +1080,7 @@
     "memoria": "4gb",
     "ddr": "DDR6",
     "precio": 55000,
-    "imgScr": "./images/productos/pv14.jpeg",
+    "imgScr": "../images/productos/pv14.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte GeForce GTX 1650 D6 Oc 4gb DDR6"
   },
@@ -1093,7 +1093,7 @@
     "memoria": "6gb",
     "ddr": "DDR6",
     "precio": 85000,
-    "imgScr": "./images/productos/pv15.jpeg",
+    "imgScr": "../images/productos/pv15.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Msi GeForce GTX 1660 Super Ventus Xs Oc 6gb DDR6"
   },
@@ -1106,7 +1106,7 @@
     "memoria": "6gb",
     "ddr": "DDR6",
     "precio": 84000,
-    "imgScr": "./images/productos/pv16.jpeg",
+    "imgScr": "../images/productos/pv16.jpeg",
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte GeForce GTX 1660 Ti Oc 6gb DDR6"
   },
@@ -1117,7 +1117,7 @@
     "certificacion": "Sin certificacion",
     "potencia": "500w",
     "precio": 8900,
-    "imgScr": "./images/productos/fp0.jpeg",
+    "imgScr": "../images/productos/fp0.jpeg",
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Thermaltake Sin certificacion 500w"
   },
@@ -1128,7 +1128,7 @@
     "certificacion": "Sin certificacion",
     "potencia": "600w",
     "precio": 9999,
-    "imgScr": "./images/productos/fp1.jpeg",
+    "imgScr": "../images/productos/fp1.jpeg",
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Thermaltake Sin certificacion 600w"
   },
@@ -1139,7 +1139,7 @@
     "certificacion": "80 Plus Bronze",
     "potencia": "450w",
     "precio": 9150,
-    "imgScr": "./images/productos/fp2.jpeg",
+    "imgScr": "../images/productos/fp2.jpeg",
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Bronze 450w"
   },
@@ -1150,7 +1150,7 @@
     "certificacion": "80 Plus Bronze",
     "potencia": "550w",
     "precio": 11700,
-    "imgScr": "./images/productos/fp3.jpeg",
+    "imgScr": "../images/productos/fp3.jpeg",
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Bronze 550w"
   },
@@ -1161,7 +1161,7 @@
     "certificacion": "80 Plus Bronze",
     "potencia": "650w",
     "precio": 14700,
-    "imgScr": "./images/productos/fp4.jpeg",
+    "imgScr": "../images/productos/fp4.jpeg",
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Bronze 650w"
   },
@@ -1172,7 +1172,7 @@
     "certificacion": "80 Plus Gold",
     "potencia": "750w",
     "precio": 21600,
-    "imgScr": "./images/productos/fp5.jpeg",
+    "imgScr": "../images/productos/fp5.jpeg",
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Gold 750w"
   },
@@ -1183,7 +1183,7 @@
     "certificacion": "80 Plus Gold",
     "potencia": "850w",
     "precio": 22999,
-    "imgScr": "./images/productos/fp6.jpeg",
+    "imgScr": "../images/productos/fp6.jpeg",
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Gold 850w"
   },
@@ -1194,7 +1194,7 @@
     "certificacion": "80 Plus Gold",
     "potencia": "1000w",
     "precio": 30999,
-    "imgScr": "./images/productos/fp7.jpeg",
+    "imgScr": "../images/productos/fp7.jpeg",
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Gold 1000w"
   },
@@ -1205,7 +1205,7 @@
     "certificacion": "Sin certificacion",
     "potencia": "750w",
     "precio": 4500,
-    "imgScr": "./images/productos/fp8.jpeg",
+    "imgScr": "../images/productos/fp8.jpeg",
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Essenses Sin certificacion 750w"
   },
@@ -1216,7 +1216,7 @@
     "certificacion": "Sin certificacion",
     "potencia": "850w",
     "precio": 4700,
-    "imgScr": "./images/productos/fp9.jpeg",
+    "imgScr": "../images/productos/fp9.jpeg",
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Essenses Sin certificacion 850w"
   }
