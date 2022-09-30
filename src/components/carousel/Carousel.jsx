@@ -4,16 +4,16 @@ const Carousel = () => {
     return (
         <div id="carouselExampleInterval" className="carousel slide text-center" data-bs-ride="carousel">
             <div className="carousel-inner">
-                <div className="carousel-item active" data-bs-interval="4000">
+                <div className="carousel-item active">
                     <img src="../images/carousel/banner_gigabyte2.png" className="d-block w-100 imgCarousel" alt="..." />
                 </div>
-                <div className="carousel-item" data-bs-interval="4000">
+                <div className="carousel-item">
                     <img src="../images/carousel/banner_gigabyte3.jpg" className="d-block w-100 imgCarousel" alt="..." />
                 </div>
-                <div className="carousel-item" data-bs-interval="4000">
+                <div className="carousel-item">
                     <img src="../images/carousel/banner_gigabyte4.png" className="d-block w-100 imgCarousel" alt="..." />
                 </div>
-                <div className="carousel-item" data-bs-interval="4000">
+                <div className="carousel-item">
                     <img src="../images/carousel/banner_gigabyte5.png" className="d-block w-100 imgCarousel" alt="..." />
                 </div>
             </div>

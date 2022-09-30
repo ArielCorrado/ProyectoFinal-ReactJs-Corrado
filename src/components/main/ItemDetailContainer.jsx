@@ -17,11 +17,14 @@ const ItemDetailContainer = () => {
       
     return (
         <div className="main__container flex">
-            <div className="cartProducto flex">
-                <img className="imgProducto" src={`${producto.imgScr}`} alt="" />
-                <div className='descProducto'>{producto.describir}</div>
-                <button className='botonProducto'>Agregar al Carrito</button>
-                <div className='precioProducto'>${producto.precio}</div>
+            <div className="cartProducto_detalle">
+                <img className="imgProducto_detalle" src={`${producto.imgScr}`} alt="" />
+                <div className="contDetalle_producto flex">
+                    <div className='descProducto_detalle'>{producto.describir}</div>
+                    <div className='precioProducto_detalle'>${producto.precio}</div>
+                </div>    
+                <button className='botonProducto botonProducto_detalle'>Agregar al Carrito<img src="../images/icono_carrito.png" className="imgCarritoEnBoton" alt=""/></button>
+                <button className='botonProducto botonProducto_detalle boton_c'>Comprar Ahora</button>
             </div>
         </div>
     );

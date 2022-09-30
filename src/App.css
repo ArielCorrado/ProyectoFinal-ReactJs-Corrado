@@ -77,6 +77,7 @@
 .iconoCarrito {
     margin-left: 60px;
     height: 60px;
+    z-index: 300;
 }
 
 
@@ -115,9 +116,6 @@
 }
 
 
-
-
-
 /*************************** Carousel ***********************************/
 
 .imgCarousel {
@@ -128,9 +126,68 @@
 
 
 
+/***************************Card detalle Producto ************************/
 
+.cartProducto_detalle {
+    max-width: 1000px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: "i d"
+                         "i b1"
+                         "i b2"; 
+    grid-template-columns: 50% 50%;  
+    grid-template-rows: 70% 15% 15%;                   
+    background-color: white;
+    padding: 20px;
+    place-items: center;
+    margin: 50px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
 
-/************************ Cards *********************************/
+.imgProducto_detalle {
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+    object-fit: contain;
+    grid-area: i;
+}
+
+.contDetalle_producto {
+    color: black;
+    flex-direction: column;
+    grid-area: d;
+}
+
+.descProducto_detalle {
+    font-size: 25px;
+    text-align: center;
+}
+
+.botonProducto_detalle {
+    grid-area: b1;
+    width: 80%;
+}
+
+.precioProducto_detalle {
+    margin-top: 40px;
+    font-size: 50px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+
+.boton_c {
+    background-color: var(--color_celeste) !important;
+    grid-area: b2;
+    width: 80%;
+}
+
+.imgCarritoEnBoton {
+    height: 25px;
+    margin-left: 25px;
+}   
+
+/************************ Card Producto *********************************/
 
 .cartProducto {
     width: 250px;
@@ -170,7 +227,6 @@
     font-weight: bold;
     color: rgb(51, 51, 51);
 }
-
 
 
 
