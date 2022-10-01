@@ -1,22 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Categorias = () => {
     return (
         <>
             <li className="nav-item">
-                <a className="nav-link" href="index.html">Microprocesadores</a>
+                <Link className="nav-link" to="/category/microprocesadores">Microprocesadores</Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="index.html">Motherboards</a>
+                <Link className="nav-link" to="/category/motherboards">Motherboards</Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="index.html">Memorias RAM</a>
+                <Link className="nav-link" to="/category/memorias_ram">Memorias RAM</Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="index.html">Placas de video</a>
+                <Link className="nav-link" to="/category/placas_de_video">Placas de video</Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="index.html">Fuentes</a>
+                <Link className="nav-link" to="/category/fuentes">Fuentes</Link>
             </li>
         </>                
     );
