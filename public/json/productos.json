@@ -505,7 +505,7 @@
   },
   {
     "id": "mr1",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
@@ -526,7 +526,7 @@
   },
   {
     "id": "mr2",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
@@ -547,7 +547,7 @@
   },
   {
     "id": "mr3",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
@@ -568,7 +568,7 @@
   },
   {
     "id": "mr4",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "RGB",
@@ -589,7 +589,7 @@
   },
   {
     "id": "mr5",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
@@ -610,7 +610,7 @@
   },
   {
     "id": "mr6",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
@@ -631,7 +631,7 @@
   },
   {
     "id": "mr7",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
@@ -652,7 +652,7 @@
   },
   {
     "id": "mr8",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
@@ -673,7 +673,7 @@
   },
   {
     "id": "mr9",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "Corsair",
     "modelo": "Vengance Pro Blanco",
     "rgb": "RGB",
@@ -694,7 +694,7 @@
   },
   {
     "id": "mr10",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "Corsair",
     "modelo": "Vengance Pro Blanco",
     "rgb": "RGB",
@@ -715,7 +715,7 @@
   },
   {
     "id": "mr11",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
@@ -736,7 +736,7 @@
   },
   {
     "id": "mr12",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
@@ -757,7 +757,7 @@
   },
   {
     "id": "mr13",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "Corsair",
     "modelo": "Dominator",
     "rgb": "RGB",
@@ -778,7 +778,7 @@
   },
   {
     "id": "mr14",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "RGB",
@@ -799,7 +799,7 @@
   },
   {
     "id": "mr15",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "RGB",
@@ -820,7 +820,7 @@
   },
   {
     "id": "mr16",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "Corsair",
     "modelo": "Vengeance Pro Negro",
     "rgb": "RGB",
@@ -841,7 +841,7 @@
   },
   {
     "id": "mr17",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "Corsair",
     "modelo": "Vengeance Pro Negro",
     "rgb": "RGB",
@@ -862,7 +862,7 @@
   },
   {
     "id": "mr18",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "Corsair",
     "modelo": "Vengance Rs Negro",
     "rgb": "RGB",
@@ -883,7 +883,7 @@
   },
   {
     "id": "mr19",
-    "categoria": "Memorias_ram",
+    "categoria": "memorias_ram",
     "marca": "Corsair",
     "modelo": "Vengeance Pro Negro",
     "rgb": "RGB",
@@ -904,7 +904,7 @@
   },
   {
     "id": "pv1",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "GeForce RTX",
     "modelo": "3060 Gaming Oc",
@@ -917,7 +917,7 @@
   },
   {
     "id": "pv2",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "GeForce RTX",
     "modelo": "3060 Vision Oc",
@@ -930,7 +930,7 @@
   },
   {
     "id": "pv3",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "GeForce RTX",
     "modelo": "3060 Gaming Oc",
@@ -943,7 +943,7 @@
   },
   {
     "id": "pv4",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Msi",
     "serie": "GeForce RTX",
     "modelo": "3070 Ventus 3x Plus",
@@ -956,7 +956,7 @@
   },
   {
     "id": "pv5",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Msi",
     "serie": "GeForce RTX",
     "modelo": "3080 Gaming Z Trio",
@@ -969,7 +969,7 @@
   },
   {
     "id": "pv6",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Asus",
     "serie": "GeForce RTX",
     "modelo": "3080 Tuf Gaming",
@@ -982,7 +982,7 @@
   },
   {
     "id": "pv7",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Gainward",
     "serie": "GeForce RTX",
     "modelo": "3090 Phantom +",
@@ -995,7 +995,7 @@
   },
   {
     "id": "pv8",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Evga",
     "serie": "GeForce RTX",
     "modelo": "3090 FTW3 Ultra",
@@ -1008,7 +1008,7 @@
   },
   {
     "id": "pv9",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Asus",
     "serie": "GeForce RTX",
     "modelo": "3090 Rog Strix Gaming Oc Blanco",
@@ -1021,7 +1021,7 @@
   },
   {
     "id": "pv10",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Msi",
     "serie": "Radeon RX",
     "modelo": "6750 XT Mech 2X Oc",
@@ -1034,7 +1034,7 @@
   },
   {
     "id": "pv11",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Asus",
     "serie": "Radeon RX",
     "modelo": "6700 XT Dual Oc",
@@ -1047,7 +1047,7 @@
   },
   {
     "id": "pv12",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Asus",
     "serie": "Radeon RX",
     "modelo": "6800 XT Rog Strix Gaming Oc",
@@ -1060,7 +1060,7 @@
   },
   {
     "id": "pv13",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "Radeon RX",
     "modelo": "6900 XT Gaming Oc",
@@ -1073,7 +1073,7 @@
   },
   {
     "id": "pv14",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "GeForce GTX",
     "modelo": "1650 D6 Oc",
@@ -1086,7 +1086,7 @@
   },
   {
     "id": "pv15",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Msi",
     "serie": "GeForce GTX",
     "modelo": "1660 Super Ventus Xs Oc",
@@ -1099,7 +1099,7 @@
   },
   {
     "id": "pv16",
-    "categoria": "Placas_de_video",
+    "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "GeForce GTX",
     "modelo": "1660 Ti Oc",
@@ -1222,7 +1222,7 @@
   },
   {
     "id": "ac0",
-    "categoria": "Air_coolers",
+    "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "H410R Rgb",
     "tdp": "100W",
@@ -1233,7 +1233,7 @@
   },
   {
     "id": "ac1",
-    "categoria": "Air_coolers",
+    "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "Hyper 212 Spectrum",
     "tdp": "150W",
@@ -1244,7 +1244,7 @@
   },
   {
     "id": "ac2",
-    "categoria": "Air_coolers",
+    "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "Master Hyper 212 Argb",
     "tdp": "150W",
@@ -1255,7 +1255,7 @@
   },
   {
     "id": "ac3",
-    "categoria": "Air_coolers",
+    "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "Masterair MA620M Argb",
     "tdp": "200W",
@@ -1266,7 +1266,7 @@
   },
   {
     "id": "ac4",
-    "categoria": "Air_coolers",
+    "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "MasterAir MA410P Rgb",
     "tdp": "150W",
@@ -1277,7 +1277,7 @@
   },
   {
     "id": "ac5",
-    "categoria": "Air_coolers",
+    "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "MasterAir MA410M Argb",
     "tdp": "150W",
@@ -1285,5 +1285,27 @@
     "imgScr": "../images/productos/ac5.jpeg",
     "opcionesBusqueda": ["Marca", "TDP"],
     "describir": "Air Cooler Cooler Master MasterAir MA410M Argb 150W"
+  },
+  {
+    "id": "wc0",
+    "categoria": "water_coolers",
+    "marca": "Asus",
+    "modelo": "Rog Strix LC 120",
+    "tdp": "125W",
+    "precio": 27800,
+    "imgScr": "../images/productos/wc0.jpeg",
+    "opcionesBusqueda": ["Marca", "TDP"],
+    "describir": "Water Cooler Asus Rog Strix LC 120 125W"
+  },
+  {
+    "id": "wc1",
+    "categoria": "water_coolers",
+    "marca": "Thermaltake",
+    "modelo": "TH360 AIO Argb",
+    "tdp": "200W",
+    "precio": 37900,
+    "imgScr": "../images/productos/wc1.jpeg",
+    "opcionesBusqueda": ["Marca", "TDP"],
+    "describir": "Water Cooler Thermaltake TH360 AIO Argb 200W"
   }
 ]

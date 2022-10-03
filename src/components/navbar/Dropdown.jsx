@@ -8,7 +8,7 @@ const Dropdown = () => {
             <div className="dropdown-menu text-center">
                 <Link className="dropdown-item" to={"/category/air_coolers"}>Air Cooling</Link>
                 <div className="dropdown-divider" />
-                <a className="dropdown-item" href="index.html">Water Cooling</a>
+                <Link className="dropdown-item" to={"/category/water_coolers"}>Water Cooling</Link>
             </div>
         </li>
     );
