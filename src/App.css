@@ -335,6 +335,7 @@
         flex-direction: column;
         height: fit-content;
         margin: 50px 15px;
+        height: 600px;
     }
 
     .botonProducto_detalle, .boton_c {
@@ -351,12 +352,20 @@
 
     .imgProducto_detalle {
         margin-right: 0;
+        height: 100%;
+    }
+
+    .contImg_detalle {
+        height: 50%;
+    }
+
+    .contDetalle_producto {
+        justify-content: center;
     }
 
     .carousel {
         display: none;
     }
-
 }
 
 
