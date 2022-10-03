@@ -13,7 +13,7 @@ const Carousel = () => {
                 <div className="carousel-item" data-bs-interval={4000}>
                     <img src="../images/carousel/banner_gigabyte4.png" className="d-block w-100" alt="..." />
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" data-bs-interval={4000}>
                     <img src="../images/carousel/banner_gigabyte5.png" className="d-block w-100" alt="..." />
                 </div>
             </div>

@@ -3,6 +3,7 @@
 
 /****************************** Main *************************************************/
 
+
 .main__container {
     flex-wrap: wrap;
 }
@@ -12,7 +13,7 @@
 
 .contNav {
     position: sticky;
-    top: 0;
+    top: 0; 
     z-index: 200;
     width: 100%;
 }
@@ -21,12 +22,20 @@
 /******************************* Busquedas ****************************/
 
 
-.busquedas {
-    position: relative; 
+.contBusquedas {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
     width: 100%;
     text-align: center;
-    height: 75px;
+    height: fit-content;
     background-color: rgb(46, 16, 66);
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.contBusquedaIcono {
+    flex-direction: row;
 }
 
 .botonBusquedas {
@@ -46,6 +55,17 @@
     background-color: white;
     padding: 5px;
     color: black;
+}
+
+
+/************************** CartWidget *******************************/
+
+
+.iconoCarrito {
+    margin-left: 60px;
+    place-self: left;
+    height: 60px;
+    z-index: 300;
 }
 
 
@@ -71,19 +91,12 @@
     border-top: 1px solid gray;
 }
 
+
 /************************** Dropdown **********************************/
+
 
 .dropdown-menu {
     background-color: rgb(59, 20, 87);
-}
-
-
-/************************** CartWidget *******************************/
-
-.iconoCarrito {
-    margin-left: 60px;
-    height: 60px;
-    z-index: 300;
 }
 
 
@@ -94,9 +107,10 @@
     z-index: 100;
     font-weight: bold;
     font-size: 30px;
-    position: absolute;
-    left: 25px;
-    top: 6px;
+    width: 200px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
     
@@ -104,6 +118,8 @@
     color: var(--color_naranja);
     font-style: oblique;
     line-height: 0;
+    width: 100%;
+    text-align: left;
 }
 
 .logo__hard {
@@ -116,9 +132,10 @@
     filter: brightness(150%) grayscale(25%);
     font-style: oblique;
     line-height: 0;
-    position: absolute;
     font-size: 20px;
-    left: 50px;
+    width: 100%;
+    text-align: right;
+        
 }
 
 
@@ -131,7 +148,6 @@
 }
 
 
-
 /***************************Card detalle Producto ************************/
 
 .cartProducto_detalle {
@@ -139,10 +155,11 @@
     height: 400px;
     display: grid;
     grid-template-areas: "i d"
+                         "i s"
                          "i b1"
                          "i b2"; 
     grid-template-columns: 50% 50%;  
-    grid-template-rows: 70% 15% 15%;                   
+    grid-template-rows: 45% 20% 15% 15%;                   
     background-color: white;
     padding: 20px;
     place-items: center;
@@ -151,22 +168,35 @@
     border-radius: 5px;
 }
 
+.selectCantidad {
+    grid-area: s;
+}
+
 .imgProducto_detalle {
     width: 100%;
     height: 100%;
     margin-right: 20px;
     object-fit: contain;
+}
+
+.contImg_detalle {
+    width: 100%;
+    height: 100%;
     grid-area: i;
+    position: relative;
 }
 
 .contDetalle_producto {
     color: black;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
     flex-direction: column;
     grid-area: d;
 }
 
 .descProducto_detalle {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -176,8 +206,7 @@
 }
 
 .precioProducto_detalle {
-    margin-top: 40px;
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(51, 51, 51);
     font-weight: 700;
 }
@@ -190,12 +219,66 @@
 
 .imgCarritoEnBoton {
     height: 25px;
-    margin-left: 25px;
+    margin-left: 15px;
 }   
+
+.botonMasMenos {
+    border-style: none;
+    border-radius: 25%;
+    background-color: rgb(100, 100, 100);
+    padding: 7px;
+    width: 40px;
+    height: 30px;
+    margin: 0 10px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.inputCantidad {
+    background-color: white;
+    border-style: none;
+    border: 1px solid gray;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: normal;
+}
+
+.cantidadTxt {
+    color: black;
+}
+
+.contCantidad {
+    grid-area: s;
+}
+
+.cantidad {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.stock_detalle {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(172, 172, 172, 0.75);
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin-bottom: 5px; 
+    font-size: 13px;
+}
 
 /************************ Card Producto *********************************/
 
-.cartProducto {
+
+.cardProducto {
     width: 250px;
     height: 400px;
     border: 1px solid gray;
@@ -235,10 +318,89 @@
 }
 
 
+/*************************** Media Querys **************************************/
 
 
+/*************************** Detalle de Producto *******************************/
 
 
+@media only screen and (max-width: 600px) {
+
+    .precioProducto_detalle{ 
+        margin-top: 0;
+    }    
+
+    .cartProducto_detalle {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin: 50px 15px;
+    }
+
+    .botonProducto_detalle, .boton_c {
+        margin: 5px 0;
+    }
+
+    .precioProducto_detalle {
+        font-size: 25px;
+    }
+
+    .descProducto_detalle {
+        font-size: 16px;
+    }
+
+    .imgProducto_detalle {
+        margin-right: 0;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    .imgCarritoEnBoton {
+        display: none;
+    }
+}
+
+
+/**************************** Sección busquedas - Carrito y Logo ************************/
+
+
+@media only screen and (max-width: 1080px) {
+    
+    .contBusquedas {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: unset;
+        place-items: center;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .iconoCarrito {
+        margin-left: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .campoBusquedas {
+        width: 70%;
+        margin-left: 10px;
+    }
+
+    .iconoCarrito {
+        margin-right: 10px;
+    }
+
+}
 
 
 

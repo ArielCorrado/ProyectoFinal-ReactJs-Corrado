@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CardProducto = ({elemento}) => {
     return (
-        <div className="cartProducto flex">
+        <div className="cardProducto flex">
             <img className="imgProducto" src={`${elemento.imgScr}`} alt="" />
             <div className='descProducto'>{elemento.describir}</div>
             <Link to={`/item/${elemento.id}`}> <button className='botonProducto'>Ver Detalles</button> </Link>

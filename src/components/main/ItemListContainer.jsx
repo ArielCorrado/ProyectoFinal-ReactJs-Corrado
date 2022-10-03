@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import CardProducto from './CardProducto';
-
-
+  
 const ItemListContainer = () => {
     
     const [productosAMostrar, setProductosAMostrar] = useState ([]);   

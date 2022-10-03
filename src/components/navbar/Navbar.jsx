@@ -2,14 +2,12 @@ import React from 'react';
 import Dropdown from "./Dropdown";
 import Categorias from "./Categorias";
 import Busquedas from './Busquedas';
-import Logo from './Logo';
 
 /*CartWidget está dentro del componente Busquedas*/
 
 const Navbar = () => {
     return (
         <div className="contNav">
-            <Logo />
             <Busquedas />           
             <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container-fluid justify-content-center">

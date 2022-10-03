@@ -11,13 +11,20 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.column {
+    flex-direction: column;
+}
+
 body {
     background-color: var(--color_back1);
-} 
-
+}
