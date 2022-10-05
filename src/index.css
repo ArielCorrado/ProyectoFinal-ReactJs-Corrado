@@ -25,6 +25,10 @@ a {
     flex-direction: column;
 }
 
+.row {
+    flex-direction: row;
+}
+
 body {
     background-color: var(--color_back1);
 }
