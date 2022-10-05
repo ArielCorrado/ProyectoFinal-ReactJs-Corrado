@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
     const [cantidad, setCantidad] = useState (1);
 
     const masMenos = (op) => {
-        if (cantidad < stock && op === "+") {
+        if (cantidad < producto.stock && op === "+") {
             setCantidad (cantidad + 1);
         }
         if (cantidad > 1 && op === "-") {
@@ -28,7 +28,6 @@ const ItemDetailContainer = () => {
         }
     }
 
-    const stock = 10;
     
     return (
         <>
@@ -37,7 +36,7 @@ const ItemDetailContainer = () => {
                 <div className="cartProducto_detalle" key={producto.id}>
                     <div className="contImg_detalle">
                         <img className="imgProducto_detalle" src={`${producto.imgScr}`} alt="" />
-                        <p className="stock_detalle">Stock: {stock}</p>
+                        <p className="stock_detalle">Stock: {producto.stock}</p>
                     </div>
                     <div className="contDetalle_producto flex">
                         <div className='descProducto_detalle'>{producto.describir}</div>

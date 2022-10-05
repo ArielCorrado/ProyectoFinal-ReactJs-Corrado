@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from "./components/navbar/Navbar";
-import Carousel from './components/carousel/Carousel';
+// import Carousel from './components/carousel/Carousel';
 import ItemListContainer from './components/main/ItemListContainer';
 import ItemDetailContainer from './components/main/ItemDetailContainer';
 import ItemCategoryContainer from './components/main/ItemCategoryContainer';
@@ -14,7 +14,7 @@ const App = () => {
         < >
             <BrowserRouter>
                 <Navbar />
-                <Carousel />
+                {/* <Carousel /> */}
                 <Routes>
                     <Route path="/" element={<ItemListContainer />} /> 
                     <Route path="/item/:id" element={<ItemDetailContainer />} />

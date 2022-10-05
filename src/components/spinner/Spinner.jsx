@@ -21,7 +21,7 @@ const Spinner = () => {
 
         setTimeout(() => {
             document.body.style.overflowY = "scroll";        //Mostramos Scroll
-            window.scrollTo(0, document.body.scrollHeight);  //Movemos window hacia abajo de todo
+            //window.scrollTo(0, document.body.scrollHeight);  //Movemos window hacia abajo de todo
             setSpinner(<></>);
         }, 1500);
 

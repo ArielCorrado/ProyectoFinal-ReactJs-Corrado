@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import CardProducto from './CardProducto';
+    import Carousel from '../carousel/Carousel';
   
 const ItemListContainer = () => {
     
@@ -25,9 +26,12 @@ const ItemListContainer = () => {
     }, []);
     
     return (
-        <div className="main__container flex">
-            {productosAMostrar}
-        </div>
+        <>
+            <Carousel />
+            <div className="main__container flex">
+                {productosAMostrar}
+            </div>
+        </>    
     );
 }
 

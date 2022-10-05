@@ -6,6 +6,7 @@
 
 .main__container {
     flex-wrap: wrap;
+    min-height: calc(100vh - 137px);        /* 137px es la altura del navbar */
 }
 
 
