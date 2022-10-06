@@ -1,11 +1,10 @@
 import React from 'react';
 import Navbar from "./components/navbar/Navbar";
-// import Carousel from './components/carousel/Carousel';
 import ItemListContainer from './components/main/ItemListContainer';
 import ItemDetailContainer from './components/main/ItemDetailContainer';
 import ItemCategoryContainer from './components/main/ItemCategoryContainer';
 import ItemSearchContainer from './components/main/ItemSearchContainer';
-import Footer from './components/Footer/Footer';
+import Footer from './components/footer/Footer';
 import "./App.css";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
