@@ -1,7 +1,7 @@
 :root {
     --color_violeta: rgb(176, 64, 199);
     --color_naranja: rgb(255, 123, 0);
-    --color_celeste: rgb(72, 153, 219);
+    --color_celeste: #47c8da;
     --color_back1: rgb(240, 240, 240);
 }
 
@@ -9,6 +9,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 a {

@@ -20,7 +20,7 @@ const Spinner = () => {
         document.body.style.overflowY = "hidden";            //Ocultamos scroll
 
         setTimeout(() => {
-            document.body.style.overflowY = "scroll";        //Mostramos Scroll
+            document.body.style.overflowY = "auto";        //Mostramos Scroll
             //window.scrollTo(0, document.body.scrollHeight);  //Movemos window hacia abajo de todo
             setSpinner(<></>);
         }, 1500);

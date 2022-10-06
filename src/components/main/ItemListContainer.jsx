@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import CardProducto from './CardProducto';
-    import Carousel from '../carousel/Carousel';
+import Carousel from '../carousel/Carousel';
   
 const ItemListContainer = () => {
     
