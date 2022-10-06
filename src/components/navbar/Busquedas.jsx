@@ -14,7 +14,6 @@ const Busquedas = () => {
         
         if (keysBusqueda !== "") {
             setLink(keysBusqueda);
-            console.log(keysBusqueda);
             setTimeout(() => e.target.submit(), 10);
         }    
     }

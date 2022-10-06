@@ -3,6 +3,8 @@
     width: 100%;
     z-index: 1000;
     background-Color: #392744;
+    top: 0;
+    height: 100vh;
 }
 
 .spinner {

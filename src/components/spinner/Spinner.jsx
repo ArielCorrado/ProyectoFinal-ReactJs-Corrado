@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 const Spinner = () => {
 
-    const spinneri = <div className="contSpinner" style={{top: `${window.pageYOffset}px`, height: `${window.innerHeight}px`, position: "absolute"}}>
+    const spinneri = <div className="contSpinner">
                         <div className="swapping-squares-spinner spinner">
                             <div className="square" />
                             <div className="square" />
@@ -21,7 +21,6 @@ const Spinner = () => {
 
         setTimeout(() => {
             document.body.style.overflowY = "auto";        //Mostramos Scroll
-            //window.scrollTo(0, document.body.scrollHeight);  //Movemos window hacia abajo de todo
             setSpinner(<></>);
         }, 1500);
 

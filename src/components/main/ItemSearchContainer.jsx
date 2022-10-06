@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import CardProducto from './CardProducto';  
 import Spinner from '../spinner/Spinner';
-
+import Swal from 'sweetalert2';
 
 const ItemSearchContainer = () => {
 
@@ -21,11 +21,26 @@ const ItemSearchContainer = () => {
                     
                 <CardProducto elemento = {producto} />
             )
-            setProductosPorBusqueda (productosEnJSX);
+                
+            if (productosEnJSX.length !== 0) {
+                setProductosPorBusqueda (productosEnJSX);
+            } else {
+                setTimeout(() =>
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'No se encontraron productos',
+                        showConfirmButton: false,
+                        allowEnterKey: false,
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,      
+                        html:
+                        '<a href="/"><b>Volver</b></a>' 
+                    }), 1500)     
+            }
         })
 
     }, [searchKeys]);
-
+ 
     return (
         <>
             <Spinner />
