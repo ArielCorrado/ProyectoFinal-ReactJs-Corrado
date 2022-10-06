@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import CardProducto from './CardProducto';  
+import Spinner from '../spinner/Spinner';
+
 
 const ItemSearchContainer = () => {
 
@@ -25,9 +27,12 @@ const ItemSearchContainer = () => {
     }, [searchKeys]);
 
     return (
-        <div className="main__container flex">
-            {productosPorBusqueda}
-        </div>
+        <>
+            <Spinner />
+            <div className="main__container flex">
+                {productosPorBusqueda}
+            </div>
+        </>
     );
 }
 
