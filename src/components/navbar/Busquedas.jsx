@@ -1,20 +1,20 @@
 import React from 'react';
 import CartWidget from './CartWidget';
 import Logo from './Logo';
-import { useState } from 'react';
+import { useRef } from 'react';
 
 const Busquedas = () => {
      
-    const [link, setLink] = useState ("");
+    const searchForm = useRef()
     
     function linkear (e) {
 
         e.preventDefault();    
-        const keysBusqueda = e.target.firstChild.value;
+        const keysBusqueda = e.target.firstChild.value.trim();                //trim() elimina espacios en blanco adelante y atras de un string
         
         if (keysBusqueda !== "") {
-            setLink(keysBusqueda);
-            setTimeout(() => e.target.submit(), 10);
+            searchForm.current.action = `/search/${keysBusqueda}`;
+            e.target.submit();
         }    
     }
        
@@ -22,7 +22,7 @@ const Busquedas = () => {
         <div className="contBusquedas flex">
             <Logo />
             <div className='flex'>
-                <form action={`/search/${link}`} method="get" className="contBusquedaIcono flex" onSubmit={linkear}>
+                <form action={""} method="get" className="contBusquedaIcono flex" onSubmit={linkear} ref={searchForm}>
                     <input className="campoBusquedas" type="search" placeholder="Buscar Producto" />
                     <button className="botonBusquedas" type="submit">Buscar</button>
                 </form>    
