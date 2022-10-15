@@ -6,7 +6,7 @@
 
 .main__container {
     flex-wrap: wrap;
-    min-height: calc(100vh - 137px - 75px);        /* 137px es la altura del navbar - 75px es la altura del footer*/
+    min-height: var(--altura_main);        
     padding: 50px 0;
 }
 
@@ -147,6 +147,47 @@
     max-width: 1920px;
     height: 500px;
     object-fit: cover;
+}
+
+
+/********************************* Card Producto en Carrito ********************/
+.main__container__carrito {
+    min-height: var(--altura_main);
+    flex-direction: column;
+}
+
+.cardProducto_carrito {
+    width: 70%;
+    height: 200px;
+    display: grid;
+    grid-template-areas: "i d c p"
+                         "i d c p";
+    grid-template-columns: 20% 50% 15% 15%;
+    grid-template-rows: 50% 50%;                   
+    background-color: white;
+    padding: 20px;
+    place-items: center;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.contDetalle_producto_carrito {
+    color: black;
+    width: 100%;
+    height: 100%;
+    grid-area: d;
+}
+
+.contCant_carrito {
+    grid-area: c;
+}
+
+.precioProducto_carrito {
+    font-size: 40px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    grid-area: p;
 }
 
 

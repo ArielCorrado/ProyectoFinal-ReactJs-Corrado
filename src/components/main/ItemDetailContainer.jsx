@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {useParams} from "react-router-dom";
 import Spinner from '../spinner/Spinner';
+import { CarritoContext } from '../../context/CarritoContext';
 
 const ItemDetailContainer = () => {
+    const {carrito, agregarAlCarrito} = useContext (CarritoContext);
 
     const {id} = useParams();
     const [producto, setProducto] = useState ({});
@@ -46,7 +48,7 @@ const ItemDetailContainer = () => {
                         <div className='cantidadTxt flex'>Cantidad</div>    
                         <div className="cantidad"><button className="botonMasMenos flex" onClick={() => masMenos("-")}>-</button> <div className="inputCantidad flex"> {cantidad} </div> <button className="botonMasMenos flex" onClick={() => masMenos("+")}>+</button></div>
                     </div>    
-                    <button className='botonProducto botonProducto_detalle'>Agregar al Carrito<img src="../images/icono_carrito.png" className="imgCarritoEnBoton" alt=""/></button>
+                    <button className='botonProducto botonProducto_detalle' onClick={() => agregarAlCarrito(producto.id, cantidad)}>Agregar al Carrito<img src="../images/icono_carrito.png" className="imgCarritoEnBoton" alt=""/></button>
                     <button className='botonProducto botonProducto_detalle boton_c'>Comprar Ahora</button>
                 </div>
             </div>

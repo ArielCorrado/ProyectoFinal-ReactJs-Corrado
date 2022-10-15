@@ -3,6 +3,7 @@
     --color_naranja: rgb(255, 123, 0);
     --color_celeste: #47c8da;
     --color_back1: rgb(240, 240, 240);
+    --altura_main: calc(100vh - 137px - 75px);                /* 137px es la altura del navbar - 75px es la altura del footer*/
 }
 
 * {
