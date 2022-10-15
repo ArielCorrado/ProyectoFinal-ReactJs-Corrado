@@ -4,6 +4,8 @@ const CarritoContext = createContext();
 const CarritoProvider = ({children}) => {
 
     const [carrito, setCarrito] = useState([]);
+
+    const [carritoCant, setCarritoCant] = useState(0);
     
     const agregarAlCarrito = (id, cantidad) => {
 
@@ -16,6 +18,7 @@ const CarritoProvider = ({children}) => {
 
         carritoAux.push({"id":id, "cantidad":cantidad})
         setCarrito(carritoAux);
+        setearCarritoCantidad ();
     }
 
     const masMenosUnoCarrito = (id, op) => {            //Sumamos o restamos una unidad según el valor de op
@@ -25,10 +28,17 @@ const CarritoProvider = ({children}) => {
 
         (op === "+") ? carritoAux[indice].cantidad++ : carritoAux[indice].cantidad--;
         setCarrito(carritoAux);
+        setearCarritoCantidad ();
+    }
+
+    const setearCarritoCantidad = () => {
+
+        const cantidadEnCarrito = carrito.reduce((ac, el) => ac + el.cantidad, 0);              //Calculamos la cantidad de items en el carrito
+        setCarritoCant (cantidadEnCarrito);                                                     //Seteamos la cantidad en el icono del carrito
     }
 
     return (
-        <CarritoContext.Provider value={{carrito, agregarAlCarrito, masMenosUnoCarrito}}>
+        <CarritoContext.Provider value={{carrito, agregarAlCarrito, masMenosUnoCarrito, carritoCant}}>
             {children}
         </CarritoContext.Provider>
     );

@@ -16,9 +16,9 @@ const CardProductoCarrito = ({producto}) => {
     
     return (
         <div className="cardProducto_carrito" key={producto.id}>
-            <div className="contImg_detalle">
-                <img className="imgProducto_detalle" src={`${producto.imgScr}`} alt="" />
-                <p className="stock_detalle">Stock: {producto.stock} unidades</p>
+            <div className="contImg_carrito">
+                <img className="imgProducto_carrito" src={`${producto.imgScr}`} alt="" />
+                <p className="stock_carrito">Stock: {producto.stock} unidades</p>
             </div>
             <div className="contDetalle_producto_carrito flex">
                 <div className='descProducto_detalle'>{producto.describir}</div>
