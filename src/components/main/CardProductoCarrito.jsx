@@ -31,6 +31,10 @@ const CardProductoCarrito = ({producto}) => {
                     <button className="botonMasMenos flex" onClick={() => masMenosCarrito(producto.id, "+")}>+</button>
                 </div>
             </div>
+            <div className='contVaciar flex column'>
+                <p className='textoVaciar'>Eliminar</p>
+                <img src="../images/vaciar2.png" className='iconoVaciar' alt="" />
+            </div>
             <div className='precioProducto_carrito'>${producto.precio * cantidadProducto}</div>
         </div>
     );
