@@ -18,8 +18,17 @@ const CarritoProvider = ({children}) => {
         setCarrito(carritoAux);
     }
 
+    const masMenosUnoCarrito = (id, op) => {            //Sumamos o restamos una unidad según el valor de op
+
+        const carritoAux = carrito;
+        const indice = carritoAux.findIndex((prod) => prod.id === id);
+
+        (op === "+") ? carritoAux[indice].cantidad++ : carritoAux[indice].cantidad--;
+        setCarrito(carritoAux);
+    }
+
     return (
-        <CarritoContext.Provider value={{carrito, agregarAlCarrito}}>
+        <CarritoContext.Provider value={{carrito, agregarAlCarrito, masMenosUnoCarrito}}>
             {children}
         </CarritoContext.Provider>
     );

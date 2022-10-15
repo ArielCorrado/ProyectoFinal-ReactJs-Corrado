@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
+import { CarritoContext } from '../../context/CarritoContext';
 
 const CardProductoCarrito = ({producto}) => {
+
+    const {masMenosUnoCarrito} = useContext(CarritoContext);
+
+    const [cantidadProducto, setCantidadProducto] = useState(producto.cantidad)
+
+    const masMenosCarrito = (id, op) => {
+        if ( (op === "+" && cantidadProducto < producto.stock) || (op === "-" && cantidadProducto > 1)) {      // Solo podemos elegir una cantidad entera mayor a cero y menor o igual al stock
+            masMenosUnoCarrito (id, op);
+            op === "+" ? setCantidadProducto (cantidadProducto + 1) : setCantidadProducto (cantidadProducto - 1);
+        }    
+    }
+    
     return (
         <div className="cardProducto_carrito" key={producto.id}>
             <div className="contImg_detalle">
@@ -12,9 +25,13 @@ const CardProductoCarrito = ({producto}) => {
             </div>
             <div className="flex column contCant_carrito">
                 <div className='cantidadTxt flex'>Cantidad</div>
-                <div className="cantidad"><button className="botonMasMenos flex">-</button> <div className="inputCantidad flex"> {producto.cantidad} </div> <button className="botonMasMenos flex">+</button></div>
+                <div className="cantidad">
+                    <button className="botonMasMenos flex" onClick={() => masMenosCarrito(producto.id, "-")}>-</button> 
+                    <div className="inputCantidad flex"> {cantidadProducto} </div> 
+                    <button className="botonMasMenos flex" onClick={() => masMenosCarrito(producto.id, "+")}>+</button>
+                </div>
             </div>
-            <div className='precioProducto_carrito'>${producto.precio * producto.cantidad}</div>
+            <div className='precioProducto_carrito'>${producto.precio * cantidadProducto}</div>
         </div>
     );
 }

@@ -31,18 +31,19 @@ const Carrito = () => {
 
     }, []);
  
-
-    return (
-        <div className="main__container__carrito flex">
-            {productosEnCarrito}
-        </div>
-    );
-     
-    return (
-        <div className="main__container flex">
-            <h1 style={{color:"black"}}>Tu Carrito está Vacío</h1>
-        </div>
-    );
+    if (productosEnCarrito.length > 0) {
+        return (
+            <div className="main__container__carrito flex">
+                {productosEnCarrito}
+            </div>
+        );
+    } else {
+        return (
+            <div className="main__container flex">
+                <h1 style={{color:"#404040"}}>Tu Carrito está Vacío</h1>
+            </div>
+        );
+    }
 }
 
 export default Carrito;

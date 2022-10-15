@@ -4,7 +4,7 @@ import Spinner from '../spinner/Spinner';
 import { CarritoContext } from '../../context/CarritoContext';
 
 const ItemDetailContainer = () => {
-    const {carrito, agregarAlCarrito} = useContext (CarritoContext);
+    const {agregarAlCarrito} = useContext (CarritoContext);
 
     const {id} = useParams();
     const [producto, setProducto] = useState ({});
