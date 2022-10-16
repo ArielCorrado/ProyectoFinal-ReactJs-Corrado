@@ -1,11 +1,15 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { CarritoContext } from '../../context/CarritoContext';
 
 const CardProductoCarrito = ({producto}) => {
 
     const {masMenosUnoCarrito, eliminarDelCarrito} = useContext(CarritoContext);
 
-    const [cantidadProducto, setCantidadProducto] = useState(producto.cantidad)
+    const [cantidadProducto, setCantidadProducto] = useState(producto.cantidad);
+        
+    useEffect(() => {
+        setCantidadProducto(producto.cantidad)           //Al actualizar los productos en el carrito tras eliminar uno de ellos "forzamos" la actualización de "cantidadProducto"
+    }, [producto.cantidad]);
 
     const masMenosCarrito = (id, op) => {
         if ( (op === "+" && cantidadProducto < producto.stock) || (op === "-" && cantidadProducto > 1)) {      // Solo podemos elegir una cantidad entera mayor a cero y menor o igual al stock
@@ -27,7 +31,7 @@ const CardProductoCarrito = ({producto}) => {
                 <div className='cantidadTxt flex'>Cantidad</div>
                 <div className="cantidad">
                     <button className="botonMasMenos flex" onClick={() => masMenosCarrito(producto.id, "-")}>-</button> 
-                    <div className="inputCantidad flex"> {cantidadProducto} </div> 
+                    <div className="inputCantidad flex"> {cantidadProducto} </div>   
                     <button className="botonMasMenos flex" onClick={() => masMenosCarrito(producto.id, "+")}>+</button>
                 </div>
             </div>

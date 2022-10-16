@@ -23,13 +23,13 @@ const Carrito = () => {
                 }    
                     
                 const productosEnJSX = productosEnArray.map ((prod) => <CardProductoCarrito producto = {prod} />)
-            
+                    
                 setProductosEnCarrito(productosEnJSX);
 
             }
         )
 
-    }, [carrito.length]);                               
+    }, [carrito.length]);                   //Si cambia carrito.length es porque eliminamos un producto del carrito                        
  
     if (productosEnCarrito.length > 0) {
         return (
