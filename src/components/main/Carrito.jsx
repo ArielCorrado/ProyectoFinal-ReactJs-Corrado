@@ -7,7 +7,7 @@ const Carrito = () => {
     
     const {carrito} = useContext (CarritoContext);
     const [productosEnCarrito, setProductosEnCarrito] = useState ([]);
-    
+        
     useEffect(() => {
 
        fetch ("../json/productos.json")
@@ -18,10 +18,10 @@ const Carrito = () => {
 
                 for (let producto of carrito) {
                     const productoPorId = data.find((prod) => prod.id === producto.id);
-                        productoPorId.cantidad = producto.cantidad;
+                    productoPorId.cantidad = producto.cantidad;
                     productosEnArray.push(productoPorId);
                 }    
-
+                    
                 const productosEnJSX = productosEnArray.map ((prod) => <CardProductoCarrito producto = {prod} />)
             
                 setProductosEnCarrito(productosEnJSX);
@@ -29,7 +29,7 @@ const Carrito = () => {
             }
         )
 
-    }, []);
+    }, [carrito.length]);                               
  
     if (productosEnCarrito.length > 0) {
         return (

@@ -37,8 +37,17 @@ const CarritoProvider = ({children}) => {
         setCarritoCant (cantidadEnCarrito);                                                     //Seteamos la cantidad en el icono del carrito
     }
 
+    const eliminarDelCarrito = (id) => {
+
+        const carritoAux = carrito;
+        const indice = carritoAux.findIndex((prod) => prod.id === id);
+        carritoAux.splice(indice, 1);
+        setCarrito(carritoAux);
+        setearCarritoCantidad ();
+    }
+
     return (
-        <CarritoContext.Provider value={{carrito, agregarAlCarrito, masMenosUnoCarrito, carritoCant}}>
+        <CarritoContext.Provider value={{carrito, eliminarDelCarrito, agregarAlCarrito, masMenosUnoCarrito, carritoCant}}>
             {children}
         </CarritoContext.Provider>
     );

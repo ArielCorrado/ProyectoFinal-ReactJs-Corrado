@@ -222,10 +222,12 @@
 .textoVaciar {
     color: black;
     margin: 0;
+    cursor: pointer;
 }
 
 .iconoVaciar {
     height: 30%;
+    cursor: pointer;
 }
 
 .contVaciar {

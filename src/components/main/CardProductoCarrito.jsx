@@ -3,7 +3,7 @@ import { CarritoContext } from '../../context/CarritoContext';
 
 const CardProductoCarrito = ({producto}) => {
 
-    const {masMenosUnoCarrito} = useContext(CarritoContext);
+    const {masMenosUnoCarrito, eliminarDelCarrito} = useContext(CarritoContext);
 
     const [cantidadProducto, setCantidadProducto] = useState(producto.cantidad)
 
@@ -13,7 +13,7 @@ const CardProductoCarrito = ({producto}) => {
             op === "+" ? setCantidadProducto (cantidadProducto + 1) : setCantidadProducto (cantidadProducto - 1);
         }    
     }
-    
+        
     return (
         <div className="cardProducto_carrito" key={producto.id}>
             <div className="contImg_carrito">
@@ -31,7 +31,7 @@ const CardProductoCarrito = ({producto}) => {
                     <button className="botonMasMenos flex" onClick={() => masMenosCarrito(producto.id, "+")}>+</button>
                 </div>
             </div>
-            <div className='contVaciar flex column'>
+            <div className='contVaciar flex column' onClick={() => eliminarDelCarrito(producto.id)}>
                 <p className='textoVaciar'>Eliminar</p>
                 <img src="../images/vaciar2.png" className='iconoVaciar' alt="" />
             </div>
