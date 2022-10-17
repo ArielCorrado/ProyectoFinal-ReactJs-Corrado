@@ -1,20 +1,18 @@
 import React from 'react';
 import CartWidget from './CartWidget';
 import Logo from './Logo';
-import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Busquedas = () => {
      
-    const searchForm = useRef()
+    const navigate = useNavigate();
     
     function linkear (e) {
 
-        e.preventDefault();    
-        const keysBusqueda = e.target.firstChild.value.trim();                //trim() elimina espacios en blanco adelante y atras de un string
+        const keysBusqueda = e.target.previousSibling.value.trim();                //trim() elimina espacios en blanco adelante y atras de un string
         
         if (keysBusqueda !== "") {
-            searchForm.current.action = `/search/${keysBusqueda}`;
-            e.target.submit();
+            navigate(`/search/${keysBusqueda}`);
         }    
     }
        
@@ -22,10 +20,10 @@ const Busquedas = () => {
         <div className="contBusquedas flex">
             <Logo />
             <div className='flex'>
-                <form action={""} method="get" className="contBusquedaIcono flex" onSubmit={linkear} ref={searchForm}>
+                <div className="contBusquedaIcono flex">
                     <input className="campoBusquedas" type="search" placeholder="Buscar Producto" />
-                    <button className="botonBusquedas" type="submit">Buscar</button>
-                </form>    
+                    <button className="botonBusquedas" onClick={linkear}>Buscar</button>
+                </div>    
                 <CartWidget />
             </div>
         </div>

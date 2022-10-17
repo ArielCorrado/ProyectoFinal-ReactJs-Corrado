@@ -32,12 +32,11 @@ const ItemSearchContainer = () => {
                 )
             } 
         })
-
+        
     }, [searchKeys]);
  
     return (
         <>
-            <Spinner />
             <div className="main__container flex">
                 {productosPorBusqueda}
             </div>
