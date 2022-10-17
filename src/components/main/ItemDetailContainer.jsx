@@ -33,7 +33,7 @@ const ItemDetailContainer = () => {
     
     return (
         <>
-            <Spinner />
+            {/* <Spinner /> */}
             <div className="main__container flex">
                 <div className="cartProducto_detalle" key={producto.id}>
                     <div className="contImg_detalle">

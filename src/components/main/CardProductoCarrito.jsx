@@ -3,18 +3,18 @@ import { CarritoContext } from '../../context/CarritoContext';
 
 const CardProductoCarrito = ({producto}) => {
 
-    const {masMenosUnoCarrito, eliminarDelCarrito} = useContext(CarritoContext);
+    const {masMenosUnoCarrito, eliminarDelCarrito, carrito} = useContext(CarritoContext);
 
-    const [cantidadProducto, setCantidadProducto] = useState(producto.cantidad);
-        
-    useEffect(() => {
-        setCantidadProducto(producto.cantidad)           //Al actualizar los productos en el carrito tras eliminar uno de ellos "forzamos" la actualización de "cantidadProducto"
-    }, [producto.cantidad]);
+    const [inc, setInc] = useState(0);
 
-    const masMenosCarrito = (id, op) => {
-        if ( (op === "+" && cantidadProducto < producto.stock) || (op === "-" && cantidadProducto > 1)) {      // Solo podemos elegir una cantidad entera mayor a cero y menor o igual al stock
+    useEffect(() => {               //Al eliminar un producto de carrito este se recarga con los productos restantes, inc vuelve a ser 0
+       setInc(0);
+    }, [carrito.length]);
+   
+    const masMenosCarrito = (id, op) => {                                                                                        //Validación de cantidad de poductos elegidos.
+        if ( (op === "+" && (producto.cantidad + inc) < producto.stock) || (op === "-" && (producto.cantidad + inc) > 1)) {      //Solo podemos elegir una cantidad entera mayor a cero y menor o igual al stock
             masMenosUnoCarrito (id, op);
-            op === "+" ? setCantidadProducto (cantidadProducto + 1) : setCantidadProducto (cantidadProducto - 1);
+            op === "+" ? setInc (inc + 1) : setInc (inc - 1);
         }    
     }
         
@@ -31,15 +31,15 @@ const CardProductoCarrito = ({producto}) => {
                 <div className='cantidadTxt flex'>Cantidad</div>
                 <div className="cantidad">
                     <button className="botonMasMenos flex" onClick={() => masMenosCarrito(producto.id, "-")}>-</button> 
-                    <div className="inputCantidad flex"> {cantidadProducto} </div>   
+                    <div className="inputCantidad flex"> {producto.cantidad + inc} </div>   
                     <button className="botonMasMenos flex" onClick={() => masMenosCarrito(producto.id, "+")}>+</button>
                 </div>
             </div>
-            <div className='contVaciar flex column' onClick={() => eliminarDelCarrito(producto.id)}>
+            <div to={"/cart"} className='contVaciar flex column' onClick={() => eliminarDelCarrito(producto.id)}>      
                 <p className='textoVaciar'>Eliminar</p>
                 <img src="../images/vaciar2.png" className='iconoVaciar' alt="" />
             </div>
-            <div className='precioProducto_carrito'>${producto.precio * cantidadProducto}</div>
+            <div className='precioProducto_carrito'>${producto.precio * (producto.cantidad + inc)}</div>
         </div>
     );
 }
