@@ -6,11 +6,11 @@ import { CarritoContext } from '../../context/CarritoContext';
 const CartWidget = () => {
     
     const {carritoCant} = useContext (CarritoContext);
-
+    
     return (
         <Link to={"/cart"}>
             <div className="contCarrito">
-                <div className='iconoCarrito_cantidad flex'>  {carritoCant}  </div>
+                {carritoCant > 0 ? <div className='iconoCarrito_cantidad flex'> {carritoCant} </div> : <></>}     
                 <img className="iconoCarrito" src="../images/icono_carrito.png" alt="" />
             </div>
         </Link>
