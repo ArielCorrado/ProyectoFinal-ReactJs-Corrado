@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import CardProducto from './CardProducto';  
 import Spinner from '../spinner/Spinner';
-import Swal from 'sweetalert2';
 
 const ItemSearchContainer = () => {
 
@@ -25,18 +24,13 @@ const ItemSearchContainer = () => {
             if (productosEnJSX.length !== 0) {
                 setProductosPorBusqueda (productosEnJSX);
             } else {
-                setTimeout(() =>
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'No se encontraron productos',
-                        showConfirmButton: false,
-                        allowEnterKey: false,
-                        allowOutsideClick: false,
-                        allowEscapeKey: false,      
-                        html:
-                        '<a href="/"><b>Volver</b></a>' 
-                    }), 1500)     
-            }
+                setProductosPorBusqueda (
+                    <div>
+                        <h1 style={{color:"#404040"}}>No Se Encontraron Productos</h1>
+                        <Link to={"/"} style={{textAlign:"center", color:"rgb(176, 64, 199)"}}><h2>Volver</h2></Link>
+                    </div>
+                )
+            } 
         })
 
     }, [searchKeys]);
