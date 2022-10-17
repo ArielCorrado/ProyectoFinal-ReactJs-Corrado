@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import CardProducto from './CardProducto';  
 
 const ItemSearchContainer = () => {
@@ -24,9 +24,9 @@ const ItemSearchContainer = () => {
                 setProductosPorBusqueda (productosEnJSX);
             } else {
                 setProductosPorBusqueda (
-                    <div>
-                        <h1 style={{color:"#404040"}}>No Se Encontraron Productos</h1>
-                        <Link to={"/"} style={{textAlign:"center", color:"rgb(176, 64, 199)"}}><h2>Volver</h2></Link>
+                    <div className='contVolver'>
+                        <h1 className='textoVolver'>No Se Encontraron Productos</h1>
+                        <button className='botonProducto' onClick={() => window.history.back()}>Volver</button>
                     </div>
                 )
             } 

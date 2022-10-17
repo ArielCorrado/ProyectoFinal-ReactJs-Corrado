@@ -25,7 +25,7 @@ const CardProductoCarrito = ({producto}) => {
                 <p className="stock_carrito">Stock: {producto.stock} unidades</p>
             </div>
             <div className="contDetalle_producto_carrito flex">
-                <div className='descProducto_detalle'>{producto.describir}</div>
+                <div className='descProducto_detalle_carrito'>{producto.describir}</div>
             </div>
             <div className="flex column contCant_carrito">
                 <div className='cantidadTxt flex'>Cantidad</div>

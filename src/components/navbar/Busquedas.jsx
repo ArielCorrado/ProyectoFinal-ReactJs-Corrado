@@ -16,8 +16,8 @@ const Busquedas = () => {
         const keysBusqueda = e.target.previousSibling.value.trim();                //trim() elimina espacios en blanco adelante y atras de un string
         
         if (keysBusqueda !== "") {
-            setOnOff(true);
-            setTimeout(() => {
+            setOnOff(true);             //Lanzo spinner
+            setTimeout(() => {          //En 1500ms lo oculto
                 setOnOff(false)
             }, 1500);
             navigate(`/search/${keysBusqueda}`);
