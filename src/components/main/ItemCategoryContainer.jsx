@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import CardProducto from './CardProducto';
+import { leerBDD } from '../../utils/firebase';
 
 const ItemCategoryContainer = () => {
 
@@ -10,19 +11,14 @@ const ItemCategoryContainer = () => {
     const [productosPorCategoria, setProductosPorCategoria] = useState ([])
 
     useEffect(() => {
-        fetch ("../json/productos.json")
-        .then ((resp) => resp.json())
-        .then ((data) => {
-            const productosEnArray = data.filter((prod) => prod.categoria.toLowerCase() === categoria.toLowerCase());
-                        
-            const productosEnJSX = productosEnArray.map((producto) =>
-            
-                <CardProducto elemento = {producto} />
-            )  
-
-            setProductosPorCategoria (productosEnJSX);
         
+        leerBDD().then((BDD) => {
+            
+            const BDDFiltrada = BDD.filter((prod) => prod[1].categoria.toLowerCase() === categoria.toLocaleLowerCase())
+            const BDDFiltradaJsx = BDDFiltrada.map((prod) => <CardProducto producto={prod} key={prod[0]}/>)
+            setProductosPorCategoria(BDDFiltradaJsx);
         })
+       
     }, [categoria]);
 
     return (

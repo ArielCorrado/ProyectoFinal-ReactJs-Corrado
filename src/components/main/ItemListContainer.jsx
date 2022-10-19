@@ -12,7 +12,7 @@ const ItemListContainer = () => {
 
         leerBDD().then((BDDEnArray) => {
 
-            const todosLosProductosJSX = BDDEnArray.map((prod) => <CardProducto producto={prod} key={prod[0]}/> )
+            const todosLosProductosJSX = BDDEnArray.map((prod) => <CardProducto producto={prod} key={prod[0]}/>);
             setProductosAMostrar(todosLosProductosJSX);
 
         })

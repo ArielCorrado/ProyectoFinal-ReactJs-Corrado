@@ -10,13 +10,15 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
 
-        leerProducto(id).then((prod) => setProducto(<CardProductoDetail producto={prod}/>) )
+        leerProducto(id).then((prod) => setProducto(<CardProductoDetail producto={prod}/>));
         
     },[id]);
 
     return (
         <>  
-            {producto}
+            <div className="main__container flex">
+                {producto}
+            </div>
         </>
     );
 }
