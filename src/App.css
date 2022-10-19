@@ -461,7 +461,6 @@
 .contFooter__ul {
     margin-bottom: 0; 
     padding-left: 0;
-    justify-content: space-around;
 }
 
 .contFooter__ul__li {
@@ -469,6 +468,7 @@
     font-weight: 100;
     color: rgb(201, 201, 201);
     cursor: pointer;
+    margin: 15px;
 }
 
 .contFooter__ul__li:hover {
@@ -658,14 +658,20 @@
         grid-template-rows: fit-content fit-content;     
        
     }  
+
+    .iconoVaciar {
+        height: 40%;
+    }
 }
 
 @media only screen and (max-width: 600px) { 
     .cardProducto_carrito { 
+        max-width: 300px;
         height: fit-content;
         grid-template-areas: "i i"
                              "d d"
-                             "v c"
+                             "v v"
+                             "c c"   
                              "p p";
         grid-template-columns: repeat(2, 1fr);        
         grid-template-rows: 200px 50px 80px 50px;     

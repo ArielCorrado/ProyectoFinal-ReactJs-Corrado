@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import CardProducto from './CardProducto';
 import Carousel from '../carousel/Carousel';
+import { leerBDD } from '../../utils/firebase';
   
 const ItemListContainer = () => {
     
@@ -9,19 +10,12 @@ const ItemListContainer = () => {
 
     useEffect(() => {
 
-        const consultarProductosEnBDD = async () => {
-            const resp = await fetch("../json/productos.json")
-            const todosLosProductosArray = await resp.json();
-            const todosLosProductosJSX = todosLosProductosArray.map((producto) =>
+        leerBDD().then((BDDEnArray) => {
 
-                <CardProducto elemento = {producto} />
-              
-            )
-        
-            return todosLosProductosJSX;
-        }
-            
-        consultarProductosEnBDD().then((data) => setProductosAMostrar(data));
+            const todosLosProductosJSX = BDDEnArray.map((producto) => <CardProducto elemento = {producto}/> )
+            setProductosAMostrar(todosLosProductosJSX);
+
+        })
         
     }, []);
     

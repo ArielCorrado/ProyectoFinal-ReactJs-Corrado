@@ -12,8 +12,8 @@ const Busquedas = () => {
     const [onOff, setOnOff] = useState(false);
     
     function linkear (e) {
-
-        const keysBusqueda = e.target.previousSibling.value.trim();                //trim() elimina espacios en blanco adelante y atras de un string
+        e.preventDefault();                                                   //Evitamos el submit ya que recarga la página 
+        const keysBusqueda = e.target.firstChild.value.trim();                //trim() elimina espacios en blanco adelante y atras de un string
         
         if (keysBusqueda !== "") {
             setOnOff(true);             //Lanzo spinner
@@ -30,10 +30,10 @@ const Busquedas = () => {
         <div className="contBusquedas flex">
             <Logo />
             <div className='flex'>
-                <div className="contBusquedaIcono flex">
+                <form className="contBusquedaIcono flex" onSubmit={linkear}>
                     <input className="campoBusquedas" type="search" placeholder="Buscar Producto" />
-                    <button className="botonBusquedas" onClick={linkear}>Buscar</button>
-                </div>    
+                    <button className="botonBusquedas" type='submit'>Buscar</button>
+                </form>    
                 <CartWidget />
             </div>
         </div>

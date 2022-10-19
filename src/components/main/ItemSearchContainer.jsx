@@ -26,7 +26,7 @@ const ItemSearchContainer = () => {
                 setProductosPorBusqueda (
                     <div className='contVolver'>
                         <h1 className='textoVolver'>No Se Encontraron Productos</h1>
-                        <button className='botonProducto' onClick={() => window.history.back()}>Volver</button>
+                        <button className='botonProducto' onClick={() => window.history.back() }>Volver</button>
                     </div>
                 )
             } 
