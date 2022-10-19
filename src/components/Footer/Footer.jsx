@@ -13,10 +13,10 @@ const Footer = () => {
                 </div>
             </div> 
             <ul className='contFooter__ul flex'>
-                <li className='contFooter__ul__li'> Nosotros </li>
-                <li className='contFooter__ul__li'> Contacto </li>
-                <li className='contFooter__ul__li'> Soporte </li>
-                <li className='contFooter__ul__li'> Ubicación </li>
+                <li className='contFooter__ul__li' key="Nosotros"> Nosotros </li>
+                <li className='contFooter__ul__li' key="Contacto"> Contacto </li>
+                <li className='contFooter__ul__li' key="Soporte"> Soporte </li>
+                <li className='contFooter__ul__li' key="Ubicación"> Ubicación </li>
             </ul>         
             <div className='footer__contImg flex'>
                 <img className='footer_img' src="../images/facebook.png" alt="" />
