@@ -14,7 +14,7 @@ const ItemSearchContainer = () => {
         leerBDD().then((BDD) => {
 
             const BDDFiltrada = BDD.filter((prod) => prod[1].describir.toLowerCase().includes(searchKeys.toLowerCase()));
-            const BDDFiltradaJsx = BDDFiltrada.map((prod) => <CardProducto producto={prod}/>);
+            const BDDFiltradaJsx = BDDFiltrada.map((prod) => <CardProducto producto={prod} key={prod[0]}/>);
 
             if (BDDFiltradaJsx.length !== 0) {
                 setProductosPorBusqueda(BDDFiltradaJsx);

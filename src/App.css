@@ -201,7 +201,7 @@
     padding: 10px;
     place-items: center;
     margin: 10px;
-    border: 1px solid gray;
+    border: 1px solid var(--borde_cards);
     border-radius: 5px;
 }
 
@@ -276,7 +276,7 @@
     padding: 20px;
     place-items: center;
     margin: 50px;
-    border: 1px solid gray;
+    border: 1px solid var(--borde_cards);
     border-radius: 5px;
     animation-name: detalleProducto;
     animation-duration: 1.5s;
@@ -410,7 +410,7 @@
 .cardProducto {
     width: 250px;
     height: 400px;
-    border: 1px solid gray;
+    border: 1px solid var(--borde_cards);
     color: rgb(34, 34, 34);
     flex-direction: column;
     text-align: center;
