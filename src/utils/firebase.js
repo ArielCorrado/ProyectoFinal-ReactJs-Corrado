@@ -26,7 +26,7 @@ const subirBDD = async () => {
                 "modelo": producto.modelo,
                 "precio": producto.precio,
                 "imgScr": producto.imgScr,
-                "stock": 12,
+                "stock": producto.stock,
 
                 "socket": producto.socket,
                 "frecuencia": producto.frecuencia,

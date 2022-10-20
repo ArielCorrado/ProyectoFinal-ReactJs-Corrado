@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { CarritoContext } from '../../context/CarritoContext';
 import CardProductoCarrito from './CardProductoCarrito';
+import { leerBDD } from '../../utils/firebase';
 
 
 const Carrito = () => {
@@ -10,28 +11,27 @@ const Carrito = () => {
         
     useEffect(() => {
 
-       fetch ("../json/productos.json")
-        .then ((resp) => resp.json())
-        .then ((data) => {
+        const productosCarrito = [];
 
-                const productosEnArray = [];
+        leerBDD().then((BDDEnArray) => {
 
-                for (let producto of carrito) {
-                    const productoPorId = data.find((prod) => prod.id === producto.id);
-                    productoPorId.cantidad = producto.cantidad;
-                    productosEnArray.push(productoPorId);
-                }    
-                    
-                const productosEnJSX = productosEnArray.map ((prod) => <CardProductoCarrito producto = {prod} />)
-                    
-                setProductosEnCarrito(productosEnJSX);
+            for (let producto of carrito) {
+
+                const productoEnCarrito = BDDEnArray.find((prod) => prod[0] === producto.id);
+                productoEnCarrito[1].cantidad = producto.cantidad;          //Agregamos en el producto una campo "cantidad" con la cantidad leida en el carrito
+                productosCarrito.push(productoEnCarrito);
 
             }
-        )
+
+            const productosEnCarritoJsx = productosCarrito.map((prod) => <CardProductoCarrito producto = {prod} key={prod[0]}/>)
+
+            setProductosEnCarrito (productosEnCarritoJsx);
+
+        })
 
     }, [carrito.length]);                   //Si cambia carrito.length es porque eliminamos un producto del carrito                        
  
-    if (productosEnCarrito.length > 0) {
+    if (carrito.length > 0) {
         return (
             <div className="main__container__carrito flex">
                 {productosEnCarrito}
