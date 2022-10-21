@@ -1,10 +1,12 @@
 :root {
     --color_violeta: rgb(176, 64, 199);
-    --color_naranja: rgb(255, 123, 0);
+    --color_naranja: #FF6D00;
     --color_celeste: #47c8da;
     --color_back1: rgb(240, 240, 240);
     --altura_main: calc(100vh - 137px - 75px);                /* 137px es la altura del navbar - 75px es la altura del footer*/
     --borde_cards: rgb(189, 189, 189);
+    --color_navbar: #240046;
+    --color_precios: rgb(100, 0, 158);
 }
 
 * {
@@ -33,5 +35,6 @@ a {
 }
 
 body {
-    background-color: var(--color_back1);
+    /* background: linear-gradient(90deg, rgba(149,0,255,1) 0%, rgba(241,73,255,1) 50%, rgba(0,212,255,1) 100%); */
+    background: linear-gradient(90deg, rgba(178,70,255,1) 39%, rgba(108,230,255,1) 100%);
 }

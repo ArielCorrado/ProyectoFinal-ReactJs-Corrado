@@ -1,5 +1,6 @@
 [
   {
+    "id": "mp0",
     "categoria": "Microprocesadores",
     "marca": "Amd",
     "modelo": "Ryzen 3 4100",
@@ -14,11 +15,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 17,
+    "stock": 14,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Amd Ryzen 3 4100 AM4 4.0Ghz"
   },
   {
+    "id": "mp1",
     "categoria": "Microprocesadores",
     "marca": "Amd",
     "modelo": "Ryzen 3 4350G",
@@ -33,11 +35,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 3,
+    "stock": 10,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Amd Ryzen 3 4350G AM4 4.0Ghz"
   },
   {
+    "id": "mp2",
     "categoria": "Microprocesadores",
     "marca": "Amd",
     "modelo": "Ryzen 5 3600",
@@ -57,6 +60,7 @@
     "describir": "Microprocesador Amd Ryzen 5 3600 AM4 4.2Ghz"
   },
   {
+    "id": "mp3",
     "categoria": "Microprocesadores",
     "marca": "Amd",
     "modelo": "Ryzen 5 5500",
@@ -71,11 +75,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 12,
+    "stock": 7,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Amd Ryzen 5 5500 AM4 4.2Ghz"
   },
   {
+    "id": "mp4",
     "categoria": "Microprocesadores",
     "marca": "Amd",
     "modelo": "Ryzen 7 5700X",
@@ -90,11 +95,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 13,
+    "stock": 6,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Amd Ryzen 7 5700X AM4 4.6Ghz"
   },
   {
+    "id": "mp5",
     "categoria": "Microprocesadores",
     "marca": "Amd",
     "modelo": "Ryzen 9 5900X",
@@ -114,6 +120,7 @@
     "describir": "Microprocesador Amd Ryzen 9 5900X AM4 4.8Ghz"
   },
   {
+    "id": "mp6",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Celeron G6900",
@@ -133,6 +140,7 @@
     "describir": "Microprocesador Intel Celeron G6900 LGA1700 3.8Ghz"
   },
   {
+    "id": "mp7",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Pentium G7400",
@@ -147,11 +155,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 11,
+    "stock": 4,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Pentium G7400 LGA1700 3.8Ghz"
   },
   {
+    "id": "mp8",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Core i3 12100",
@@ -166,11 +175,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 2,
+    "stock": 14,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i3 12100 LGA1700 4.3Ghz"
   },
   {
+    "id": "mp9",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Core i5 12400",
@@ -185,11 +195,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 4,
+    "stock": 18,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i5 12400 LGA1700 4.4Ghz"
   },
   {
+    "id": "mp10",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Core i7 12700KF",
@@ -204,11 +215,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 5,
+    "stock": 10,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i7 12700KF LGA1700 5.0Ghz"
   },
   {
+    "id": "mp11",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Core i9 12900KF",
@@ -223,11 +235,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 17,
+    "stock": 4,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i9 12900KF LGA1700 5.2Ghz"
   },
   {
+    "id": "mp12",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Core i9 12900K",
@@ -242,11 +255,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 2,
+    "stock": 18,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i9 12900K LGA1700 5.2Ghz"
   },
   {
+    "id": "mp13",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Core i7 12700K",
@@ -261,11 +275,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 15,
+    "stock": 10,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i7 12700K LGA1700 5.0Ghz"
   },
   {
+    "id": "mp14",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Core i5 11600K Comet Lake",
@@ -280,11 +295,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 13,
+    "stock": 19,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i5 11600K Comet Lake LGA1200 4.9Ghz"
   },
   {
+    "id": "mp15",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Core i7 11700KF Rocket Lake",
@@ -299,11 +315,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 10,
+    "stock": 11,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i7 11700KF Rocket Lake LGA1200 5.0Ghz"
   },
   {
+    "id": "mp16",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Celeron G5905",
@@ -318,11 +335,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 6,
+    "stock": 5,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Celeron G5905 LGA1200 3.5Ghz"
   },
   {
+    "id": "mp17",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Pentium Gold G6405",
@@ -337,11 +355,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 4,
+    "stock": 1,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Pentium Gold G6405 LGA1200 4.1Ghz"
   },
   {
+    "id": "mp18",
     "categoria": "Microprocesadores",
     "marca": "Intel",
     "modelo": "Core i3 10105",
@@ -356,11 +375,12 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 4,
+    "stock": 6,
     "opcionesBusqueda": ["Marca", "Socket", "Frecuencia"],
     "describir": "Microprocesador Intel Core i3 10105 LGA1200 4.4Ghz"
   },
   {
+    "id": "mb0",
     "categoria": "Motherboards",
     "marca": "Gigabyte",
     "modelo": "GA-B450M DS3H",
@@ -375,11 +395,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 9,
+    "stock": 5,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-B450M DS3H AM4 DDR4"
   },
   {
+    "id": "mb1",
     "categoria": "Motherboards",
     "marca": "Gigabyte",
     "modelo": "GA-A520M S2H",
@@ -399,6 +420,7 @@
     "describir": "Motherboard Gigabyte GA-A520M S2H AM4 DDR4"
   },
   {
+    "id": "mb2",
     "categoria": "Motherboards",
     "marca": "Gigabyte",
     "modelo": "GA-B550M DS3H",
@@ -413,11 +435,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 11,
+    "stock": 5,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-B550M DS3H AM4 DDR4"
   },
   {
+    "id": "mb3",
     "categoria": "Motherboards",
     "marca": "Gigabyte",
     "modelo": "GA-X570S UD",
@@ -432,11 +455,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 4,
+    "stock": 11,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-X570S UD AM4 DDR4"
   },
   {
+    "id": "mb4",
     "categoria": "Motherboards",
     "marca": "Gigabyte",
     "modelo": "GA-X570S AORUS ELITE",
@@ -451,11 +475,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 5,
+    "stock": 6,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-X570S AORUS ELITE AM4 DDR4"
   },
   {
+    "id": "mb5",
     "categoria": "Motherboards",
     "marca": "Msi",
     "modelo": "PRO H610M",
@@ -470,11 +495,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 2,
+    "stock": 3,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi PRO H610M LGA1700 DDR4"
   },
   {
+    "id": "mb6",
     "categoria": "Motherboards",
     "marca": "Msi",
     "modelo": "PRO H610M-G",
@@ -494,6 +520,7 @@
     "describir": "Motherboard Msi PRO H610M-G LGA1700 DDR4"
   },
   {
+    "id": "mb7",
     "categoria": "Motherboards",
     "marca": "Msi",
     "modelo": "PRO B660M-G",
@@ -508,11 +535,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 17,
+    "stock": 7,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi PRO B660M-G LGA1700 DDR4"
   },
   {
+    "id": "mb8",
     "categoria": "Motherboards",
     "marca": "Msi",
     "modelo": "PRO Z690-A",
@@ -527,11 +555,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 17,
+    "stock": 4,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi PRO Z690-A LGA1700 DDR4"
   },
   {
+    "id": "mb9",
     "categoria": "Motherboards",
     "marca": "Msi",
     "modelo": "Z690 Tomahawk WiFi",
@@ -546,11 +575,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 4,
+    "stock": 12,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi Z690 Tomahawk WiFi LGA1700 DDR4"
   },
   {
+    "id": "mb10",
     "categoria": "Motherboards",
     "marca": "Gigabyte",
     "modelo": "GA-Z690 AORUS ULTRA",
@@ -565,11 +595,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 7,
+    "stock": 14,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Gigabyte GA-Z690 AORUS ULTRA LGA1700 DDR5"
   },
   {
+    "id": "mb11",
     "categoria": "Motherboards",
     "marca": "Asus",
     "modelo": "Prime Z690-P WIFI",
@@ -584,11 +615,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 17,
+    "stock": 6,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Prime Z690-P WIFI LGA1700 DDR4"
   },
   {
+    "id": "mb12",
     "categoria": "Motherboards",
     "marca": "Asus",
     "modelo": "Tuf GAMING Z690-PLUS WIFI",
@@ -603,11 +635,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 16,
+    "stock": 15,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Tuf GAMING Z690-PLUS WIFI LGA1700 DDR4"
   },
   {
+    "id": "mb13",
     "categoria": "Motherboards",
     "marca": "Asus",
     "modelo": "Prime A320M-K",
@@ -622,11 +655,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 2,
+    "stock": 7,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Prime A320M-K AM4 DDR4"
   },
   {
+    "id": "mb14",
     "categoria": "Motherboards",
     "marca": "Asus",
     "modelo": "Prime A520M-K",
@@ -641,11 +675,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 7,
+    "stock": 15,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Prime A520M-K AM4 DDR4"
   },
   {
+    "id": "mb15",
     "categoria": "Motherboards",
     "marca": "Asus",
     "modelo": "Prime B450M-A II",
@@ -660,11 +695,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 11,
+    "stock": 13,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Prime B450M-A II AM4 DDR4"
   },
   {
+    "id": "mb16",
     "categoria": "Motherboards",
     "marca": "Asus",
     "modelo": "Tuf B550M GAMING PLUS WIFI II",
@@ -684,6 +720,7 @@
     "describir": "Motherboard Asus Tuf B550M GAMING PLUS WIFI II AM4 DDR4"
   },
   {
+    "id": "mb17",
     "categoria": "Motherboards",
     "marca": "Asus",
     "modelo": "Rog B550-A GAMING",
@@ -698,11 +735,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 18,
+    "stock": 1,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Rog B550-A GAMING AM4 DDR4"
   },
   {
+    "id": "mb18",
     "categoria": "Motherboards",
     "marca": "Asus",
     "modelo": "Prime X570-P",
@@ -717,11 +755,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 4,
+    "stock": 8,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Asus Prime X570-P AM4 DDR4"
   },
   {
+    "id": "mb19",
     "categoria": "Motherboards",
     "marca": "Msi",
     "modelo": "B560M PRO VDH",
@@ -736,11 +775,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 19,
+    "stock": 18,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi B560M PRO VDH LGA1200 DDR4"
   },
   {
+    "id": "mb20",
     "categoria": "Motherboards",
     "marca": "Msi",
     "modelo": "B560M BAZOOKA",
@@ -755,11 +795,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 14,
+    "stock": 11,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi B560M BAZOOKA LGA1200 DDR4"
   },
   {
+    "id": "mb21",
     "categoria": "Motherboards",
     "marca": "Msi",
     "modelo": "Z590 GAMING PLUS",
@@ -774,11 +815,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 11,
+    "stock": 9,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi Z590 GAMING PLUS LGA1200 DDR4"
   },
   {
+    "id": "mb22",
     "categoria": "Motherboards",
     "marca": "Msi",
     "modelo": "Z590 GAMING CARBON WIFI",
@@ -793,11 +835,12 @@
     "frecuencia": "N/A",
     "serie": "N/A",
     "cantMemoria": "N/A",
-    "stock": 13,
+    "stock": 4,
     "opcionesBusqueda": ["Marca", "Socket", "Memoria"],
     "describir": "Motherboard Msi Z590 GAMING CARBON WIFI LGA1200 DDR4"
   },
   {
+    "id": "mr0",
     "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
@@ -812,7 +855,7 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 14,
+    "stock": 15,
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -824,6 +867,7 @@
     "describir": "Memoria Ram kingston fury sin RGB ddr4 4gb 2666mhz"
   },
   {
+    "id": "mr1",
     "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
@@ -838,7 +882,7 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 13,
+    "stock": 20,
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -850,6 +894,7 @@
     "describir": "Memoria Ram kingston fury sin RGB ddr4 4gb 3200mhz"
   },
   {
+    "id": "mr2",
     "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
@@ -864,7 +909,7 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 3,
+    "stock": 15,
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -876,6 +921,7 @@
     "describir": "Memoria Ram kingston fury sin RGB ddr4 8gb 2666mhz"
   },
   {
+    "id": "mr3",
     "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
@@ -890,7 +936,7 @@
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 11,
+    "stock": 14,
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -902,6 +948,7 @@
     "describir": "Memoria Ram kingston fury RGB ddr4 8gb 2666mhz"
   },
   {
+    "id": "mr4",
     "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
@@ -910,58 +957,6 @@
     "cantMemoria": "8gb",
     "frecuencia": "3200mhz",
     "precio": 9250,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr0.jpeg?alt=media&token=2461b923-1885-4b9a-82cb-8e283c49c45a",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 19,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram kingston fury sin RGB ddr4 8gb 3200mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "kingston",
-    "modelo": "fury",
-    "rgb": "sin RGB",
-    "tipoMemoria": "ddr4",
-    "cantMemoria": "16gb",
-    "frecuencia": "2666mhz",
-    "precio": 13600,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr0.jpeg?alt=media&token=2461b923-1885-4b9a-82cb-8e283c49c45a",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 3,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram kingston fury sin RGB ddr4 16gb 2666mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "kingston",
-    "modelo": "fury",
-    "rgb": "sin RGB",
-    "tipoMemoria": "ddr4",
-    "cantMemoria": "16gb",
-    "frecuencia": "3200mhz",
-    "precio": 16700,
     "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr0.jpeg?alt=media&token=2461b923-1885-4b9a-82cb-8e283c49c45a",
     "socket": "N/A",
     "certificacion": "N/A",
@@ -977,102 +972,25 @@
       "Capacidad",
       "Frecuencia"
     ],
-    "describir": "Memoria Ram kingston fury sin RGB ddr4 16gb 3200mhz"
+    "describir": "Memoria Ram kingston fury sin RGB ddr4 8gb 3200mhz"
   },
   {
+    "id": "mr5",
     "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
     "tipoMemoria": "ddr4",
     "cantMemoria": "16gb",
-    "frecuencia": "3600mhz",
-    "precio": 19000,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr0.jpeg?alt=media&token=2461b923-1885-4b9a-82cb-8e283c49c45a",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 7,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram kingston fury sin RGB ddr4 16gb 3600mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "Corsair",
-    "modelo": "Vengance Pro Blanco",
-    "rgb": "RGB",
-    "tipoMemoria": "ddr4",
-    "cantMemoria": "16gb (2x8Gb)",
     "frecuencia": "2666mhz",
-    "precio": 20500,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr2.jpeg?alt=media&token=e098c348-7606-4e2b-a37f-eb6e39983aa2",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 12,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram Corsair Vengance Pro Blanco RGB ddr4 16gb (2x8Gb) 2666mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "Corsair",
-    "modelo": "Vengance Pro Blanco",
-    "rgb": "RGB",
-    "tipoMemoria": "ddr4",
-    "cantMemoria": "16gb (2x8Gb)",
-    "frecuencia": "3600mhz",
-    "precio": 24000,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr3.jpeg?alt=media&token=4c00c99b-bc4f-4c33-b53b-869f039a9018",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 3,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram Corsair Vengance Pro Blanco RGB ddr4 16gb (2x8Gb) 3600mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "kingston",
-    "modelo": "fury",
-    "rgb": "sin RGB",
-    "tipoMemoria": "ddr5",
-    "cantMemoria": "8gb",
-    "frecuencia": "4800mhz",
-    "precio": 15900,
+    "precio": 13600,
     "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr0.jpeg?alt=media&token=2461b923-1885-4b9a-82cb-8e283c49c45a",
     "socket": "N/A",
     "certificacion": "N/A",
     "potencia": "N/A",
     "tdp": "N/A",
     "serie": "N/A",
-    "stock": 7,
+    "stock": 19,
     "opcionesBusqueda": [
       "Marca",
       "Modelo",
@@ -1081,148 +999,19 @@
       "Capacidad",
       "Frecuencia"
     ],
-    "describir": "Memoria Ram kingston fury sin RGB ddr5 8gb 4800mhz"
+    "describir": "Memoria Ram kingston fury sin RGB ddr4 16gb 2666mhz"
   },
   {
+    "id": "mr6",
     "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
     "rgb": "sin RGB",
-    "tipoMemoria": "ddr5",
+    "tipoMemoria": "ddr4",
     "cantMemoria": "16gb",
-    "frecuencia": "5200mhz",
-    "precio": 26000,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr0.jpeg?alt=media&token=2461b923-1885-4b9a-82cb-8e283c49c45a",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 10,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram kingston fury sin RGB ddr5 16gb 5200mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "Corsair",
-    "modelo": "Dominator",
-    "rgb": "RGB",
-    "tipoMemoria": "ddr5",
-    "cantMemoria": "32gb (2x16Gb)",
-    "frecuencia": "5200mhz",
-    "precio": 76700,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr4.jpeg?alt=media&token=5a4958cd-ad66-416d-bda1-132f60e871fb",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 19,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram Corsair Dominator RGB ddr5 32gb (2x16Gb) 5200mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "kingston",
-    "modelo": "fury",
-    "rgb": "RGB",
-    "tipoMemoria": "ddr5",
-    "cantMemoria": "8gb",
-    "frecuencia": "5200mhz",
-    "precio": 9900,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr5.jpeg?alt=media&token=fcce4815-12aa-4060-8fae-dfb9c47608b7",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 19,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram kingston fury RGB ddr5 8gb 5200mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "kingston",
-    "modelo": "fury",
-    "rgb": "RGB",
-    "tipoMemoria": "ddr5",
-    "cantMemoria": "8gb",
-    "frecuencia": "5600mhz",
-    "precio": 16000,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr6.jpeg?alt=media&token=53f10b4e-b930-490d-9ad8-8d2f8fa0d4d3",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 18,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram kingston fury RGB ddr5 8gb 5600mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "Corsair",
-    "modelo": "Vengeance Pro Negro",
-    "rgb": "RGB",
-    "tipoMemoria": "ddr4",
-    "cantMemoria": "8gb",
     "frecuencia": "3200mhz",
-    "precio": 10500,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr7.jpeg?alt=media&token=876c0be4-9951-433b-b9e1-e38e230ef0d7",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 13,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram Corsair Vengeance Pro Negro RGB ddr4 8gb 3200mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "Corsair",
-    "modelo": "Vengeance Pro Negro",
-    "rgb": "RGB",
-    "tipoMemoria": "ddr4",
-    "cantMemoria": "16gb (2x8Gb)",
-    "frecuencia": "2666mhz",
-    "precio": 19900,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr8.jpeg?alt=media&token=e80bef48-b93d-40f3-beca-6231742aada3",
+    "precio": 16700,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr0.jpeg?alt=media&token=2461b923-1885-4b9a-82cb-8e283c49c45a",
     "socket": "N/A",
     "certificacion": "N/A",
     "potencia": "N/A",
@@ -1237,44 +1026,19 @@
       "Capacidad",
       "Frecuencia"
     ],
-    "describir": "Memoria Ram Corsair Vengeance Pro Negro RGB ddr4 16gb (2x8Gb) 2666mhz"
+    "describir": "Memoria Ram kingston fury sin RGB ddr4 16gb 3200mhz"
   },
   {
+    "id": "mr7",
     "categoria": "memorias_ram",
-    "marca": "Corsair",
-    "modelo": "Vengance Rs Negro",
-    "rgb": "RGB",
+    "marca": "kingston",
+    "modelo": "fury",
+    "rgb": "sin RGB",
     "tipoMemoria": "ddr4",
-    "cantMemoria": "16gb (2x8Gb)",
+    "cantMemoria": "16gb",
     "frecuencia": "3600mhz",
-    "precio": 20900,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr9.jpeg?alt=media&token=26b760b5-2bad-4f23-9f1a-572716868823",
-    "socket": "N/A",
-    "certificacion": "N/A",
-    "potencia": "N/A",
-    "tdp": "N/A",
-    "serie": "N/A",
-    "stock": 4,
-    "opcionesBusqueda": [
-      "Marca",
-      "Modelo",
-      "Rgb",
-      "Tipo",
-      "Capacidad",
-      "Frecuencia"
-    ],
-    "describir": "Memoria Ram Corsair Vengance Rs Negro RGB ddr4 16gb (2x8Gb) 3600mhz"
-  },
-  {
-    "categoria": "memorias_ram",
-    "marca": "Corsair",
-    "modelo": "Vengeance Pro Negro",
-    "rgb": "RGB",
-    "tipoMemoria": "ddr4",
-    "cantMemoria": "16gb (2x8Gb)",
-    "frecuencia": "2666mhz",
-    "precio": 19900,
-    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr10.jpeg?alt=media&token=050cc3d5-6783-476f-a8c2-ba9f331f7ebc",
+    "precio": 19000,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr0.jpeg?alt=media&token=2461b923-1885-4b9a-82cb-8e283c49c45a",
     "socket": "N/A",
     "certificacion": "N/A",
     "potencia": "N/A",
@@ -1289,9 +1053,307 @@
       "Capacidad",
       "Frecuencia"
     ],
+    "describir": "Memoria Ram kingston fury sin RGB ddr4 16gb 3600mhz"
+  },
+  {
+    "id": "mr8",
+    "categoria": "memorias_ram",
+    "marca": "Corsair",
+    "modelo": "Vengance Pro Blanco",
+    "rgb": "RGB",
+    "tipoMemoria": "ddr4",
+    "cantMemoria": "16gb (2x8Gb)",
+    "frecuencia": "2666mhz",
+    "precio": 20500,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr2.jpeg?alt=media&token=e098c348-7606-4e2b-a37f-eb6e39983aa2",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 19,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
+    "describir": "Memoria Ram Corsair Vengance Pro Blanco RGB ddr4 16gb (2x8Gb) 2666mhz"
+  },
+  {
+    "id": "mr9",
+    "categoria": "memorias_ram",
+    "marca": "Corsair",
+    "modelo": "Vengance Pro Blanco",
+    "rgb": "RGB",
+    "tipoMemoria": "ddr4",
+    "cantMemoria": "16gb (2x8Gb)",
+    "frecuencia": "3600mhz",
+    "precio": 24000,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr3.jpeg?alt=media&token=4c00c99b-bc4f-4c33-b53b-869f039a9018",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 11,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
+    "describir": "Memoria Ram Corsair Vengance Pro Blanco RGB ddr4 16gb (2x8Gb) 3600mhz"
+  },
+  {
+    "id": "mr10",
+    "categoria": "memorias_ram",
+    "marca": "kingston",
+    "modelo": "fury",
+    "rgb": "sin RGB",
+    "tipoMemoria": "ddr5",
+    "cantMemoria": "8gb",
+    "frecuencia": "4800mhz",
+    "precio": 15900,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr0.jpeg?alt=media&token=2461b923-1885-4b9a-82cb-8e283c49c45a",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 18,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
+    "describir": "Memoria Ram kingston fury sin RGB ddr5 8gb 4800mhz"
+  },
+  {
+    "id": "mr11",
+    "categoria": "memorias_ram",
+    "marca": "kingston",
+    "modelo": "fury",
+    "rgb": "sin RGB",
+    "tipoMemoria": "ddr5",
+    "cantMemoria": "16gb",
+    "frecuencia": "5200mhz",
+    "precio": 26000,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr0.jpeg?alt=media&token=2461b923-1885-4b9a-82cb-8e283c49c45a",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 13,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
+    "describir": "Memoria Ram kingston fury sin RGB ddr5 16gb 5200mhz"
+  },
+  {
+    "id": "mr12",
+    "categoria": "memorias_ram",
+    "marca": "Corsair",
+    "modelo": "Dominator",
+    "rgb": "RGB",
+    "tipoMemoria": "ddr5",
+    "cantMemoria": "32gb (2x16Gb)",
+    "frecuencia": "5200mhz",
+    "precio": 76700,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr4.jpeg?alt=media&token=5a4958cd-ad66-416d-bda1-132f60e871fb",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 15,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
+    "describir": "Memoria Ram Corsair Dominator RGB ddr5 32gb (2x16Gb) 5200mhz"
+  },
+  {
+    "id": "mr13",
+    "categoria": "memorias_ram",
+    "marca": "kingston",
+    "modelo": "fury",
+    "rgb": "RGB",
+    "tipoMemoria": "ddr5",
+    "cantMemoria": "8gb",
+    "frecuencia": "5200mhz",
+    "precio": 9900,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr5.jpeg?alt=media&token=fcce4815-12aa-4060-8fae-dfb9c47608b7",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 4,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
+    "describir": "Memoria Ram kingston fury RGB ddr5 8gb 5200mhz"
+  },
+  {
+    "id": "mr14",
+    "categoria": "memorias_ram",
+    "marca": "kingston",
+    "modelo": "fury",
+    "rgb": "RGB",
+    "tipoMemoria": "ddr5",
+    "cantMemoria": "8gb",
+    "frecuencia": "5600mhz",
+    "precio": 16000,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr6.jpeg?alt=media&token=53f10b4e-b930-490d-9ad8-8d2f8fa0d4d3",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 17,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
+    "describir": "Memoria Ram kingston fury RGB ddr5 8gb 5600mhz"
+  },
+  {
+    "id": "mr15",
+    "categoria": "memorias_ram",
+    "marca": "Corsair",
+    "modelo": "Vengeance Pro Negro",
+    "rgb": "RGB",
+    "tipoMemoria": "ddr4",
+    "cantMemoria": "8gb",
+    "frecuencia": "3200mhz",
+    "precio": 10500,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr7.jpeg?alt=media&token=876c0be4-9951-433b-b9e1-e38e230ef0d7",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 7,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
+    "describir": "Memoria Ram Corsair Vengeance Pro Negro RGB ddr4 8gb 3200mhz"
+  },
+  {
+    "id": "mr16",
+    "categoria": "memorias_ram",
+    "marca": "Corsair",
+    "modelo": "Vengeance Pro Negro",
+    "rgb": "RGB",
+    "tipoMemoria": "ddr4",
+    "cantMemoria": "16gb (2x8Gb)",
+    "frecuencia": "2666mhz",
+    "precio": 19900,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr8.jpeg?alt=media&token=e80bef48-b93d-40f3-beca-6231742aada3",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 13,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
     "describir": "Memoria Ram Corsair Vengeance Pro Negro RGB ddr4 16gb (2x8Gb) 2666mhz"
   },
   {
+    "id": "mr17",
+    "categoria": "memorias_ram",
+    "marca": "Corsair",
+    "modelo": "Vengance Rs Negro",
+    "rgb": "RGB",
+    "tipoMemoria": "ddr4",
+    "cantMemoria": "16gb (2x8Gb)",
+    "frecuencia": "3600mhz",
+    "precio": 20900,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr9.jpeg?alt=media&token=26b760b5-2bad-4f23-9f1a-572716868823",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 2,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
+    "describir": "Memoria Ram Corsair Vengance Rs Negro RGB ddr4 16gb (2x8Gb) 3600mhz"
+  },
+  {
+    "id": "mr18",
+    "categoria": "memorias_ram",
+    "marca": "Corsair",
+    "modelo": "Vengeance Pro Negro",
+    "rgb": "RGB",
+    "tipoMemoria": "ddr4",
+    "cantMemoria": "16gb (2x8Gb)",
+    "frecuencia": "2666mhz",
+    "precio": 19900,
+    "imgScr": "https://firebasestorage.googleapis.com/v0/b/e-hard.appspot.com/o/imagenes%2Fproductos%2Fmr10.jpeg?alt=media&token=050cc3d5-6783-476f-a8c2-ba9f331f7ebc",
+    "socket": "N/A",
+    "certificacion": "N/A",
+    "potencia": "N/A",
+    "tdp": "N/A",
+    "serie": "N/A",
+    "stock": 5,
+    "opcionesBusqueda": [
+      "Marca",
+      "Modelo",
+      "Rgb",
+      "Tipo",
+      "Capacidad",
+      "Frecuencia"
+    ],
+    "describir": "Memoria Ram Corsair Vengeance Pro Negro RGB ddr4 16gb (2x8Gb) 2666mhz"
+  },
+  {
+    "id": "pv1",
     "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "GeForce RTX",
@@ -1311,6 +1373,7 @@
     "describir": "Placa de video Gigabyte GeForce RTX 3060 Gaming Oc 12gb DDR6"
   },
   {
+    "id": "pv2",
     "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "GeForce RTX",
@@ -1325,11 +1388,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 17,
+    "stock": 13,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte GeForce RTX 3060 Vision Oc 12gb DDR6"
   },
   {
+    "id": "pv3",
     "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "GeForce RTX",
@@ -1344,11 +1408,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 8,
+    "stock": 10,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte GeForce RTX 3060 Gaming Oc 8gb DDR6"
   },
   {
+    "id": "pv4",
     "categoria": "placas_de_video",
     "marca": "Msi",
     "serie": "GeForce RTX",
@@ -1363,11 +1428,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 8,
+    "stock": 20,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Msi GeForce RTX 3070 Ventus 3x Plus 8gb DDR6"
   },
   {
+    "id": "pv5",
     "categoria": "placas_de_video",
     "marca": "Msi",
     "serie": "GeForce RTX",
@@ -1382,11 +1448,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 5,
+    "stock": 9,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Msi GeForce RTX 3080 Gaming Z Trio 12gb DDR6"
   },
   {
+    "id": "pv6",
     "categoria": "placas_de_video",
     "marca": "Asus",
     "serie": "GeForce RTX",
@@ -1401,11 +1468,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 4,
+    "stock": 13,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Asus GeForce RTX 3080 Tuf Gaming 12gb DDR6"
   },
   {
+    "id": "pv7",
     "categoria": "placas_de_video",
     "marca": "Gainward",
     "serie": "GeForce RTX",
@@ -1420,11 +1488,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 14,
+    "stock": 9,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gainward GeForce RTX 3090 Phantom + 24gb DDR6"
   },
   {
+    "id": "pv8",
     "categoria": "placas_de_video",
     "marca": "Evga",
     "serie": "GeForce RTX",
@@ -1439,11 +1508,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 4,
+    "stock": 16,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Evga GeForce RTX 3090 FTW3 Ultra 24gb DDR6"
   },
   {
+    "id": "pv9",
     "categoria": "placas_de_video",
     "marca": "Asus",
     "serie": "GeForce RTX",
@@ -1458,11 +1528,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 2,
+    "stock": 8,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Asus GeForce RTX 3090 Rog Strix Gaming Oc Blanco 24gb DDR6"
   },
   {
+    "id": "pv10",
     "categoria": "placas_de_video",
     "marca": "Msi",
     "serie": "Radeon RX",
@@ -1477,11 +1548,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 17,
+    "stock": 4,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Msi Radeon RX 6750 XT Mech 2X Oc 12gb DDR6"
   },
   {
+    "id": "pv11",
     "categoria": "placas_de_video",
     "marca": "Asus",
     "serie": "Radeon RX",
@@ -1496,11 +1568,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 2,
+    "stock": 13,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Asus Radeon RX 6700 XT Dual Oc 12gb DDR6"
   },
   {
+    "id": "pv12",
     "categoria": "placas_de_video",
     "marca": "Asus",
     "serie": "Radeon RX",
@@ -1515,11 +1588,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 6,
+    "stock": 7,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Asus Radeon RX 6800 XT Rog Strix Gaming Oc 16gb DDR6"
   },
   {
+    "id": "pv13",
     "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "Radeon RX",
@@ -1534,11 +1608,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 19,
+    "stock": 13,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte Radeon RX 6900 XT Gaming Oc 16gb DDR6"
   },
   {
+    "id": "pv14",
     "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "GeForce GTX",
@@ -1553,11 +1628,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 10,
+    "stock": 9,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte GeForce GTX 1650 D6 Oc 4gb DDR6"
   },
   {
+    "id": "pv15",
     "categoria": "placas_de_video",
     "marca": "Msi",
     "serie": "GeForce GTX",
@@ -1572,11 +1648,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 5,
+    "stock": 3,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Msi GeForce GTX 1660 Super Ventus Xs Oc 6gb DDR6"
   },
   {
+    "id": "pv16",
     "categoria": "placas_de_video",
     "marca": "Gigabyte",
     "serie": "GeForce GTX",
@@ -1591,11 +1668,12 @@
     "tdp": "N/A",
     "socket": "N/A",
     "frecuencia": "N/A",
-    "stock": 7,
+    "stock": 19,
     "opcionesBusqueda": ["Marca", "Serie", "Memoria", "DDR"],
     "describir": "Placa de video Gigabyte GeForce GTX 1660 Ti Oc 6gb DDR6"
   },
   {
+    "id": "fp0",
     "categoria": "Fuentes",
     "marca": "Thermaltake",
     "certificacion": "Sin certificacion",
@@ -1610,11 +1688,12 @@
     "serie": "N/A",
     "modelo": "N/A",
     "frecuencia": "N/A",
-    "stock": 10,
+    "stock": 19,
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Thermaltake Sin certificacion 500w"
   },
   {
+    "id": "fp1",
     "categoria": "Fuentes",
     "marca": "Thermaltake",
     "certificacion": "Sin certificacion",
@@ -1629,11 +1708,12 @@
     "serie": "N/A",
     "modelo": "N/A",
     "frecuencia": "N/A",
-    "stock": 3,
+    "stock": 7,
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Thermaltake Sin certificacion 600w"
   },
   {
+    "id": "fp2",
     "categoria": "Fuentes",
     "marca": "Gigabyte",
     "certificacion": "80 Plus Bronze",
@@ -1648,11 +1728,12 @@
     "serie": "N/A",
     "modelo": "N/A",
     "frecuencia": "N/A",
-    "stock": 3,
+    "stock": 18,
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Bronze 450w"
   },
   {
+    "id": "fp3",
     "categoria": "Fuentes",
     "marca": "Gigabyte",
     "certificacion": "80 Plus Bronze",
@@ -1667,11 +1748,12 @@
     "serie": "N/A",
     "modelo": "N/A",
     "frecuencia": "N/A",
-    "stock": 8,
+    "stock": 15,
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Bronze 550w"
   },
   {
+    "id": "fp4",
     "categoria": "Fuentes",
     "marca": "Gigabyte",
     "certificacion": "80 Plus Bronze",
@@ -1686,11 +1768,12 @@
     "serie": "N/A",
     "modelo": "N/A",
     "frecuencia": "N/A",
-    "stock": 6,
+    "stock": 3,
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Bronze 650w"
   },
   {
+    "id": "fp5",
     "categoria": "Fuentes",
     "marca": "Gigabyte",
     "certificacion": "80 Plus Gold",
@@ -1710,6 +1793,7 @@
     "describir": "Fuente Gigabyte 80 Plus Gold 750w"
   },
   {
+    "id": "fp6",
     "categoria": "Fuentes",
     "marca": "Gigabyte",
     "certificacion": "80 Plus Gold",
@@ -1724,11 +1808,12 @@
     "serie": "N/A",
     "modelo": "N/A",
     "frecuencia": "N/A",
-    "stock": 20,
+    "stock": 7,
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Gold 850w"
   },
   {
+    "id": "fp7",
     "categoria": "Fuentes",
     "marca": "Gigabyte",
     "certificacion": "80 Plus Gold",
@@ -1743,11 +1828,12 @@
     "serie": "N/A",
     "modelo": "N/A",
     "frecuencia": "N/A",
-    "stock": 14,
+    "stock": 6,
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Gigabyte 80 Plus Gold 1000w"
   },
   {
+    "id": "fp8",
     "categoria": "Fuentes",
     "marca": "Essenses",
     "certificacion": "Sin certificacion",
@@ -1762,11 +1848,12 @@
     "serie": "N/A",
     "modelo": "N/A",
     "frecuencia": "N/A",
-    "stock": 6,
+    "stock": 4,
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Essenses Sin certificacion 750w"
   },
   {
+    "id": "fp9",
     "categoria": "Fuentes",
     "marca": "Essenses",
     "certificacion": "Sin certificacion",
@@ -1781,11 +1868,12 @@
     "serie": "N/A",
     "modelo": "N/A",
     "frecuencia": "N/A",
-    "stock": 6,
+    "stock": 17,
     "opcionesBusqueda": ["Marca", "Certificacion", "Potencia"],
     "describir": "Fuente Essenses Sin certificacion 850w"
   },
   {
+    "id": "ac0",
     "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "H410R Rgb",
@@ -1800,11 +1888,12 @@
     "certificacion": "N/A",
     "frecuencia": "N/A",
     "potencia": "N/A",
-    "stock": 7,
+    "stock": 12,
     "opcionesBusqueda": ["Marca", "TDP"],
     "describir": "Air Cooler Cooler Master H410R Rgb 100W"
   },
   {
+    "id": "ac1",
     "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "Hyper 212 Spectrum",
@@ -1819,11 +1908,12 @@
     "certificacion": "N/A",
     "frecuencia": "N/A",
     "potencia": "N/A",
-    "stock": 9,
+    "stock": 15,
     "opcionesBusqueda": ["Marca", "TDP"],
     "describir": "Air Cooler Cooler Master Hyper 212 Spectrum 150W"
   },
   {
+    "id": "ac2",
     "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "Master Hyper 212 Argb",
@@ -1838,11 +1928,12 @@
     "certificacion": "N/A",
     "frecuencia": "N/A",
     "potencia": "N/A",
-    "stock": 13,
+    "stock": 9,
     "opcionesBusqueda": ["Marca", "TDP"],
     "describir": "Air Cooler Cooler Master Master Hyper 212 Argb 150W"
   },
   {
+    "id": "ac3",
     "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "Masterair MA620M Argb",
@@ -1857,11 +1948,12 @@
     "certificacion": "N/A",
     "frecuencia": "N/A",
     "potencia": "N/A",
-    "stock": 16,
+    "stock": 1,
     "opcionesBusqueda": ["Marca", "TDP"],
     "describir": "Air Cooler Cooler Master Masterair MA620M Argb 200W"
   },
   {
+    "id": "ac4",
     "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "MasterAir MA410P Rgb",
@@ -1876,11 +1968,12 @@
     "certificacion": "N/A",
     "frecuencia": "N/A",
     "potencia": "N/A",
-    "stock": 17,
+    "stock": 13,
     "opcionesBusqueda": ["Marca", "TDP"],
     "describir": "Air Cooler Cooler Master MasterAir MA410P Rgb 150W"
   },
   {
+    "id": "ac5",
     "categoria": "air_coolers",
     "marca": "Cooler Master",
     "modelo": "MasterAir MA410M Argb",
@@ -1895,11 +1988,12 @@
     "certificacion": "N/A",
     "frecuencia": "N/A",
     "potencia": "N/A",
-    "stock": 13,
+    "stock": 2,
     "opcionesBusqueda": ["Marca", "TDP"],
     "describir": "Air Cooler Cooler Master MasterAir MA410M Argb 150W"
   },
   {
+    "id": "wc0",
     "categoria": "water_coolers",
     "marca": "Asus",
     "modelo": "Rog Strix LC 120",
@@ -1914,11 +2008,12 @@
     "certificacion": "N/A",
     "frecuencia": "N/A",
     "potencia": "N/A",
-    "stock": 12,
+    "stock": 10,
     "opcionesBusqueda": ["Marca", "TDP"],
     "describir": "Water Cooler Asus Rog Strix LC 120 125W"
   },
   {
+    "id": "wc1",
     "categoria": "water_coolers",
     "marca": "Thermaltake",
     "modelo": "TH360 AIO Argb",
@@ -1933,7 +2028,7 @@
     "certificacion": "N/A",
     "frecuencia": "N/A",
     "potencia": "N/A",
-    "stock": 14,
+    "stock": 11,
     "opcionesBusqueda": ["Marca", "TDP"],
     "describir": "Water Cooler Thermaltake TH360 AIO Argb 200W"
   }

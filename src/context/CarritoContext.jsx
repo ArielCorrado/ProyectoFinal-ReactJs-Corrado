@@ -6,6 +6,8 @@ const CarritoProvider = ({children}) => {
     const [carrito, setCarrito] = useState([]);
 
     const [carritoCant, setCarritoCant] = useState(0);
+
+    const [carritoTotal, setCarritoTotal] = useState(0);
     
     const agregarAlCarrito = (id, cantidad) => {
 
@@ -46,8 +48,12 @@ const CarritoProvider = ({children}) => {
         setearCarritoCantidad ();
     }
 
+    const setearCarritoTotal = (valor, set) => {
+        set? setCarritoTotal(valor) : setCarritoTotal(carritoTotal + valor);
+    }
+
     return (
-        <CarritoContext.Provider value={{carrito, eliminarDelCarrito, agregarAlCarrito, masMenosUnoCarrito, carritoCant}}>
+        <CarritoContext.Provider value={{carrito, eliminarDelCarrito, agregarAlCarrito, masMenosUnoCarrito, carritoCant, setearCarritoTotal, carritoTotal}}>
             {children}
         </CarritoContext.Provider>
     );
