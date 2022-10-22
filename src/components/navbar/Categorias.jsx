@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Categorias = () => {
     return (
-        <>
+        <>  
+            <li className="nav-item" key="Home">
+                <Link className="nav-link" to="/">Home</Link>
+            </li>
             <li className="nav-item" key="Microprocesadores">
                 <Link className="nav-link" to="/category/microprocesadores">Microprocesadores</Link>
             </li>

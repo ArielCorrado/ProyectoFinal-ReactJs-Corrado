@@ -57,9 +57,9 @@ const Carrito = () => {
                     <div className='flex botonVaciar botonConfirmar' onClick={() => setMostrarForm(true)} >
                         <p className='textoVaciarCarrito'>Continuar Compra</p>
                     </div>
-                    <div className="botonVaciar flex">
+                    <div className="botonVaciar flex" onClick={vaciarCarrito}>
                         <img src="../images/vaciar3.png" alt="" className='iconoVaciarChico'/>
-                        <p className='textoVaciarCarrito' onClick={vaciarCarrito}>Vaciar Carrito</p>
+                        <p className='textoVaciarCarrito'>Vaciar Carrito</p>
                     </div>
                 </div>
             </>

@@ -3,7 +3,7 @@ import { CarritoContext } from '../../context/CarritoContext';
 
 const CardProductoCarrito = ({producto}) => {
 
-    const {masMenosUnoCarrito, eliminarDelCarrito, carrito, setearCarritoTotal, carritoTotal} = useContext(CarritoContext);
+    const {masMenosUnoCarrito, eliminarDelCarrito, carrito, setearCarritoTotal} = useContext(CarritoContext);
   
     const [inc, setInc] = useState(0);
 

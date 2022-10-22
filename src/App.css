@@ -74,7 +74,11 @@
     background-color: white;
     padding: 5px;
     color: black;
+}
+
+.campoBusquedas:focus {
     border: 2px solid var(--color_naranja);
+    outline: none;
 }
 
 .botonVolver {
@@ -125,11 +129,10 @@
     background-color: white;
     color: #202020;
     height: 50px;
-    margin-left: 10px;
     width: fit-content;
     padding: 15px 30px;
     border-radius: 25px;
-    margin-top: 30px;
+    margin-top: 40px;
     cursor: pointer;
 }
 
@@ -416,7 +419,7 @@
     border-style: none;
     border-radius: 25%;
     /* background-color: rgb(100, 100, 100); */
-    background-color: var(--color_naranja);
+    background-color: var(--color_violeta);
     padding: 7px;
     width: 40px;
     height: 30px;
@@ -619,7 +622,7 @@
     background-color: rgba(255, 255, 255, 0.25);
     color: white;
     --color-placeholder: rgb(255, 255, 255);
-    --font-placeholder: 300;
+    --font-placeholder: 100;
 }
 
 .input:focus {
