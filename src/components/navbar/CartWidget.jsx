@@ -8,12 +8,12 @@ const CartWidget = () => {
     const {carritoCant} = useContext (CarritoContext);
     
     return (
-        <Link to={"/cart"}>
-            <div className="contCarrito">
+        <div className="contCarrito">
+            <Link to={"/cart"}>   
                 {carritoCant > 0 ? <div className='iconoCarrito_cantidad flex'> {carritoCant} </div> : <></>}     
-                <img className="iconoCarrito" src="../images/icono_carrito.png" alt="" />
-            </div>
-        </Link>
+                <img className="iconoCarrito" src="../images/icono_carrito.png" alt="" /> 
+            </Link>
+        </div>
     );
 }
 

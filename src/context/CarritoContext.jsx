@@ -34,9 +34,12 @@ const CarritoProvider = ({children}) => {
     }
 
     const setearCarritoCantidad = () => {
-
-        const cantidadEnCarrito = carrito.reduce((ac, el) => ac + el.cantidad, 0);              //Calculamos la cantidad de items en el carrito
-        setCarritoCant (cantidadEnCarrito);                                                     //Seteamos la cantidad en el icono del carrito
+        if (carrito.length > 0) {
+            const cantidadEnCarrito = carrito.reduce((ac, el) => ac + el.cantidad, 0);              //Calculamos la cantidad de items en el carrito
+            setCarritoCant (cantidadEnCarrito);                                                     //Seteamos la cantidad en el icono del carrito
+        } else {
+            setCarritoCant (0);
+        }                                                    
     }
 
     const eliminarDelCarrito = (id) => {
@@ -52,8 +55,14 @@ const CarritoProvider = ({children}) => {
         set? setCarritoTotal(valor) : setCarritoTotal(carritoTotal + valor);
     }
 
+    const vaciarCarrito = () => {
+        carrito.length = 0;             //Se probó con setCarrito([]) y no funcionó (?)
+        setCarrito(carrito);
+        setearCarritoCantidad ();
+    }
+
     return (
-        <CarritoContext.Provider value={{carrito, eliminarDelCarrito, agregarAlCarrito, masMenosUnoCarrito, carritoCant, setearCarritoTotal, carritoTotal}}>
+        <CarritoContext.Provider value={{carrito, eliminarDelCarrito, agregarAlCarrito, masMenosUnoCarrito, carritoCant, setearCarritoTotal, carritoTotal, vaciarCarrito}}>
             {children}
         </CarritoContext.Provider>
     );

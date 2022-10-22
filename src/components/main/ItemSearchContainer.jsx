@@ -20,9 +20,11 @@ const ItemSearchContainer = () => {
                 setProductosPorBusqueda(BDDFiltradaJsx);
             } else {
                 setProductosPorBusqueda (
-                    <div className='contVolver'>
-                        <h1 className='textoVolver'>No Se Encontraron Productos</h1>
-                        <button className='botonProducto' onClick={() => window.history.back() }>Volver</button>
+                    <div className='flex column'>
+                        <div className='contTotalCarrito flex'>
+                            <h2 className='textoTotal_carrito'>No Se Encontraron Productos</h2>
+                        </div>
+                        <button className='botonVolver' onClick={() => window.history.back() }>Volver</button>
                     </div>
                 )    
             }

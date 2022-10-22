@@ -5,7 +5,7 @@ const Carousel = () => {
         <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active" data-bs-interval="4000">
-                    <img src="../images/carousel/banner_gigabyte2.png" className="d-block w-100" alt="..." />
+                    <img src="../images/carousel/banner_gigabyte5.png" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item" data-bs-interval="4000">
                     <img src="../images/carousel/banner_gigabyte3.jpg" className="d-block w-100" alt="..." />
@@ -14,7 +14,7 @@ const Carousel = () => {
                     <img src="../images/carousel/banner_gigabyte4.png" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item" data-bs-interval="4000">
-                    <img src="../images/carousel/banner_gigabyte5.png" className="d-block w-100" alt="..." />
+                    <img src="../images/carousel/banner_gigabyte2.png" className="d-block w-100" alt="..." />
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

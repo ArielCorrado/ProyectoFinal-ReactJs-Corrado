@@ -5,7 +5,7 @@ import { leerBDD } from '../../utils/firebase';
 
 const Carrito = () => {
     
-    const {carrito, carritoTotal, setearCarritoTotal} = useContext (CarritoContext);
+    const {carrito, carritoTotal, setearCarritoTotal, vaciarCarrito} = useContext (CarritoContext);
     const [productosEnCarrito, setProductosEnCarrito] = useState ([]);
         
     
@@ -39,8 +39,15 @@ const Carrito = () => {
             <div className="main__container__carrito flex">
                 {productosEnCarrito}
                 <div className='flex contTotalCarrito'>
-                    <div className='textoTotal_carrito'>Total: &nbsp;</div>
+                    <p className='textoTotal_carrito'>Total: &nbsp;</p>
                     <div className='precioTotal_carrito'>${carritoTotal}</div>
+                </div>
+                <div className='flex botonVaciar botonConfirmar'>
+                    <p className='textoVaciarCarrito'>Confirmar Compra</p>
+                </div>
+                <div className="botonVaciar flex">
+                    <img src="../images/vaciar3.png" alt="" className='iconoVaciarChico'/>
+                    <p className='textoVaciarCarrito' onClick={vaciarCarrito}>Vaciar Carrito</p>
                 </div>
             </div>
         );

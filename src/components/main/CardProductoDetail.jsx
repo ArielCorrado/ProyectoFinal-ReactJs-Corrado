@@ -33,7 +33,7 @@ const CardProductoDetail = ({producto}) => {
                 <div className="cantidad"><button className="botonMasMenos flex" onClick={() => masMenos("-")}>-</button> <div className="inputCantidad flex"> {cantidad} </div> <button className="botonMasMenos flex" onClick={() => masMenos("+")}>+</button></div>
             </div>
             <button className='botonProducto botonProducto_detalle' onClick={() => agregarAlCarrito(producto[0], cantidad)}>Agregar al Carrito<img src="../images/icono_carrito.png" className="imgCarritoEnBoton" alt="" /></button>
-            <Link to={"/cart"} className="contBotonComprar flex"> <button className='botonProducto botonProducto_detalle boton_c'>Comprar Ahora</button> </Link>
+            <Link to={"/cart"} className="contBotonComprar flex"> <button className='botonProducto botonProducto_detalle boton_c' onClick={() => agregarAlCarrito(producto[0], cantidad)}> Comprar Ahora </button> </Link>
         </div>
     );
 }
