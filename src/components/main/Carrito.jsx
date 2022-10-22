@@ -2,13 +2,14 @@ import React, { useState, useEffect, useContext } from 'react';
 import { CarritoContext } from '../../context/CarritoContext';
 import CardProductoCarrito from './CardProductoCarrito';
 import { leerBDD } from '../../utils/firebase';
+import Form from './Form';
 
 const Carrito = () => {
     
     const {carrito, carritoTotal, setearCarritoTotal, vaciarCarrito} = useContext (CarritoContext);
     const [productosEnCarrito, setProductosEnCarrito] = useState ([]);
-        
-    
+    const [mostrarForm, setMostrarForm] = useState(false);
+     
     useEffect(() => {
 
         const productosCarrito = [];
@@ -32,24 +33,36 @@ const Carrito = () => {
         })
 
     }, [carrito.length]);                   //Si cambia carrito.length es porque eliminamos un producto del carrito   
-       
+
     
+    const toggleForm = (e) => {
+        if (e.target.id === "contFormulario") {
+            setMostrarForm(false);
+            document.body.style.overflow = "visible";
+        } 
+    }
+ 
+
     if (carrito.length > 0) {
+
         return (
-            <div className="main__container__carrito flex">
-                {productosEnCarrito}
-                <div className='flex contTotalCarrito'>
-                    <p className='textoTotal_carrito'>Total: &nbsp;</p>
-                    <div className='precioTotal_carrito'>${carritoTotal}</div>
+            <>
+                {mostrarForm && <Form toggleForm={toggleForm}/>}
+                <div className="main__container__carrito flex">
+                    {productosEnCarrito}
+                    <div className='flex contTotalCarrito'>
+                        <p className='textoTotal_carrito'>Total: &nbsp;</p>
+                        <div className='precioTotal_carrito'>${carritoTotal}</div>
+                    </div>
+                    <div className='flex botonVaciar botonConfirmar' onClick={() => setMostrarForm(true)} >
+                        <p className='textoVaciarCarrito'>Continuar Compra</p>
+                    </div>
+                    <div className="botonVaciar flex">
+                        <img src="../images/vaciar3.png" alt="" className='iconoVaciarChico'/>
+                        <p className='textoVaciarCarrito' onClick={vaciarCarrito}>Vaciar Carrito</p>
+                    </div>
                 </div>
-                <div className='flex botonVaciar botonConfirmar'>
-                    <p className='textoVaciarCarrito'>Confirmar Compra</p>
-                </div>
-                <div className="botonVaciar flex">
-                    <img src="../images/vaciar3.png" alt="" className='iconoVaciarChico'/>
-                    <p className='textoVaciarCarrito' onClick={vaciarCarrito}>Vaciar Carrito</p>
-                </div>
-            </div>
+            </>
         );
     } else {
         return (

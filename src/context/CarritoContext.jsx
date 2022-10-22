@@ -34,7 +34,7 @@ const CarritoProvider = ({children}) => {
     }
 
     const setearCarritoCantidad = () => {
-        if (carrito.length > 0) {
+        if (carrito.length > 0) {                                                                   //Si carrito.length = 0 es porque el carrito esta vacío 
             const cantidadEnCarrito = carrito.reduce((ac, el) => ac + el.cantidad, 0);              //Calculamos la cantidad de items en el carrito
             setCarritoCant (cantidadEnCarrito);                                                     //Seteamos la cantidad en el icono del carrito
         } else {

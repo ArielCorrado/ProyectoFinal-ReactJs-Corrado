@@ -18,7 +18,7 @@ const Busquedas = () => {
        
     return (
         <>
-        <div className="contBusquedas flex">
+        <div className="contBusquedas">
             <Logo />
             <div className='flex'>
                 <form className="contBusquedaIcono flex" onSubmit={linkear}>
