@@ -21,6 +21,7 @@ const CardProductoDetail = ({producto}) => {
     const anadirACarrito = (id, cantidad) => {
         Swal.fire({
             position: 'top',
+            width: 400,
             icon: 'success',
             title: 'Producto Añadido al Carrito',
             showConfirmButton: false,
