@@ -46,8 +46,6 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px 0;
-    animation-name: efectoIn;
-    animation-duration: 1.5s;
 }
 
 .contBusquedaIcono {
