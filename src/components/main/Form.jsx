@@ -18,19 +18,29 @@ const Form = ({toggleForm}) => {
         const datos = Object.fromEntries(formDatos);
         datos.total = carritoTotal;
         
-        crearOrdeDeCompra(datos).then((data) => {
-            vaciarCarrito();
-            navigate("/");
-            document.body.style.overflow = "visible";
-            const ordenId = data.id
+        if (datos.nombre !="" && datos.apellido !="" && datos.dni !="" && datos.direccion !="" && datos.email !="" && datos.telefono!="") {  
+            crearOrdeDeCompra(datos).then((data) => {
+                vaciarCarrito();
+                navigate("/");
+                document.body.style.overflow = "visible";
+                const ordenId = data.id
+                Swal.fire({
+                    title: 'Gracias por Elegirnos!',
+                    text: `Tu orden de compra es la Nº: ${ordenId}`,
+                    icon: 'success',
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'OK'
+                })
+            });
+        }else {
             Swal.fire({
-                title: 'Gracias por Elegirnos!',
-                text: `Tu orden de compra es la Nº: ${ordenId}`,
-                icon: 'success',
+                title: 'Faltan ingresar datos',
+                text: `Vuelva a intentar`,
+                icon: 'warning',
                 confirmButtonColor: '#3085d6',
                 confirmButtonText: 'OK'
             })
-        });
+        }    
     }     
 
     return (
