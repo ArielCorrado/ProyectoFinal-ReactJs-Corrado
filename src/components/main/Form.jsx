@@ -29,7 +29,8 @@ const Form = ({toggleForm}) => {
                     text: `Tu orden de compra es la Nº: ${ordenId}`,
                     icon: 'success',
                     confirmButtonColor: '#3085d6',
-                    confirmButtonText: 'OK'
+                    confirmButtonText: 'OK',
+                    scrollbarPadding: false
                 })
             });
         }else {

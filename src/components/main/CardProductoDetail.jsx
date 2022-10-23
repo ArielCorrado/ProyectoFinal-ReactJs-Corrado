@@ -18,6 +18,19 @@ const CardProductoDetail = ({producto}) => {
         }
     }
 
+    const anadirACarrito = (id, cantidad) => {
+        Swal.fire({
+            position: 'top',
+            icon: 'success',
+            title: 'Producto Añadido al Carrito',
+            showConfirmButton: false,
+            timer: 1500,
+            scrollbarPadding: false
+        })
+
+        agregarAlCarrito (id, cantidad);
+    }
+
     return (
         <div className="cartProducto_detalle">
             <div className="contImg_detalle">
@@ -32,7 +45,7 @@ const CardProductoDetail = ({producto}) => {
                 <div className='cantidadTxt flex'>Cantidad</div>
                 <div className="cantidad"><button className="botonMasMenos flex" onClick={() => masMenos("-")}>-</button> <div className="inputCantidad flex"> {cantidad} </div> <button className="botonMasMenos flex" onClick={() => masMenos("+")}>+</button></div>
             </div>
-            <button className='botonProducto botonProducto_detalle' onClick={() => agregarAlCarrito(producto[0], cantidad)}>Agregar al Carrito<img src="../images/icono_carrito.png" className="imgCarritoEnBoton" alt="" /></button>
+            <button className='botonProducto botonProducto_detalle' onClick={() => anadirACarrito(producto[0], cantidad)}>Agregar al Carrito<img src="../images/icono_carrito.png" className="imgCarritoEnBoton" alt="" /></button>
             <Link to={"/cart"} className="contBotonComprar flex"> <button className='botonProducto botonProducto_detalle boton_c' onClick={() => agregarAlCarrito(producto[0], cantidad)}> Comprar Ahora </button> </Link>
         </div>
     );
