@@ -25,7 +25,7 @@ const CardProductoDetail = ({producto}) => {
             icon: 'success',
             title: 'Producto Añadido al Carrito',
             showConfirmButton: false,
-            timer: 1500,
+            timer: 1000,
             scrollbarPadding: false
         })
 

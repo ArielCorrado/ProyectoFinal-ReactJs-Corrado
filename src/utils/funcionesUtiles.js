@@ -6,7 +6,8 @@ const error = (mensaje) => {
         confirmButtonColor: '#3085d6',
         confirmButtonText: 'VOLVER',
         allowOutsideClick: false,
-        allowEscapeKey: false
+        allowEscapeKey: false,
+        scrollbarPadding: false
     })  
     .then((result) => {
         if (result.isConfirmed) {
