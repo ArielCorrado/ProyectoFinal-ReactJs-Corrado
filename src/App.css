@@ -23,6 +23,49 @@
 }
 
 
+/******************************* Main categorias *************************************/
+
+.main__container__categorias {
+    display: grid;
+    grid-template-columns: 300px calc(100% - 300px);
+    place-items: center; 
+}
+
+.cont_productos_categoria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 25px;
+}
+
+
+/***********************************  Filtro ******************************************/
+
+.cont__filtro {
+    margin-top: 70px;
+    width: 250px;
+    height: 700px;
+    background-color: cornflowerblue;
+    place-self: start;
+    justify-self: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.32);
+    text-align: center;
+    align-items: flex-start;
+}
+
+.filtro_precio_titulo {
+    color: rgb(51, 51, 51);
+    margin: 0;
+}
+
+.filtro_precio {
+    margin: 20px;
+}
+
+
 /******************************* Contenedor de NavBar *******************************/
 
 .contNav {
