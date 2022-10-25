@@ -30,8 +30,8 @@ const subirBDD = async () => {
 
                 "socket": producto.socket,
                 "frecuencia": producto.frecuencia,
-                "tipoMemoria": producto.tipoMemoria,
-                "cantMemoria": producto.cantMemoria,
+                "tipodememoria": producto.tipodememoria,
+                "cantidaddememoria": producto.cantidaddememoria,
                 "tdp": producto.tdp,
                 "serie": producto.serie,
                 "certificacion": producto.certificacion,

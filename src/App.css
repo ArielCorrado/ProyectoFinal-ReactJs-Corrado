@@ -43,9 +43,10 @@
 /***********************************  Filtro ******************************************/
 
 .cont__filtro {
-    margin-top: 70px;
+    margin: 70px;
+    padding: 20px 0;
     width: 250px;
-    height: 700px;
+    height: fit-content;
     background-color: cornflowerblue;
     place-self: start;
     justify-self: center;
@@ -53,7 +54,7 @@
     background-color: white;
     box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.32);
     text-align: center;
-    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .filtro_precio_titulo {
@@ -63,6 +64,16 @@
 
 .filtro_precio {
     margin: 20px;
+}
+
+.filtro_opciones {
+    color: black;
+}
+
+.filtro_subopciones {
+    color: black;
+    margin-right: 10px;
+    margin-bottom: 0;
 }
 
 
