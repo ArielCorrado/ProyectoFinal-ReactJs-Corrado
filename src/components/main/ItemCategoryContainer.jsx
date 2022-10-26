@@ -5,12 +5,12 @@ import CardProducto from './CardProducto';
 import { leerBDD } from '../../utils/firebase';
 import { error } from '../../utils/funcionesUtiles';
 import Filtro from './Filtro';
-
+import Spinner from './Spinner';
 
 const ItemCategoryContainer = () => {
 
     const {categoria} = useParams();
-    const [productosPorCategoria, setProductosPorCategoria] = useState ([]);
+    const [productosPorCategoria, setProductosPorCategoria] = useState ([<Spinner/>]);
     const [productos, setProductos] = useState([]);
     const [productosFiltrados, setProductosFiltrados] = useState([]);
     const ordenar = useRef();     
@@ -24,8 +24,8 @@ const ItemCategoryContainer = () => {
             BDDFiltradaJSX.length !== 0 ? setProductosPorCategoria(BDDFiltradaJSX) : error ("Categoria No Válida");
             
             ordenarPorPrecio(BDDFiltrada, "Precio Ascendente");
-            setProductos (BDDFiltrada);
-                setProductosFiltrados (BDDFiltrada);
+            setProductos(BDDFiltrada);
+            setProductosFiltrados(BDDFiltrada);
         })
        
     }, [categoria]);

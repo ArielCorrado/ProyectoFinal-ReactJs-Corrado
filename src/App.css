@@ -3,7 +3,6 @@
 
 /****************************** Main *************************************************/
 
-
 .main__container {
     flex-wrap: wrap;
     min-height: var(--altura_main);        
@@ -41,11 +40,12 @@
 }
 
 
+
 /***********************************  Filtro ******************************************/
 
 .cont__filtro {
-    margin: 70px;
-    padding: 20px 0;
+    margin: 70px 0;
+    padding-bottom: 20px;
     width: 250px;
     height: fit-content;
     background-color: cornflowerblue;
@@ -69,12 +69,41 @@
 
 .filtro_opciones {
     color: black;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 
 .filtro_subopciones {
+    margin: 0 10px;
     color: black;
     margin-right: 10px;
     margin-bottom: 0;
+}
+
+.cont_filtro_subopciones {
+    justify-content: flex-start;
+}
+
+.check {
+    border: 2px solid var(--color_violeta);
+}
+
+@media only screen and (max-width: 660px) {
+    .cont_productos_categoria {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+    .main__container__categorias {
+        grid-template-rows: fit-content fit-content;
+        grid-template-columns: 100%;
+    }
+
+    .cont__filtro {
+        margin: 70px 10px;
+    }
+   
 }
 
 

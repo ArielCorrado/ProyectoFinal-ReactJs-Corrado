@@ -3,11 +3,12 @@ import {useParams} from "react-router-dom";
 import { leerProducto } from '../../utils/firebase';
 import CardProductoDetail from './CardProductoDetail';
 import { error } from '../../utils/funcionesUtiles';
+import Spinner from './Spinner';
 
 const ItemDetailContainer = () => {
     
     const {id} = useParams();
-    const [producto, setProducto] = useState ([]);
+    const [producto, setProducto] = useState ([<Spinner/>]);
 
     useEffect(() => {
         

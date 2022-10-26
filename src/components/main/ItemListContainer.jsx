@@ -3,10 +3,11 @@ import { useState, useEffect } from 'react';
 import CardProducto from './CardProducto';
 import Carousel from '../carousel/Carousel';
 import { leerBDD } from '../../utils/firebase';
+import Spinner from './Spinner';
   
 const ItemListContainer = () => {
     
-    const [productosAMostrar, setProductosAMostrar] = useState ([]);   
+    const [productosAMostrar, setProductosAMostrar] = useState ([<Spinner/>]);   
 
     useEffect(() => {
 

@@ -33,7 +33,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
 
     const setearArray = (e) => {                    //Pusheamos a opcion legida en un array
         if (e.target.checked) {
-            const obj = { "op" : e.target.parentNode.id.toLowerCase().replace(/\s+/g, "") , "sop" : e.target.previousSibling.innerHTML};
+            const obj = { "op" : e.target.parentNode.id.toLowerCase().replace(/\s+/g, "") , "sop" : e.target.nextSibling.innerHTML};
             arrayFiltro.push(obj);
         } else {
             const index = arrayFiltro.findIndex((elemento) => elemento.op === e.target.parentNode.id.toLowerCase().replace(/\s+/g, ""));
@@ -108,14 +108,14 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                 } else {
                     for (let o of op) {                     //Si op es tipo object es porque se trata de un array de subopciones. Por ejemplo: ["Intel", "Amd"]
                         opcionesYSubOpcionesJSX.push(
-                            <div className='flex' key={o} id={opc}>
-                                <p className='filtro_subopciones'>{o}</p>
+                            <div className='cont_filtro_subopciones flex' key={o} id={opc}>
                                 {                       
                                     ( op.length === 1 && !arrayFiltro.some((opt) => opt.op === opc.toLowerCase().replace(/\s+/g, "")) ) ?  
 
                                     <></> :
 
                                     <input 
+                                        className='form-check-input check'
                                         type="checkbox" 
                                         checked = {
                                             arrayFiltro.some((opt) => opt.op === opc.toLowerCase().replace(/\s+/g, "")) 
@@ -126,6 +126,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                                         }}
                                     /> 
                                 }
+                                <p className='filtro_subopciones'>{o}</p>
                             </div>
                         );
                     }
