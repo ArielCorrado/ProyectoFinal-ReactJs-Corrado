@@ -2,11 +2,12 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 
 
+const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
  
-const Filtro = ({productos}) => {
+    const [cambio, setCambio] = useState(false);
 
     const [listaFiltro, setListaFiltro] = useState(<></>)
-        
+                  
     const buscarSubOpciones = (opcion) => {
 
         const subOpciones = [];
@@ -21,9 +22,15 @@ const Filtro = ({productos}) => {
     }
 
 
-    useEffect(() => {
+    const aplicarFiltro = (e) => {
+        productosFiltrados = productos.filter((prod) => prod[1][e.target.parentNode.id.toLowerCase().replace(/\s+/g, "")] === e.target.previousSibling.innerHTML);
+        ordenarPorPrecio(productosFiltrados, "Precio Ascendente");
+    }
+   
 
-        if (productos.length > 0) {
+    useEffect(() => {
+                
+        if (productos.length !== 0) {
 
             const opcionesFiltro = productos[0][1].opcionesBusqueda;
             const opcionesYSubOpciones = [];
@@ -34,32 +41,34 @@ const Filtro = ({productos}) => {
                 opcionesYSubOpciones.push(buscarSubOpciones(opcion.toLowerCase().replace(/\s+/g, "")))   //Pasamos a minuscula y eliminamos espacios en blanco
             }
 
-            
-            const opcionesYSubOpcionesJSX =  [];
+            const opcionesYSubOpcionesJSX = [];
+            let opc = "";
+
             for (let op of opcionesYSubOpciones) {
 
-                if (typeof(op) === "string") {
+                if (typeof (op) === "string") {
                     opcionesYSubOpcionesJSX.push(<h5 className='filtro_opciones' key={op}>{op}</h5>);
+                    opc = op;
                 } else {
                     for (let o of op) {
                         opcionesYSubOpcionesJSX.push(
-                            <div className='flex' key={o}>
+                            <div className='flex' key={o} id={opc}>
                                 <p className='filtro_subopciones'>{o}</p>
-                                <input type="checkbox"/>
+                                <input type="checkbox" onChange={(e) => { 
+                                    aplicarFiltro(e);
+                                    setCambio(!cambio);
+                                }}/>
                             </div>
                         );
                     }
                 }
-
             }
-            
-            setListaFiltro (opcionesYSubOpcionesJSX);
-               
-            
+            setListaFiltro(opcionesYSubOpcionesJSX);
         }
+    }, [productos, cambio]);
+        
 
-    }, [productos.length]);
-   
+    
 
     return (
         <>

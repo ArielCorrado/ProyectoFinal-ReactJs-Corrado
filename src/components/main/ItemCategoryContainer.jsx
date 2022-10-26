@@ -14,6 +14,8 @@ const ItemCategoryContainer = () => {
     const [productosPorCategoria, setProductosPorCategoria] = useState ([]);
 
     const [productos, setProductos] = useState([]);
+
+    const [productosFiltrados, setProductosFiltrados] = useState([]);
   
     useEffect(() => {
         
@@ -25,16 +27,18 @@ const ItemCategoryContainer = () => {
             
             ordenarPorPrecio(BDDFiltrada, "Precio Ascendente");
             setProductos(BDDFiltrada);
+                setProductosFiltrados (BDDFiltrada);
         })
        
     }, [categoria]);
     
     
-    const ordenarPorPrecio = (productos, op) => {
+    const ordenarPorPrecio = (product, op) => {
              
-        (op === "Precio Ascendente") ? productos.sort((a,b) =>  a[1].precio - b[1].precio) : productos.sort((a,b) =>   b[1].precio - a[1].precio);
-        const ProductosJsx = productos.map((prod) => <CardProducto producto={prod} key={prod[0]}/>);
+        (op === "Precio Ascendente") ? product.sort((a,b) =>  a[1].precio - b[1].precio) : product.sort((a,b) =>   b[1].precio - a[1].precio);
+        const ProductosJsx = product.map((prod) => <CardProducto producto={prod} key={prod[0]}/>);
         setProductosPorCategoria(ProductosJsx);
+            setProductos(product);
     }
    
     
@@ -51,7 +55,7 @@ const ItemCategoryContainer = () => {
                         </select>
                     </div>
                     <div>
-                        <Filtro productos={productos}/>
+                        <Filtro productos={productos} ordenarPorPrecio={ordenarPorPrecio} productosFiltrados={productosFiltrados}/>
                     </div>
                 </div>
 
