@@ -21,6 +21,7 @@ const App = () => {
                     <Route path="/cart" element={<Carrito />} />
                     <Route path="/item/:id" element={<ItemDetailContainer />} />
                     <Route path="/category/:categoria" element={<ItemCategoryContainer />} />
+                    <Route path="/category/:categoria/:filterKeys" element={<ItemCategoryContainer />} />
                     <Route path="/search/:searchKeys" element={<ItemSearchContainer />} />
                     <Route path="*" element={<Error404 />} />
                 </Routes>    

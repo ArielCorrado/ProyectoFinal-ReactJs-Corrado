@@ -55,7 +55,7 @@ const ItemCategoryContainer = () => {
                         </select>
                     </div>
                     <div>
-                        <Filtro productos={productos} ordenarPorPrecio={ordenarPorPrecio} productosFiltrados={productosFiltrados}/>
+                        <Filtro productos={productos} ordenarPorPrecio={ordenarPorPrecio} productosFiltrados={productosFiltrados} />
                     </div>
                 </div>
 
