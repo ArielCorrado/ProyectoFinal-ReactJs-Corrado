@@ -10,13 +10,10 @@ import Filtro from './Filtro';
 const ItemCategoryContainer = () => {
 
     const {categoria} = useParams();
-
     const [productosPorCategoria, setProductosPorCategoria] = useState ([]);
-
     const [productos, setProductos] = useState([]);
-
     const [productosFiltrados, setProductosFiltrados] = useState([]);
-  
+      
     useEffect(() => {
         
         leerBDD().then((BDD) => {

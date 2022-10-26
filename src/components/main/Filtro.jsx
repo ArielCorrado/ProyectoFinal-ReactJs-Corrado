@@ -4,12 +4,18 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 
 const arrayFiltro = [];
+
 const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
- 
+
     const {categoria} = useParams();
     const {filterKeys} = useParams();
     const navigate = useNavigate();
     const [listaFiltro, setListaFiltro] = useState(<></>)
+ 
+    
+    useEffect(() => {
+        arrayFiltro.length = 0;
+    }, [categoria]);
 
 
     const buscarSubOpciones = (opcion) => {
@@ -55,19 +61,19 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
 
     useEffect(() => {
      
-        /***********************************lEEMOS LA URL Y LA PASAMOS LAS KEYS A UNA ARRAY ***********************************************/
+        /***********************************lEEMOS LA URL Y LA PASAMOS LAS KEYS A UNA ARRAY *******************************************************/
 
-        if (filterKeys && arrayFiltro.length === 0) {
+        if (filterKeys && arrayFiltro.length === 0) {           //Este caso se da si ponemos manualmente la url
             const keys1 = filterKeys.split("&");
             for (const key of keys1) {
                 const keys2 = key.split("=");
                 arrayFiltro.push({ "op":keys2[0], "sop":keys2[1] });
             }
-            
-        }
+        } else 
 
-        /******************************************** Aplicamos el filtro **********************************************************************/
-    
+             
+        /******************************************** Aplicamos el filtro en los productos***********************************************************/
+         
         productosFiltrados = productos;
 
         for (let opcion of arrayFiltro) {                                                           //Filtramos por cada elemento en "arrayFiltro"
@@ -75,8 +81,11 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
         }
     
         ordenarPorPrecio(productosFiltrados, "Precio Ascendente");
- 
-        /*****************************************************************************************************************************************/
+            
+        
+
+
+        /**********************************************Actualizamos el filtro con sus opciones******************************************************/
 
         if (productosFiltrados.length !== 0) {              //Este código recarga el filtro según los productos que quedaron filtrados
 
@@ -95,6 +104,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                 if (typeof (op) === "string") {             //Si op e un string es porque es una opción. Por ejemplo:  "Marca"
                     opcionesYSubOpcionesJSX.push(<h5 className='filtro_opciones' key={op}>{op}</h5>);
                     opc = op;
+
                 } else {
                     for (let o of op) {                     //Si op es tipo object es porque se trata de un array de subopciones. Por ejemplo: ["Intel", "Amd"]
                         opcionesYSubOpcionesJSX.push(
