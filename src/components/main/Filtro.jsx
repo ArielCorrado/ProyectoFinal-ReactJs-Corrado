@@ -2,12 +2,13 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 
 const arrayFiltro = [];
+
 const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
  
     const [cambio, setCambio] = useState(false);
 
     const [listaFiltro, setListaFiltro] = useState(<></>)
-                     
+
     const buscarSubOpciones = (opcion) => {
 
         const subOpciones = [];
@@ -31,8 +32,8 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
             } 
 
             arrayFiltro.push({"op":e.target.parentNode.id.toLowerCase().replace(/\s+/g, ""), 
-                            "sop":e.target.previousSibling.innerHTML
-            }); 
+                              "sop":e.target.previousSibling.innerHTML});
+                         
 
             productosFiltrados = productos;
 
