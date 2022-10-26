@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import CardProducto from './CardProducto';
 import { leerBDD } from '../../utils/firebase';
@@ -13,7 +13,8 @@ const ItemCategoryContainer = () => {
     const [productosPorCategoria, setProductosPorCategoria] = useState ([]);
     const [productos, setProductos] = useState([]);
     const [productosFiltrados, setProductosFiltrados] = useState([]);
-      
+    const ordenar = useRef();     
+
     useEffect(() => {
         
         leerBDD().then((BDD) => {
@@ -30,12 +31,13 @@ const ItemCategoryContainer = () => {
     }, [categoria]);
     
     
-    const ordenarPorPrecio = (products, op) => {
-             
+    const ordenarPorPrecio = (products) => {
+        
+        const op = ordenar.current.value;
         (op === "Precio Ascendente") ? products.sort((a,b) =>  a[1].precio - b[1].precio) : products.sort((a,b) =>   b[1].precio - a[1].precio);
         const ProductosJsx = products.map((prod) => <CardProducto producto={prod} key={prod[0]}/>);
         setProductosPorCategoria(ProductosJsx);
-            setProductosFiltrados(products);
+        setProductosFiltrados(products);
     }
    
     
@@ -46,7 +48,7 @@ const ItemCategoryContainer = () => {
                 <div className='cont__filtro flex column'>
                     <div className='filtro_precio'>
                         <p className='filtro_precio_titulo'>Ordenar por:</p>
-                        <select className='form-select' onChange={(e) => ordenarPorPrecio(productos, e.target.value)}>
+                        <select className='form-select' onChange={(e) => ordenarPorPrecio(productosFiltrados)} ref={ordenar}>
                             <option>Precio Ascendente</option>
                             <option>Precio Descendente</option>
                         </select>

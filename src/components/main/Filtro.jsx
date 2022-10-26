@@ -18,8 +18,8 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
     }, [categoria]);
 
 
-    const buscarSubOpciones = (opcion) => {
-        const subOpciones = [];
+    const buscarSubOpciones = (opcion) => {                             //Buscamos todas las subopciones. Por ej. en Micros. En Marca seria "Amd y Intel"
+        const subOpciones = [];             
         subOpciones.push(productosFiltrados[0][1][opcion]);
               
         for (let prod of productosFiltrados) {
@@ -31,7 +31,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
     }
 
 
-    const setearArray = (e) => {
+    const setearArray = (e) => {                    //Pusheamos a opcion legida en un array
         if (e.target.checked) {
             const obj = { "op" : e.target.parentNode.id.toLowerCase().replace(/\s+/g, "") , "sop" : e.target.previousSibling.innerHTML};
             arrayFiltro.push(obj);
@@ -42,7 +42,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
     }
 
 
-    const cargarArray = () => {
+    const cargarArray = () => {                     //Leemos las opciones del array de opciones y las pasamos a una url
 
         const urlarray = [];
         for (const el of arrayFiltro) {
@@ -87,7 +87,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
 
         /**********************************************Actualizamos el filtro con sus opciones******************************************************/
 
-        if (productosFiltrados.length !== 0) {              //Este código recarga el filtro según los productos que quedaron filtrados
+        if (productosFiltrados.length !== 0) {              
 
             const opcionesFiltro = productosFiltrados[0][1].opcionesBusqueda;
             const opcionesYSubOpciones = [];
