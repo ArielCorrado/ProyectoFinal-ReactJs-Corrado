@@ -34,8 +34,11 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                             "sop":e.target.previousSibling.innerHTML
             }); 
 
+            productosFiltrados = productos;
+
             for (let opcion of arrayFiltro) {                                                           //Filtramos po cada elemento en "arrayFiltro"
-                productosFiltrados = productos.filter((prod) => prod[1][opcion.op] === opcion.sop);
+                
+                productosFiltrados = productosFiltrados.filter((prod) => prod[1][opcion.op] === opcion.sop);
             }
                               
         }  else  { 
@@ -44,12 +47,14 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
 
             arrayFiltro.splice(index, 1); 
 
-            if( arrayFiltro.length !== 0) {
- 
-                for (let opcion of arrayFiltro) {                                                           //Filtramos po cada elemento en "arrayFiltro"
-                    productosFiltrados = productos.filter((prod) => prod[1][opcion.op] === opcion.sop);
+            if( arrayFiltro.length !== 0) {        
+
+                    productosFiltrados = productos;
+
+                for (let opcion of arrayFiltro) {                                                           //Filtramos por cada elemento en "arrayFiltro"
+                    productosFiltrados = productosFiltrados.filter((prod) => prod[1][opcion.op] === opcion.sop);
                 }
-            } else {
+            } else {                                                    //Si arrayFiltro.legth === 0 es porque no hay ningún filtro a plicado entonces mostramos toda la categoria
                 productosFiltrados = productos;
             }    
         } 
@@ -59,7 +64,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
 
     useEffect(() => {
                 
-        if (productosFiltrados.length !== 0) {
+        if (productosFiltrados.length !== 0) {              //Este código recarga el filtro según los productos que quedaron filtrados
 
             const opcionesFiltro = productosFiltrados[0][1].opcionesBusqueda;
             const opcionesYSubOpciones = [];
@@ -75,21 +80,31 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
 
             for (let op of opcionesYSubOpciones) {
 
-                if (typeof (op) === "string") {
+                if (typeof (op) === "string") {             //Si op e un string es porque es una opción. Por ejemplo:  "Marca"
                     opcionesYSubOpcionesJSX.push(<h5 className='filtro_opciones' key={op}>{op}</h5>);
                     opc = op;
                 } else {
-                    for (let o of op) {
+
+                    for (let o of op) {                     //Si op es tipo object es porque se trata de un array de subopciones. Por ejemplo: ["Intel", "Amd"]
                         opcionesYSubOpcionesJSX.push(
                             <div className='flex' key={o} id={opc}>
                                 <p className='filtro_subopciones'>{o}</p>
-                                <input type="checkbox" onChange={(e) => { 
-                                    aplicarFiltro(e);
-                                    setCambio(!cambio);
-                                }}/>
+                                
+                                {                       
+                                    ( op.length === 1 && !arrayFiltro.some((opt) => opt.op === opc.toLowerCase().replace(/\s+/g, "")) ) ?  
+
+                                    <></> :
+
+                                    <input type="checkbox" onChange={(e) => { 
+                                            aplicarFiltro(e);
+                                            setCambio(!cambio);
+                                    }}/> 
+                                }
+
                             </div>
                         );
                     }
+
                 }
             }
             setListaFiltro(opcionesYSubOpcionesJSX);
