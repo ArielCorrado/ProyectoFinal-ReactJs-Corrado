@@ -7,7 +7,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
     const [cambio, setCambio] = useState(false);
 
     const [listaFiltro, setListaFiltro] = useState(<></>)
-                   
+                     
     const buscarSubOpciones = (opcion) => {
 
         const subOpciones = [];
@@ -23,20 +23,36 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
 
 
     const aplicarFiltro = (e) => {
-        const index = arrayFiltro.findIndex((elemento) => elemento.op === e.target.parentNode.id.toLowerCase().replace(/\s+/g, ""))   //Si elegimos "Marca" : "Intel" verificamos si "Marca"
-                                                                                                                                      // está en el array de filtro  
-        if (index !== -1) {
-            arrayFiltro.splice(index, 1);                                                      //Si está borramos y pusheamos la nueva opción. Sinó solo pusheamos                             
-        } 
-        arrayFiltro.push({"op":e.target.parentNode.id.toLowerCase().replace(/\s+/g, ""), 
-                          "sop":e.target.previousSibling.innerHTML
-        }); 
+        if (e.target.checked) {
+            const index = arrayFiltro.findIndex((elemento) => elemento.op === e.target.parentNode.id.toLowerCase().replace(/\s+/g, ""))   //Si elegimos "Marca" : "Intel" verificamos si "Marca"
+                                                                                                                                          // está en el array de filtro  
+            if (index !== -1) {
+                arrayFiltro.splice(index, 1);                                                      //Si está borramos y pusheamos la nueva opción. Sinó solo pusheamos                             
+            } 
 
-        for (let opcion of arrayFiltro) {                                                           //Filtramos po cada elemento en "arrayFiltro"
-            productosFiltrados = productos.filter((prod) => prod[1][opcion.op] === opcion.sop);
-        }
-                       
-        // productosFiltrados = productosFiltrados.filter((prod) => prod[1][e.target.parentNode.id.toLowerCase().replace(/\s+/g, "")] === e.target.previousSibling.innerHTML);
+            arrayFiltro.push({"op":e.target.parentNode.id.toLowerCase().replace(/\s+/g, ""), 
+                            "sop":e.target.previousSibling.innerHTML
+            }); 
+
+            for (let opcion of arrayFiltro) {                                                           //Filtramos po cada elemento en "arrayFiltro"
+                productosFiltrados = productos.filter((prod) => prod[1][opcion.op] === opcion.sop);
+            }
+                              
+        }  else  { 
+
+            const index = arrayFiltro.findIndex((elemento) => elemento.op === e.target.parentNode.id.toLowerCase().replace(/\s+/g, ""));
+
+            arrayFiltro.splice(index, 1); 
+
+            if( arrayFiltro.length !== 0) {
+ 
+                for (let opcion of arrayFiltro) {                                                           //Filtramos po cada elemento en "arrayFiltro"
+                    productosFiltrados = productos.filter((prod) => prod[1][opcion.op] === opcion.sop);
+                }
+            } else {
+                productosFiltrados = productos;
+            }    
+        } 
         ordenarPorPrecio(productosFiltrados, "Precio Ascendente");
     }
    

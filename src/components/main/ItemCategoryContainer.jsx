@@ -33,12 +33,12 @@ const ItemCategoryContainer = () => {
     }, [categoria]);
     
     
-    const ordenarPorPrecio = (product, op) => {
+    const ordenarPorPrecio = (products, op) => {
              
-        (op === "Precio Ascendente") ? product.sort((a,b) =>  a[1].precio - b[1].precio) : product.sort((a,b) =>   b[1].precio - a[1].precio);
-        const ProductosJsx = product.map((prod) => <CardProducto producto={prod} key={prod[0]}/>);
+        (op === "Precio Ascendente") ? products.sort((a,b) =>  a[1].precio - b[1].precio) : products.sort((a,b) =>   b[1].precio - a[1].precio);
+        const ProductosJsx = products.map((prod) => <CardProducto producto={prod} key={prod[0]}/>);
         setProductosPorCategoria(ProductosJsx);
-            setProductosFiltrados(product);
+            setProductosFiltrados(products);
     }
    
     
