@@ -26,7 +26,7 @@ const ItemCategoryContainer = () => {
             BDDFiltradaJSX.length !== 0 ? setProductosPorCategoria(BDDFiltradaJSX) : error ("Categoria No Válida");
             
             ordenarPorPrecio(BDDFiltrada, "Precio Ascendente");
-            setProductos(BDDFiltrada);
+            setProductos (BDDFiltrada);
                 setProductosFiltrados (BDDFiltrada);
         })
        
@@ -38,7 +38,7 @@ const ItemCategoryContainer = () => {
         (op === "Precio Ascendente") ? product.sort((a,b) =>  a[1].precio - b[1].precio) : product.sort((a,b) =>   b[1].precio - a[1].precio);
         const ProductosJsx = product.map((prod) => <CardProducto producto={prod} key={prod[0]}/>);
         setProductosPorCategoria(ProductosJsx);
-            setProductos(product);
+            setProductosFiltrados(product);
     }
    
     

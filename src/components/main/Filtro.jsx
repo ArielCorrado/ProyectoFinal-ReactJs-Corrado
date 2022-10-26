@@ -1,19 +1,19 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
-
+const arrayFiltro = [];
 const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
  
     const [cambio, setCambio] = useState(false);
 
     const [listaFiltro, setListaFiltro] = useState(<></>)
-                  
+                   
     const buscarSubOpciones = (opcion) => {
 
         const subOpciones = [];
-        subOpciones.push(productos[0][1][opcion]);
+        subOpciones.push(productosFiltrados[0][1][opcion]);
               
-        for (let prod of productos) {
+        for (let prod of productosFiltrados) {
             if (!(subOpciones.some((subOp) => subOp === prod[1][opcion]))) {
                 subOpciones.push(prod[1][opcion])
             }
@@ -23,16 +23,29 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
 
 
     const aplicarFiltro = (e) => {
-        productosFiltrados = productos.filter((prod) => prod[1][e.target.parentNode.id.toLowerCase().replace(/\s+/g, "")] === e.target.previousSibling.innerHTML);
+        const index = arrayFiltro.findIndex((elemento) => elemento.op === e.target.parentNode.id.toLowerCase().replace(/\s+/g, ""))   //Si elegimos "Marca" : "Intel" verificamos si "Marca"
+                                                                                                                                      // está en el array de filtro  
+        if (index !== -1) {
+            arrayFiltro.splice(index, 1);                                                      //Si está borramos y pusheamos la nueva opción. Sinó solo pusheamos                             
+        } 
+        arrayFiltro.push({"op":e.target.parentNode.id.toLowerCase().replace(/\s+/g, ""), 
+                          "sop":e.target.previousSibling.innerHTML
+        }); 
+
+        for (let opcion of arrayFiltro) {                                                           //Filtramos po cada elemento en "arrayFiltro"
+            productosFiltrados = productos.filter((prod) => prod[1][opcion.op] === opcion.sop);
+        }
+                       
+        // productosFiltrados = productosFiltrados.filter((prod) => prod[1][e.target.parentNode.id.toLowerCase().replace(/\s+/g, "")] === e.target.previousSibling.innerHTML);
         ordenarPorPrecio(productosFiltrados, "Precio Ascendente");
     }
    
 
     useEffect(() => {
                 
-        if (productos.length !== 0) {
+        if (productosFiltrados.length !== 0) {
 
-            const opcionesFiltro = productos[0][1].opcionesBusqueda;
+            const opcionesFiltro = productosFiltrados[0][1].opcionesBusqueda;
             const opcionesYSubOpciones = [];
 
             for (let opcion of opcionesFiltro) {
@@ -65,7 +78,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
             }
             setListaFiltro(opcionesYSubOpcionesJSX);
         }
-    }, [productos, cambio]);
+    }, [productosFiltrados, cambio]);
         
 
     
