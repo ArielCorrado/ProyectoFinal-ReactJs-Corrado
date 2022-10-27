@@ -110,8 +110,8 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                         opcionesYSubOpcionesJSX.push(
                             <div className='cont_filtro_subopciones flex' key={o} id={opc}>
                                 {                       
-                                    ( op.length === 1 && !arrayFiltro.some((opt) => opt.op === opc.toLowerCase().replace(/\s+/g, "")) ) ?  
-
+                                    ( op.length === 1 && !arrayFiltro.some((opt) => opt.op === opc.toLowerCase().replace(/\s+/g, "")) ) ?  //Si hay una sola subopción y no está en el filtro
+                                                                                                                                           // (No está seleccionada). No ponemos su checkbox 
                                     <></> :
 
                                     <input 

@@ -8,7 +8,7 @@ import Spinner from './Spinner';
 const ItemDetailContainer = () => {
     
     const {id} = useParams();
-    const [producto, setProducto] = useState ([<Spinner/>]);
+    const [producto, setProducto] = useState ([<Spinner key={"spinner"}/>]);
 
     useEffect(() => {
         

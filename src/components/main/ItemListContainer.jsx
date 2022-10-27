@@ -7,7 +7,7 @@ import Spinner from './Spinner';
   
 const ItemListContainer = () => {
     
-    const [productosAMostrar, setProductosAMostrar] = useState ([<Spinner/>]);   
+    const [productosAMostrar, setProductosAMostrar] = useState ([<Spinner key={"spinner"}/>]);   
 
     useEffect(() => {
 
@@ -22,7 +22,7 @@ const ItemListContainer = () => {
     
     return (
         <>
-            <Carousel />
+            <Carousel/>
             <div className="main__container flex">
                 {productosAMostrar}
             </div>

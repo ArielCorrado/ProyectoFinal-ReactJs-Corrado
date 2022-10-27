@@ -189,7 +189,7 @@
 
 .textoTotal_carrito {
     grid-area: c;
-    font-size: 40px;
+    font-size: 30px;
     color: var(--color_precios);
     font-weight: 700;
     margin-bottom: 0;
@@ -200,10 +200,10 @@
     background-color: white;
     min-height: 70px;
     border-radius: 40px;
-    padding: 0 30px;
     flex-wrap: wrap;
     text-align: center;
     border: 1px solid var(--color_precios);
+    min-width: 300px;
 }
 
 
@@ -244,23 +244,17 @@
     margin-top: 40px;
 }
 
-.total {
-    padding: 0 45px;
-}
-
 .continuar_texto {
     margin-bottom: 0;
-    /* color: var(--color-rosa); */
     color: white;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .cont_continuar {
-    /* background-color:white; */
     background-color: #B040C7;
     border: 1px solid rgb(196, 196, 196);
-
 }
+
 
 /************************** CartWidget *******************************/
 
@@ -287,6 +281,9 @@
     z-index: 300;
 }
 
+.iconoCarrito_vacio {
+    filter: brightness(75%);
+}
 
 /*************************** Categorias ***************************************/
 
@@ -731,6 +728,7 @@
     border-radius: 10px;
     padding: 40px;
     background: linear-gradient(90deg, rgb(176, 64, 199) 39%, #47c8da 100%);
+    margin: 50px 0;
 }
 
 .input {
@@ -781,11 +779,11 @@
 }
 
 .cont_formulario {
+    align-items: flex-start;
     position: absolute;
     z-index: 300;
     width: 100%;
-    height: calc(100vh + 25px);
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: var(--color_precios);
     animation-name: efectoIn;
     animation-duration: 0.75s;
 }
@@ -815,7 +813,8 @@
 @media only screen and (max-width: 1100px) {
     .contFooter {
         grid-template-columns: unset;
-        grid-template-rows: 75px 75px 75px;
+        grid-template-rows: repeat(3, fit-content);
+        row-gap: 10px;
     }
 
     .contFooter__ul {
@@ -915,6 +914,10 @@
 
 @media only screen and (max-width: 600px) {
 
+    .contBusquedas {
+        display: flex;
+    }
+
     .campoBusquedas {
         width: 70%;
         margin-left: 10px;
@@ -922,6 +925,10 @@
 
     .contCarrito {
         margin-right: 10px;
+    }
+
+    .logo {
+        display: none;
     }
 
 }
@@ -955,7 +962,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 630px) { 
     .cardProducto_carrito { 
         max-width: 300px;
         height: fit-content;
@@ -974,6 +981,44 @@
     }
 }
 
+@media only screen and (max-width: 600px) { 
 
+    .contTotalCarrito {
+        min-width: 250px;
+        padding: 0;
+        margin: 5px;
+    }
+
+    .textoTotal_carrito {
+        font-size: 25px;
+    }
+
+    .precioTotal_carrito {
+        font-size: 30px;
+    }
+
+    .continuar_texto {
+        font-size: 25px;
+    } 
+
+    .cont_botones_grandes {
+        flex-direction: column;
+    }
+
+    .cont_newsLetter {
+        display: none;
+    }
+
+    .contFooter {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px 0;
+    }
+
+    .footer_img {
+        height: 40px;
+    }
+
+}
 
 

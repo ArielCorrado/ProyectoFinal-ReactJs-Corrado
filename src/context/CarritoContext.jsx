@@ -1,16 +1,14 @@
 import React, {createContext, useState} from 'react';
+import { mensaje } from '../utils/funcionesUtiles';
 
 const CarritoContext = createContext();
 const CarritoProvider = ({children}) => {
 
     const [carrito, setCarrito] = useState([]);
-
     const [carritoCant, setCarritoCant] = useState(0);
-
     const [carritoTotal, setCarritoTotal] = useState(0);
     
     const agregarAlCarrito = (id, cantidad) => {
-
         const carritoAux = carrito;
         const indice = carritoAux.findIndex((prod) => prod.id === id)       //Verificamos si el producto agregado ya está en el carrito
                                                                             // si ya está en el carrito findIndex devuelve el indice donde se encuentra, si nó esta en el carrito devuelve -1
@@ -24,7 +22,6 @@ const CarritoProvider = ({children}) => {
     }
 
     const masMenosUnoCarrito = (id, op) => {            //Sumamos o restamos una unidad según el valor de op
-
         const carritoAux = carrito;
         const indice = carritoAux.findIndex((prod) => prod.id === id);
 
@@ -43,7 +40,6 @@ const CarritoProvider = ({children}) => {
     }
 
     const eliminarDelCarrito = (id) => {
-
         const carritoAux = carrito;
         const indice = carritoAux.findIndex((prod) => prod.id === id);
         carritoAux.splice(indice, 1);
@@ -56,6 +52,7 @@ const CarritoProvider = ({children}) => {
     }
 
     const vaciarCarrito = () => {
+        mensaje("El Carrito está Vacío");
         carrito.length = 0;             //Se probó con setCarrito([]) y no funcionó (?)
         setCarrito(carrito);
         setearCarritoCantidad ();

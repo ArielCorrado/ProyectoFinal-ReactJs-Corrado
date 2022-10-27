@@ -13,7 +13,7 @@ const Form = ({toggleForm}) => {
 
     const subirOrden = (e) => {
         e.preventDefault();
-
+        
         const formDatos = new FormData (formulario.current);
         const datos = Object.fromEntries(formDatos);
         datos.total = carritoTotal;
@@ -43,12 +43,11 @@ const Form = ({toggleForm}) => {
             })
         }    
     }     
-
+ 
     return (
         <>
-            {document.body.style.overflow = "hidden"}
-            <div className='cont_formulario flex' id="contFormulario" onClick={(e) => toggleForm(e)} style={{top:window.pageYOffset+"px"}}>
-                <form id="formulario" className="flex form" ref={formulario} onSubmit={(e) => subirOrden(e)}>
+            <div className='cont_formulario flex' id="cont_formulario" onClick={((e) => toggleForm(e))} style={{height:document.body.offsetHeight+"px", top:0}}>
+                <form id="formulario" className="flex form" ref={formulario} onSubmit={(e) => subirOrden(e)} >
                     <h1 className="formulario_titulo">Complete con sus datos para continuar:</h1>
                     <input id="formNombre" className="input" type="text" name="nombre" placeholder="Nombre"/>
                     <input id="formNombre" className="input" type="text" name="apellido" placeholder="Apellido" />

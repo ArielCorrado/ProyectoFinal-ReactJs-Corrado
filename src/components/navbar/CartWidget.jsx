@@ -7,14 +7,27 @@ const CartWidget = () => {
     
     const {carritoCant} = useContext (CarritoContext);
     
-    return (
-        <div className="contCarrito">
-            <Link to={"/cart"}>   
-                {carritoCant > 0 ? <div className='iconoCarrito_cantidad flex'> {carritoCant} </div> : <></>}     
-                <img className="iconoCarrito" src="../images/icono_carrito.png" alt="" /> 
-            </Link>
-        </div>
-    );
+
+
+    if (carritoCant > 0) {
+        return (
+            <div className="contCarrito">
+                <Link to={"/cart"}>   
+                    {carritoCant > 0 ? <div className='iconoCarrito_cantidad flex'> {carritoCant} </div> : <></>}     
+                    <img className="iconoCarrito" src="../images/icono_carrito.png" alt="" /> 
+                </Link>
+            </div>
+        );
+    } else {
+        return (
+            <div className="contCarrito">
+                <img className="iconoCarrito iconoCarrito_vacio" src="../images/icono_carrito.png" alt=""/> 
+            </div>
+        )
+    }
+
+
+    
 }
 
 export default CartWidget;

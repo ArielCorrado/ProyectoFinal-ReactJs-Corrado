@@ -3,12 +3,13 @@ import { useParams } from 'react-router-dom';
 import CardProducto from './CardProducto';  
 import { leerBDD } from '../../utils/firebase';
 import { error } from '../../utils/funcionesUtiles';
+import Spinner from './Spinner';
 
 const ItemSearchContainer = () => {
 
     const {searchKeys} = useParams();
         
-    const [productosPorBusqueda, setProductosPorBusqueda] = useState ([]);
+    const [productosPorBusqueda, setProductosPorBusqueda] = useState ([<Spinner key={"spinner"}/>]);
 
     useEffect(() => {
         

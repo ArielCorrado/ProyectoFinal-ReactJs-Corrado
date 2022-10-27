@@ -16,4 +16,22 @@ const error = (mensaje) => {
     })
 }
 
-export {error};
+const mensaje = (mensaje) => {
+    Swal.fire({
+        title: mensaje,
+        icon: 'warning',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'VOLVER',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        scrollbarPadding: false
+    })  
+    .then((result) => {
+        if (result.isConfirmed) {
+            window.history.back();
+        }
+    })
+}
+
+
+export {error, mensaje};

@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='contFooter'>
-            <div className="flex column">
+            <div className="flex column cont_newsLetter">
                 <div className='flex'>
                     <p className='ofertas'>Recibí ofertas exclusivas!</p>
                 </div> 

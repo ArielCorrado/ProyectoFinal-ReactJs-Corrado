@@ -10,7 +10,7 @@ import Spinner from './Spinner';
 const ItemCategoryContainer = () => {
 
     const {categoria} = useParams();
-    const [productosPorCategoria, setProductosPorCategoria] = useState ([<Spinner/>]);
+    const [productosPorCategoria, setProductosPorCategoria] = useState ([<Spinner key={"spinner"}/>]);
     const [productos, setProductos] = useState([]);
     const [productosFiltrados, setProductosFiltrados] = useState([]);
     const ordenar = useRef();     
@@ -54,7 +54,7 @@ const ItemCategoryContainer = () => {
                         </select>
                     </div>
                     <div>
-                        <Filtro productos={productos} ordenarPorPrecio={ordenarPorPrecio} productosFiltrados={productosFiltrados} />
+                        <Filtro productos={productos} ordenarPorPrecio={ordenarPorPrecio} productosFiltrados={productosFiltrados}/>
                     </div>
                 </div>
 

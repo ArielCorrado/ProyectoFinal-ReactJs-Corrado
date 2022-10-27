@@ -3,6 +3,7 @@ import { CarritoContext } from '../../context/CarritoContext';
 import CardProductoCarrito from './CardProductoCarrito';
 import { leerBDD } from '../../utils/firebase';
 import Form from './Form';
+import { error } from '../../utils/funcionesUtiles';
 
 const Carrito = () => {
     
@@ -33,10 +34,9 @@ const Carrito = () => {
 
     
     const toggleForm = (e) => {
-        if (e.target.id === "contFormulario") {
+        if (e.target.id === "cont_formulario") {
             setMostrarForm(false);
-            document.body.style.overflow = "visible";
-        } 
+        }
     }
  
 
@@ -47,8 +47,8 @@ const Carrito = () => {
                 {mostrarForm && <Form toggleForm={toggleForm}/>}
                 <div className="main__container__carrito flex">
                     {productosEnCarrito}
-                    <div className='flex wrap'>
-                        <div className='flex contTotalCarrito total'>
+                    <div className='flex wrap cont_botones_grandes'>
+                        <div className='flex contTotalCarrito'>
                             <p className='textoTotal_carrito'>Total: &nbsp;</p>
                             <div className='precioTotal_carrito'>${carritoTotal}</div>
                         </div>
