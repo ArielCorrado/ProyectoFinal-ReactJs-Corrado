@@ -871,7 +871,7 @@
     "categoria": "memorias_ram",
     "marca": "kingston",
     "modelo": "fury",
-    "rgb": "sin RGB",
+    "rgb": "RGB",
     "tipodememoria": "ddr4",
     "cantidaddememoria": "4gb",
     "frecuencia": "3200mhz",

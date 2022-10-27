@@ -55,11 +55,15 @@
     box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.32);
     text-align: center;
     justify-content: flex-start;
+    border: 1px solid var(--color_precios);
 }
 
 .filtro_precio_titulo {
-    color: rgb(51, 51, 51);
+    color: rgb(0, 0, 0);
     margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+
 }
 
 .filtro_precio {
@@ -143,7 +147,6 @@
     height: 40px;
     margin: 0 10px;
     color: rgb(255, 255, 255);
-    /* border: 2px solid white;  */
     font-size: 15px;
 }
 
@@ -200,6 +203,7 @@
     padding: 0 30px;
     flex-wrap: wrap;
     text-align: center;
+    border: 1px solid var(--color_precios);
 }
 
 
@@ -215,6 +219,7 @@
     border-radius: 25px;
     margin: 10px 0; 
     cursor: pointer;
+    border: 1px solid var(--color_precios);
 }
 
 .iconoVaciarChico {
@@ -245,11 +250,16 @@
 
 .continuar_texto {
     margin-bottom: 0;
-    color: var(--color-rosa);
+    /* color: var(--color-rosa); */
+    color: white;
+    font-size: 35px;
 }
 
 .cont_continuar {
-    background-color:white;
+    /* background-color:white; */
+    background-color: #B040C7;
+    border: 1px solid rgb(196, 196, 196);
+
 }
 
 /************************** CartWidget *******************************/
@@ -268,7 +278,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: rgba(255, 111, 0, 0.932)
+    background-color: rgba(255, 111, 0, 0.932);
 }
 
 .iconoCarrito {
@@ -377,6 +387,7 @@
     margin: 10px;
     /* border: 1px solid var(--borde_cards); */
     border-radius: 5px;
+    border: 1px solid var(--color_precios);
 }
 
 .contDetalle_producto_carrito {
@@ -455,6 +466,7 @@
     border-radius: 5px;
     animation-name: efectoIn;
     animation-duration: 1.5s;
+    border: 1px solid var(--color_precios);
 }
  
 .selectCantidad {
@@ -598,6 +610,7 @@
     background-color: white;
     justify-content: flex-end !important;
     box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.32);
+    border: 1px solid var(--color_precios);
 }
 
 .imgProducto {
@@ -675,7 +688,6 @@
     width: fit-content;
     padding: 5px;
     border-radius: 10px;
-        /* border: 2px solid white; */
 }
 
 .inputNewsLetter {
@@ -685,7 +697,6 @@
     background-color: white;    
     padding: 5px;
     border-radius: 10px;
-    /* margin-left: 20px; */
     color: black;
     border: 2px solid var(--color_celeste);
 }

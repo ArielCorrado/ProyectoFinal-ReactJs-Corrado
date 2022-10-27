@@ -48,7 +48,7 @@ const ItemCategoryContainer = () => {
                 <div className='cont__filtro flex column'>
                     <div className='filtro_precio'>
                         <p className='filtro_precio_titulo'>Ordenar por:</p>
-                        <select className='form-select' onChange={(e) => ordenarPorPrecio(productosFiltrados)} ref={ordenar}>
+                        <select className='form-select' onChange={() => ordenarPorPrecio(productosFiltrados)} ref={ordenar}>
                             <option>Precio Ascendente</option>
                             <option>Precio Descendente</option>
                         </select>
