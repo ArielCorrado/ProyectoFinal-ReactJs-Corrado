@@ -24,11 +24,8 @@ const Carrito = () => {
             }
 
             const sumaTotalCarrito = productosCarrito.reduce((ac, prod) => ac + (prod[1].cantidad * prod[1].precio), 0);
-                     
             const productosEnCarritoJsx = productosCarrito.map((prod) => <CardProductoCarrito producto = {prod} suma={sumaTotalCarrito} key={prod[0]}/>);
-
             setProductosEnCarrito (productosEnCarritoJsx);
-                         
             setearCarritoTotal(sumaTotalCarrito, true);
         })
 
@@ -50,16 +47,23 @@ const Carrito = () => {
                 {mostrarForm && <Form toggleForm={toggleForm}/>}
                 <div className="main__container__carrito flex">
                     {productosEnCarrito}
-                    <div className='flex contTotalCarrito'>
-                        <p className='textoTotal_carrito'>Total: &nbsp;</p>
-                        <div className='precioTotal_carrito'>${carritoTotal}</div>
+                    <div className='flex wrap'>
+                        <div className='flex contTotalCarrito total'>
+                            <p className='textoTotal_carrito'>Total: &nbsp;</p>
+                            <div className='precioTotal_carrito'>${carritoTotal}</div>
+                        </div>
+                        <div className='flex contTotalCarrito pointer cont_continuar' onClick={() => setMostrarForm(true)} >
+                            <p className='botonConfirmar continuar_texto'>Continuar Compra</p>
+                        </div>
                     </div>
-                    <div className='flex botonVaciar botonConfirmar' onClick={() => setMostrarForm(true)} >
-                        <p className='textoVaciarCarrito'>Continuar Compra</p>
-                    </div>
-                    <div className="botonVaciar flex" onClick={vaciarCarrito}>
-                        <img src="../images/vaciar3.png" alt="" className='iconoVaciarChico'/>
-                        <p className='textoVaciarCarrito'>Vaciar Carrito</p>
+                    <div className='cont_volver'>
+                        <div className='flex botonVaciar' onClick={(() => window.history.back())}>
+                            <p className='textoVaciarCarrito'>Volver</p>
+                        </div>
+                        <div className="botonVaciar flex" onClick={vaciarCarrito}>
+                            <img src="../images/vaciar3.png" alt="" className='iconoVaciarChico'/>
+                            <p className='textoVaciarCarrito'>Vaciar Carrito</p>
+                        </div>
                     </div>
                 </div>
             </>
