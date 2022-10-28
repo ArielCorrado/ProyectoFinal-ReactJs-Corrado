@@ -52,7 +52,6 @@ const CarritoProvider = ({children}) => {
     }
 
     const vaciarCarrito = () => {
-        mensaje("El Carrito está Vacío");
         carrito.length = 0;             //Se probó con setCarrito([]) y no funcionó (?)
         setCarrito(carrito);
         setearCarritoCantidad ();

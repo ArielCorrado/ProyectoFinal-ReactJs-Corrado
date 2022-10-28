@@ -26,7 +26,7 @@
 .main__container__categorias {
     display: grid;
     grid-template-columns: 300px calc(100% - 300px);
-    grid-template-rows: minmax(calc(100vh - 137px - 75px), auto);
+    grid-template-rows: minmax(var(--altura_main), auto);
     place-items: center; 
 }
 
@@ -199,7 +199,7 @@
     margin: 10px;
     background-color: white;
     min-height: 70px;
-    border-radius: 40px;
+    border-radius: 5px;
     flex-wrap: wrap;
     text-align: center;
     border: 1px solid var(--color_precios);
@@ -216,7 +216,7 @@
     height: 35px;
     width: 200px;
     padding: 0 30px;
-    border-radius: 25px;
+    border-radius: 5px;
     margin: 10px 0; 
     cursor: pointer;
     border: 1px solid var(--color_precios);
@@ -252,7 +252,11 @@
 
 .cont_continuar {
     background-color: #B040C7;
-    border: 1px solid rgb(196, 196, 196);
+    border: 1px solid rgb(163, 163, 163);
+}
+
+.cont_continuar:hover {
+    background-color: var(--hover_violeta);
 }
 
 
@@ -282,11 +286,11 @@
 }
 
 .iconoCarrito_vacio {
-    filter: brightness(75%);
+    filter: brightness(85%);
 }
 
-/*************************** Categorias ***************************************/
 
+/*************************** Categorias ***************************************/
 
 .nav-item {
     margin: 0 10px;
@@ -299,7 +303,7 @@
 
 .navbar {
     background-color: var(--color_navbar);
-    padding: 5px;
+    padding: 0;
     border-top: 1px solid var(--color_celeste);
 }
 
@@ -308,6 +312,10 @@
 
 
 .dropdown-menu {
+    background-color: var(--color_navbar);
+}
+
+.dropdown-item:hover {
     background-color: var(--color_navbar);
 }
 
@@ -327,7 +335,7 @@
 }
     
 .logo__e {
-    color: var(--color_naranja);
+    color: #fd872d;
     font-style: oblique;
     line-height: 0;
     width: 100%;
@@ -337,18 +345,17 @@
 .logo__hard {
     color: var(--color_celeste);
     line-height: 40px;
+    font-style: oblique;
 }
 
 .logo__computacion {
-    color: var(--color_violeta);
+    color: rgb(204, 74, 230);
     filter: brightness(150%) grayscale(25%);
     font-style: oblique;
     line-height: 0;
     font-size: 20px;
     width: 100%;
     text-align: right;
-    padding-right: 40px;
-        
 }
 
 
@@ -435,6 +442,10 @@
     cursor: pointer;
 }
 
+.iconoVaciar:hover {
+    filter: saturate(250%);
+}
+
 .contVaciar {
     grid-area: v;
     width: 100%;
@@ -515,6 +526,10 @@
     width: 80%;
 }
 
+.boton_c:hover {
+    background-color: rgb(15, 145, 252) !important;
+}
+
 .contBotonComprar {
     grid-area: b2;
     width: 100%;
@@ -528,7 +543,6 @@
 .botonMasMenos {
     border-style: none;
     border-radius: 25%;
-    /* background-color: rgb(100, 100, 100); */
     background-color: var(--color_violeta);
     padding: 7px;
     width: 40px;
@@ -536,6 +550,10 @@
     margin: 0 10px;
     font-weight: 900;
     font-size: 20px;
+}
+
+.botonMasMenos:hover {
+    background-color: var(--hover_violeta);
 }
 
 .inputCantidad {
@@ -606,8 +624,13 @@
     padding: 15px;
     background-color: white;
     justify-content: flex-end !important;
-    box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.32);
+    box-shadow: -8px 6px 5px 0px rgba(0,0,0,0.4);
     border: 1px solid var(--color_precios);
+    transition: all 0.3s;
+}
+
+.cardProducto:hover {
+    box-shadow: -16px 12px 10px 0px rgba(0,0,0,0.32);
 }
 
 .imgProducto {
@@ -626,6 +649,10 @@
     background-color: var(--color_violeta);
     padding: 7px;
     min-width: 125px;
+}
+
+.botonProducto:hover {
+    background-color: var(--hover_violeta);
 }
 
 .precioProducto {
@@ -695,7 +722,10 @@
     padding: 5px;
     border-radius: 10px;
     color: black;
-    border: 2px solid var(--color_celeste);
+}
+
+.inputNewsLetter:focus {
+    outline: 2px solid var(--color_celeste);
 }
 
 .ofertas {

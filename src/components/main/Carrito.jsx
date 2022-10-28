@@ -3,7 +3,7 @@ import { CarritoContext } from '../../context/CarritoContext';
 import CardProductoCarrito from './CardProductoCarrito';
 import { leerBDD } from '../../utils/firebase';
 import Form from './Form';
-import { error } from '../../utils/funcionesUtiles';
+import { mensaje } from '../../utils/funcionesUtiles';
 
 const Carrito = () => {
     
@@ -30,6 +30,10 @@ const Carrito = () => {
             setearCarritoTotal(sumaTotalCarrito, true);
         })
 
+        if(carrito.length === 0) {
+            mensaje("El Carrito Está Vacío")
+        }
+
     }, [carrito.length]);                   //Si cambia carrito.length es porque eliminamos un producto del carrito   
 
     
@@ -39,7 +43,7 @@ const Carrito = () => {
         }
     }
  
-
+    
     if (carrito.length > 0) {
 
         return (

@@ -105,7 +105,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                     opcionesYSubOpcionesJSX.push(<h5 className='filtro_opciones' key={op}>{op}</h5>);
                     opc = op;
 
-                } else {
+                } else {                                    //Si op no es un "string" (no es una opción) es una lista de subopciones
                     for (let o of op) {                     //Si op es tipo object es porque se trata de un array de subopciones. Por ejemplo: ["Intel", "Amd"]
                         opcionesYSubOpcionesJSX.push(
                             <div className='cont_filtro_subopciones flex' key={o} id={opc}>
