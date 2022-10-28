@@ -18,16 +18,15 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
     }, [categoria]);
 
 
-    const buscarSubOpciones = (opcion) => {                                       //Buscamos todas las subopciones. Por ej. en Micros. En Marca seria "Amd y Intel"
+    const buscarSubOpciones = (opcion) => {                             //Buscamos todas las subopciones. Por ej. en Micros. En Marca seria "Amd y Intel"
         const subOpciones = [];             
-        subOpciones.push([productosFiltrados[0][1][opcion] , false]);             //Pusheamos la primer subopcion del primer producto con su estado (false es deseleccionado en el filtro) 
+        subOpciones.push(productosFiltrados[0][1][opcion]);
               
         for (let prod of productosFiltrados) {
-            if (!(subOpciones.some((subOp) => subOp[0] === prod[1][opcion]))) {
-                subOpciones.push([prod[1][opcion] , false])
+            if (!(subOpciones.some((subOp) => subOp === prod[1][opcion]))) {
+                subOpciones.push(prod[1][opcion])
             }
         }
-        console.log(subOpciones)
         return subOpciones;
     }
 
@@ -109,7 +108,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                 } else {                                    //Si op no es un "string" (no es una opción) es una lista de subopciones
                     for (let o of op) {                     //Si op es tipo object es porque se trata de un array de subopciones. Por ejemplo: ["Intel", "Amd"]
                         opcionesYSubOpcionesJSX.push(
-                            <div className='cont_filtro_subopciones flex' key={o[0]} id={opc}>
+                            <div className='cont_filtro_subopciones flex' key={o} id={opc}>
                                 {                       
                                     ( op.length === 1 && !arrayFiltro.some((opt) => opt.op === opc.toLowerCase().replace(/\s+/g, "")) ) ?  //Si hay una sola subopción y no está en el filtro
                                                                                                                                            // (No está seleccionada). No ponemos su checkbox 
@@ -127,7 +126,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                                         }}
                                     /> 
                                 }
-                                <p className='filtro_subopciones'>{o[0]}</p>
+                                <p className='filtro_subopciones'>{o}</p>
                             </div>
                         );
                     }
