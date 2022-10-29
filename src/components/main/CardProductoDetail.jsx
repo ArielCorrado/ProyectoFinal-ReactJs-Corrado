@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { CarritoContext } from '../../context/CarritoContext';
 import { useContext, useState } from 'react';
+import Swal from 'sweetalert2';
 
 const CardProductoDetail = ({producto}) => {
 
