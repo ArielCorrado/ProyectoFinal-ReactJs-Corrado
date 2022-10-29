@@ -45,6 +45,7 @@ const ItemCategoryContainer = () => {
         <>
             <div className='main__container__categorias'>
 
+            <div className='cont__filtro__flex flex'>
                 <div className='cont__filtro flex column'>
                     <div className='filtro_precio'>
                         <p className='filtro_precio_titulo'>Ordenar por:</p>
@@ -57,6 +58,7 @@ const ItemCategoryContainer = () => {
                         <Filtro productos={productos} ordenarPorPrecio={ordenarPorPrecio} productosFiltrados={productosFiltrados}/>
                     </div>
                 </div>
+            </div>    
 
                 <div className='cont_productos_categoria'>
                     {productosPorCategoria}
