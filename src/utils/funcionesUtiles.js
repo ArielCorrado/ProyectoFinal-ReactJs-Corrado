@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 const error = (mensaje) => {
     Swal.fire({
         title: 'Ops!',
