@@ -72,10 +72,7 @@ const crearOrdeDeCompra = async (obj) => {
 }
 
 
-//crearOrdeDeCompra ("Ariel", "Corrado", 27952246, "Mentruyt 378, Lomas de Zamora, Bs. As.", "jarielc2012@yahoo.com.ar", "+5491140869822", 22500)
 //subirBDD();
-//leerProducto("0IPPSD4VbkfeR4hqAtbB").then((prod) => console.log(prod));
-//leerBDD();
 
 
 export {subirBDD, leerProducto, leerBDD, crearOrdeDeCompra};

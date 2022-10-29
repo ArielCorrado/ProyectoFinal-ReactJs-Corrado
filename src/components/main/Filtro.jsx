@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-
 const arrayFiltro = [];
 
 const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
@@ -11,8 +10,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
     const {filterKeys} = useParams();
     const navigate = useNavigate();
     const [listaFiltro, setListaFiltro] = useState(<></>)
- 
-    
+     
     useEffect(() => {
         arrayFiltro.length = 0;
     }, [categoria]);
@@ -31,7 +29,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
     }
 
 
-    const setearArray = (e) => {                    //Pusheamos a opcion legida en un array
+    const setearArray = (e) => {                    //Pusheamos a opcion elegida en un array
         if (e.target.checked) {
             const obj = { "op" : e.target.parentNode.id.toLowerCase().replace(/\s+/g, "") , "sop" : e.target.nextSibling.innerHTML};
             arrayFiltro.push(obj);
@@ -48,12 +46,10 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
         for (const el of arrayFiltro) {
             urlarray.push(el.op.concat("=",el.sop));
         }
-
         let url = "";
         for (const el of urlarray) {
             url = url + "&" + el;
         }
-
         url = url.slice(1);
         navigate (`/category/${categoria}/${url}`);
     }

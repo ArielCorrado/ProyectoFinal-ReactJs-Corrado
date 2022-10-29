@@ -2,6 +2,7 @@ import React from 'react';
 import CartWidget from './CartWidget';
 import Logo from './Logo';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Busquedas = () => {
      
@@ -13,7 +14,16 @@ const Busquedas = () => {
         
         if (keysBusqueda !== "") {
             navigate(`/search/${keysBusqueda}`);
-        }    
+        } else {
+            Swal.fire({
+                width: 400,
+                icon: 'warning',
+                title: 'Ingrese Un Valor',
+                showConfirmButton: false,
+                timer: 1000,
+                scrollbarPadding: true
+            })
+        }   
     }
        
     return (

@@ -10,15 +10,16 @@ const Form = ({toggleForm}) => {
     const {carritoTotal, vaciarCarrito} = useContext (CarritoContext);
     const formulario = useRef();
     const navigate = useNavigate();
-
+    window.scrollTo({top:0});
+    
     const subirOrden = (e) => {
         e.preventDefault();
-        
+                
         const formDatos = new FormData (formulario.current);
         const datos = Object.fromEntries(formDatos);
         datos.total = carritoTotal;
         
-        if (datos.nombre !="" && datos.apellido !="" && datos.dni !="" && datos.direccion !="" && datos.email !="" && datos.telefono!="") {  
+        if (datos.nombre.trim() !=="" && datos.apellido.trim() !=="" && datos.dni.trim() !=="" && datos.direccion.trim() !=="" && datos.email.trim() !=="" && datos.telefono.trim()!=="") {  
             crearOrdeDeCompra(datos).then((data) => {
                 vaciarCarrito();
                 navigate("/");
