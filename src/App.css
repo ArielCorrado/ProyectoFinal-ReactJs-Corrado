@@ -945,7 +945,7 @@
 
 /**************************************** NavBar ****************************************/
 
-@media only screen and (max-height: 750px) {
+@media only screen and (max-height: 630px) {
 
     .contNav {
         position: relative;
