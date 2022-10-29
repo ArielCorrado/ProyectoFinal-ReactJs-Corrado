@@ -38,7 +38,7 @@ const Carrito = () => {
 
     
     const toggleForm = (e) => {
-        if (e.target.id === "cont_formulario") {
+        if (e.target.id === "cont_formulario" || e.target.id === "close") {
             setMostrarForm(false);
         }
     }

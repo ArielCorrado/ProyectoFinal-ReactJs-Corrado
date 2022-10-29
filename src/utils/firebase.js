@@ -59,8 +59,7 @@ const leerBDD = async () => {
 
 const crearOrdeDeCompra = async (obj) => {
     const ordenDeCompra = await addDoc(collection(bd, "ordenesDeCompra"),{
-        "nombre": obj.nombre,
-        "apellido": obj.apellido,
+        "nombreApellido": obj.nombreApellido,
         "dni": obj.dni,
         "direccion": obj.direccion,
         "email": obj.email,

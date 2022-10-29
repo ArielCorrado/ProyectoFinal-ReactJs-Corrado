@@ -722,7 +722,7 @@
 
 .formulario_titulo {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 400;
     color: #ffffff;
     text-align: center;
@@ -731,6 +731,8 @@
 }    
 
 .form {
+    height: fit-content;
+    position: absolute;
     width: 700px;           
     flex-direction: column;
     border: 1px solid rgb(161, 161, 161);
@@ -738,14 +740,17 @@
     padding: 40px;
     background: linear-gradient(90deg, rgb(176, 64, 199) 39%, #47c8da 100%);
     margin: 50px 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .input {
-    width: 100%;
+    width: 90%;
     height: 50px;
     font-size: 22px;
     font-weight: 300;
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 5px 20px;
     font-family: 'Josefin Sans', sans-serif;
     border-radius: 7px;
@@ -761,19 +766,17 @@
 }
 
 .formulario_boton {
+    margin: 25px 10px;
     border-radius: 10px;
-    width: 50%;
-    height: 60px;
+    max-width: max-content;
+    min-height: 70px;
     color: white;
     background-color: var(--color-rosa);
     border: none;
     cursor: pointer;
     font-weight: 600;
     font-size: 20px;
-}
-
-.formulario_boton:hover {
-    background-color: rgb(255, 36, 98);
+    padding: 10px 20px;
 }
 
 .textarea {
@@ -787,8 +790,11 @@
     font-size: 20px;
 }
 
+.formulario_boton:hover {
+    background-color: rgb(255, 36, 98);
+}
+
 .cont_formulario {
-    align-items: flex-start;
     position: absolute;
     z-index: 300;
     width: 100%;
@@ -797,13 +803,21 @@
     animation-duration: 0.75s;
 }
 
+.closeForm {
+    height: 40px;
+    z-index: 400;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
 
 
 /*************************** Media Querys ************************************/
 
 /******************************* Form ***************************************/
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:750px) {
 
     .form {
         width: 95%;
@@ -815,6 +829,13 @@
 
     .input {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+
+    .form {
+        padding: 20px; 
     }
 }
 
@@ -922,8 +943,17 @@
 }
 
 
-/**************************** Sección busquedas - Carrito y Logo ************************/
+/**************************************** NavBar ****************************************/
 
+@media only screen and (max-height: 750px) {
+
+    .contNav {
+        position: relative;
+    }
+}
+
+
+/**************************** Sección busquedas - Carrito y Logo ************************/
 
 @media only screen and (max-width: 1080px) {
     
@@ -1052,5 +1082,7 @@
     }
 
 }
+
+
 
 
