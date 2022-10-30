@@ -4,11 +4,12 @@ import CardProductoCarrito from './CardProductoCarrito';
 import { leerBDD } from '../../utils/firebase';
 import Form from './Form';
 import { mensaje } from '../../utils/funcionesUtiles';
+import Spinner from './Spinner';
 
 const Carrito = () => {
     
     const {carrito, carritoTotal, setearCarritoTotal, vaciarCarrito} = useContext (CarritoContext);
-    const [productosEnCarrito, setProductosEnCarrito] = useState ([]);
+    const [productosEnCarrito, setProductosEnCarrito] = useState ([<Spinner key={"spinner"}/>]);
     const [mostrarForm, setMostrarForm] = useState(false);
      
     useEffect(() => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { error } from '../../utils/funcionesUtiles';
 
 const arrayFiltro = [];
 
@@ -65,9 +66,9 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                 const keys2 = key.split("=");
                 arrayFiltro.push({ "op":keys2[0], "sop":keys2[1] });
             }
-        } else 
+        }  
 
-             
+           
         /******************************************** Aplicamos el filtro en los productos***********************************************************/
          
         productosFiltrados = productos;
@@ -77,7 +78,7 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
         }
     
         ordenarPorPrecio(productosFiltrados, "Precio Ascendente");
-                    
+                                    
 
         /**********************************************Actualizamos el filtro con sus opciones******************************************************/
 

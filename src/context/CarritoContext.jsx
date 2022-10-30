@@ -1,5 +1,4 @@
 import React, {createContext, useState} from 'react';
-import { mensaje } from '../utils/funcionesUtiles';
 
 const CarritoContext = createContext();
 const CarritoProvider = ({children}) => {

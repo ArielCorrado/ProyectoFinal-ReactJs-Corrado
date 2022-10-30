@@ -23,14 +23,14 @@ const mensaje = (mensaje) => {
         title: mensaje,
         icon: 'warning',
         confirmButtonColor: '#3085d6',
-        confirmButtonText: 'VOLVER',
+        confirmButtonText: 'HOME',
         allowOutsideClick: false,
         allowEscapeKey: false,
         scrollbarPadding: false
     })  
     .then((result) => {
         if (result.isConfirmed) {
-            window.history.back();
+            location.href="/";
         }
     })
 }
