@@ -12,4 +12,6 @@
 sweetalert2: Para el manejo de ventanas modales de advertencia, error y confirmación
  
 
-Se Incluye .Gif mostrando la navegabilidad en carpeta "docs".  
+
+
+(Se Incluye .Gif mostrando la navegabilidad en carpeta "docs")  
