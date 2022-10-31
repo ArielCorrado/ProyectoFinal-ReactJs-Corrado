@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import {useParams} from "react-router-dom";
 import { leerProducto } from '../../utils/firebase';
 import CardProductoDetail from './CardProductoDetail';
-import { error } from '../../utils/funcionesUtiles';
+import { mensaje } from '../../utils/funcionesUtiles';
 import Spinner from './Spinner';
 
 const ItemDetailContainer = () => {
@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         
         leerProducto(id).then((prod) => {
-            prod[1] ? setProducto(<CardProductoDetail producto={prod}/>) : error (`El Producto no Existe`);
+            prod[1] ? setProducto(<CardProductoDetail producto={prod}/>) : mensaje ("El Producto no Existe", "back");
         });
                 
     },[id]);

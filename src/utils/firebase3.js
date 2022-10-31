@@ -16,5 +16,8 @@ const leerProducto = async (id) => {
     return productoN;
 }
 
-
-export {leerBDD, leerProducto};
+const crearOrdeDeCompra = async () => {
+    return ("123456789");
+}
+ 
+export {leerBDD, leerProducto, crearOrdeDeCompra};

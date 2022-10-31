@@ -1,39 +1,26 @@
 import Swal from "sweetalert2";
 
-const error = (mensaje) => {
-    Swal.fire({
-        title: 'Ops!',
-        text: mensaje,
-        icon: 'error',
-        confirmButtonColor: '#3085d6',
-        confirmButtonText: 'VOLVER',
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-        scrollbarPadding: false
-    })  
-    .then((result) => {
-        if (result.isConfirmed) {
-            window.history.back();
-        }
-    })
-}
-
-const mensaje = (mensaje) => {
+const mensaje = (mensaje, opcion) => {
+    let buttonText = "";
+    opcion === "back" ? buttonText = "VOLVER" : buttonText = "HOME";
     Swal.fire({
         title: mensaje,
         icon: 'warning',
         confirmButtonColor: '#3085d6',
-        confirmButtonText: 'HOME',
+        confirmButtonText: buttonText,
         allowOutsideClick: false,
         allowEscapeKey: false,
         scrollbarPadding: false
     })  
     .then((result) => {
         if (result.isConfirmed) {
-            location.href="/";
+            if (opcion === "back") {
+                window.history.back() 
+            } else  {
+                window.location.href = "/";
+            }
         }
     })
 }
 
-
-export {error, mensaje};
+export {mensaje};

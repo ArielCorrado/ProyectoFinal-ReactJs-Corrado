@@ -1,15 +1,17 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { mensaje } from '../../utils/funcionesUtiles';
 
 const arrayFiltro = [];
 
-const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
+const Filtro = ({productos, ordenarPorPrecio}) => {
 
     const {categoria} = useParams();
     const {filterKeys} = useParams();
     const navigate = useNavigate();
     const [listaFiltro, setListaFiltro] = useState(<></>)
+    let productosFiltrados = [];
      
     useEffect(() => {
         arrayFiltro.length = 0;
@@ -56,9 +58,11 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
 
 
     useEffect(() => {
-     
+
+           
         /***********************************lEEMOS LA URL Y LA PASAMOS LAS KEYS A UNA ARRAY *******************************************************/
 
+        
         if (filterKeys && arrayFiltro.length === 0) {           //Este caso se da si ponemos manualmente la url
             const keys1 = filterKeys.split("&");
             for (const key of keys1) {
@@ -66,22 +70,27 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                 arrayFiltro.push({ "op":keys2[0], "sop":keys2[1] });
             }
         }  
-
-           
+                
         /******************************************** Aplicamos el filtro en los productos***********************************************************/
-         
-        productosFiltrados = productos;
+        
+        if (productos.length !== 0) {
 
-        for (let opcion of arrayFiltro) {                                                           //Filtramos por cada elemento en "arrayFiltro"
-            productosFiltrados = productosFiltrados.filter((prod) => prod[1][opcion.op] === opcion.sop);
+            productosFiltrados = productos;
+        
+            for (let opcion of arrayFiltro) {                                                           //Filtramos por cada elemento en "arrayFiltro"
+                productosFiltrados = productosFiltrados.filter((prod) => prod[1][opcion.op] === opcion.sop);
+            }
+            
+            ordenarPorPrecio(productosFiltrados, "Precio Ascendente");
+        } 
+
+        if (filterKeys && productos.length !== 0 && productosFiltrados.length ===0) {           //Si ponemos una url con las keys de filtro directamente y no hay resultados
+            mensaje("No se Encontraron Productos con el Filtro Aplicado", "back");                       // se genera una ventana de error
         }
-    
-        ordenarPorPrecio(productosFiltrados, "Precio Ascendente");
-                                    
+        
+        if (productosFiltrados.length !== 0) { 
 
-        /**********************************************Actualizamos el filtro con sus opciones******************************************************/
-
-        if (productosFiltrados.length !== 0) {              
+            /**********************************************Actualizamos el filtro con sus opciones****************************************************/
 
             const opcionesFiltro = productosFiltrados[0][1].opcionesBusqueda;
             const opcionesYSubOpciones = [];
@@ -125,9 +134,9 @@ const Filtro = ({productos, ordenarPorPrecio, productosFiltrados}) => {
                         );
                     }
                 }
-            }
+            } 
             setListaFiltro(opcionesYSubOpcionesJSX);
-        }
+        } 
     }, [filterKeys, productos]);
     
 

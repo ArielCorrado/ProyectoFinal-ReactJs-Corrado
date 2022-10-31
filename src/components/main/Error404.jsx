@@ -1,8 +1,8 @@
 import React from 'react';
-import { error } from '../../utils/funcionesUtiles';
+import { mensaje } from '../../utils/funcionesUtiles';
 
 const Error404 = () => {
-    error ("Ruta No Válida");
+    mensaje ("Ruta No Válida", "back");
     return (
         <div className="main__container flex"></div>
     );
